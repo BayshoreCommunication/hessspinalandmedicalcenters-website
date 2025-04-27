@@ -1,19 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
-import { BsHospital } from "react-icons/bs";
-import { TbStretching2 } from "react-icons/tb";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const treatments = [
   {
     id: 1,
-    icon: <BsHospital className="size-10" />,
+    icon: "/assets/homepage/service-section/1.png",
     title: "Chiropractic Manipulation",
     description:
       "We focus on auto accident care and treatment options that will help ease your pain and deal with life after an auto accident.",
   },
   {
     id: 2,
-    icon: <BsHospital className="size-10" />,
+    icon: "/assets/homepage/service-section/2.png",
     title: "Digital Radiography",
     description:
       "Our physicians will diagnose and evaluate your injury or condition to determine the type of treatment that is most appropriate.",
@@ -21,28 +20,28 @@ const treatments = [
   },
   {
     id: 3,
-    icon: <BsHospital className="size-10" />,
+    icon: "/assets/homepage/service-section/3.png",
     title: "Individual Treatment Plans",
     description:
       "Trauma associated with auto injuries can take days or weeks to manifest, that's why it's important to get treatment ASAP!",
   },
   {
     id: 4,
-    icon: <TbStretching2 className="size-10" />,
+    icon: "/assets/homepage/service-section/4.png",
     title: "Injury Rehabilitation",
     description:
       "Our exercise and stretching routines will build flexibility and strength, so you can fully restore your maximum range of motion and independence.",
   },
   {
     id: 5,
-    icon: <TbStretching2 className="size-10" />,
+    icon: "/assets/homepage/service-section/5.png",
     title: "Physical Therapy",
     description:
       "Hydrotherapy uses the combination of water, heat and massage to provide a comforting and relaxing experience, relieving pain.",
   },
   {
     id: 6,
-    icon: <TbStretching2 className="size-10" />,
+    icon: "/assets/homepage/service-section/6.png",
     title: "Constant neck and back pain?",
     description:
       "Chiropractic adjustments relieve pressure on the nerves and muscles, and treat the underlying spinal or whiplash injury.",
@@ -67,7 +66,7 @@ const CanHelpYou = () => {
           </div>
         </ScrollMotionEffect>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
           {treatments.map((item, index) => (
             <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
               <div
@@ -75,7 +74,13 @@ const CanHelpYou = () => {
                 className="group relative flex flex-col justify-between bg-white border border-gray-300 rounded-xl p-6 transition duration-300 hover:bg-[#135420]"
               >
                 <div className="my-3 text-gray-800 group-hover:text-white transition">
-                  {item?.icon}
+                  <Image
+                    width={500}
+                    height={500}
+                    src={item.icon}
+                    alt={item.title}
+                    className="w-12 h-12 transition duration-300 group-hover:invert"
+                  />
                 </div>
                 <div className="flex items-start gap-4">
                   <div>

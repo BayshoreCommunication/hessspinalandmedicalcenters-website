@@ -1,6 +1,5 @@
-import { image } from "@nextui-org/react";
 import Image from "next/image";
-import { RiCustomerService2Line } from "react-icons/ri";
+import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const leftFeatures = [
   {
@@ -63,71 +62,82 @@ const SpinalMedical = () => {
   return (
     <section className="bg-pwhite">
       <div className="container  p-6 md:p-16">
-        <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
-          Why choose Hess Spinal & Medical?
-        </h1>
-        <div className="w-[50%] mx-auto mt-4">
-          <p className="text-md md:text-lg text-[#55545A] text-center  flex justify-center">
-            {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
-          </p>
-        </div>
+        <ScrollMotionEffect effect="fade-right" duration="2000">
+          <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
+            Why choose Hess Spinal & Medical?
+          </h1>
+        </ScrollMotionEffect>
+
+        <ScrollMotionEffect effect="fade-right" duration="2000">
+          <div className="w-full md:w-[50%] mx-auto mt-4">
+            <p className="text-md md:text-lg text-[#55545A] text-center  flex justify-center">
+              {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
+            </p>
+          </div>
+        </ScrollMotionEffect>
 
         <div className="py-12">
           <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-16 items-center">
             {/* Left Features */}
-            <div className="flex flex-col gap-8">
-              {leftFeatures.map((item, index) => (
-                <div key={index} className="flex items-start  gap-4 ">
-                  <div className="text-green-500 bg-white p-3 rounded-full">
-                    <Image
-                      src={item.image}
-                      alt="icon"
-                      width={40}
-                      height={40}
-                    ></Image>
+            <ScrollMotionEffect effect="fade-right" duration="1000">
+              <div className="flex flex-col gap-8">
+                {leftFeatures.map((item, index) => (
+                  <div key={index} className="flex items-start gap-4 ">
+                    <div className="text-green-500 bg-white p-3 rounded-full">
+                      <Image
+                        src={item.image}
+                        alt="icon"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-gray-900">{item.title}</h3>
+                      <p className="text-sm text-gray-600 mt-1">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900">{item.title}</h3>
-                    <p className="text-sm text-gray-600 mt-1">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            </ScrollMotionEffect>
 
-            {/* Center Image */}
-            <div className="flex flex-col items-center">
-              <Image
-                width={500}
-                height={400}
-                className="w-full object-cover"
-                src={"/assets/homepage/spinal-medical.jpg"}
-                alt={"about image"}
-              />
-            </div>
-
-            {/* Right Features */}
-            <div className="flex flex-col gap-12">
-              {rightFeatures.map((item, index) => (
-                <div key={index} className="flex items-start  gap-4 ">
-                  <div className="text-green-500 bg-white p-3 rounded-full">
-                    <Image
-                      src={item.image}
-                      alt="icon"
-                      width={40}
-                      height={40}
-                    ></Image>
+            <ScrollMotionEffect effect="fade-right" duration="2000">
+              {/* Center Image */}
+              <div className="flex flex-col items-center">
+                <Image
+                  width={500}
+                  height={400}
+                  className="w-full object-cover"
+                  src={"/assets/homepage/spinal-medical.jpg"}
+                  alt={"about image"}
+                />
+              </div>
+            </ScrollMotionEffect>
+            
+            <ScrollMotionEffect effect="fade-right" duration="3000">
+              {/* Right Features */}
+              <div className="flex flex-col gap-12">
+                {rightFeatures.map((item, index) => (
+                  <div key={index} className="flex items-start gap-4 ">
+                    <div className="text-green-500 bg-white p-3 rounded-full">
+                      <Image
+                        src={item.image}
+                        alt="icon"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-gray-900">{item.title}</h3>
+                      <p className="text-sm text-gray-600 mt-1">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900">{item.title}</h3>
-                    <p className="text-sm text-gray-600 mt-1">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            </ScrollMotionEffect>
           </div>
         </div>
       </div>
