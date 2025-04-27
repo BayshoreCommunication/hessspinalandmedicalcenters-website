@@ -43,7 +43,7 @@ const WhatPeopleSay = () => {
               <div className="mt-5">
                 <Link
                   href={"/testimonials"}
-                  className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
+                  className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary duration-500 "
                 >
                   View All Reviews
                 </Link>

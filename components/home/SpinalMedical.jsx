@@ -1,25 +1,30 @@
+import { image } from "@nextui-org/react";
 import Image from "next/image";
 import { RiCustomerService2Line } from "react-icons/ri";
 
 const leftFeatures = [
   {
-    icon: <RiCustomerService2Line className="size-10" />,
+    // icon: <RiCustomerService2Line className="size-10" />,
+    image: "/assets/homepage/why-choose-icon/1.png",
     title: "Comprehensive Care in One Location",
     description: "Access multiple medical services without extra appointments.",
   },
   {
-    icon: <RiCustomerService2Line className="size-10" />,
+    // icon: <RiCustomerService2Line className="size-10" />,
+    image: "/assets/homepage/why-choose-icon/2.png",
     title: "Immediate Treatment, No Upfront Costs",
     description:
       "PIP coverage allows accident victims to receive care without payment delays.",
   },
   {
-    icon: <RiCustomerService2Line className="size-10" />,
+    // icon: <RiCustomerService2Line className="size-10" />,
+    image: "/assets/homepage/why-choose-icon/3.png",
     title: "Expert Injury Care with Insurance Assistance",
     description: "Get treatment while we handle your auto insurance claims.",
   },
   {
-    icon: <RiCustomerService2Line className="size-10" />,
+    // icon: <RiCustomerService2Line className="size-10" />,
+    image: "/assets/homepage/why-choose-icon/4.png",
     title: "No Financial Barriers to Recovery",
     description:
       "Receive necessary medical attention without out-of-pocket expenses.",
@@ -28,23 +33,27 @@ const leftFeatures = [
 
 const rightFeatures = [
   {
-    icon: <RiCustomerService2Line className="size-10" />,
+    // icon: <RiCustomerService2Line className="size-10" />,
+    image: "/assets/homepage/why-choose-icon/5.png",
     title: "Hassle-Free Accident Injury Treatment",
     description:
       "Covered under Florida’s PIP benefits—no upfront costs required.",
   },
   {
-    icon: <RiCustomerService2Line className="size-10" />,
+    // icon: <RiCustomerService2Line className="size-10" />,
+    image: "/assets/homepage/why-choose-icon/6.png",
     title: "Seamless Insurance Claim Support",
     description: "We assist with claims, ensuring stress-free medical care.",
   },
   {
-    icon: <RiCustomerService2Line className="size-10" />,
+    // icon: <RiCustomerService2Line className="size-10" />,
+    image: "/assets/homepage/why-choose-icon/7.png",
     title: "Compassionate Care, Zero Upfront Costs",
     description: "Focus on healing while we manage your coverage.",
   },
   {
-    icon: <RiCustomerService2Line className="size-10" />,
+    // icon: <RiCustomerService2Line className="size-10" />,
+    image: "/assets/homepage/why-choose-icon/8.png",
     title: "Dedicated Auto Injury Treatment Team",
     description: "Professional medical support tailored for accident recovery.",
   },
@@ -55,7 +64,7 @@ const SpinalMedical = () => {
     <section className="bg-pwhite">
       <div className="container  p-6 md:p-16">
         <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
-          Our Key Offerings
+          Why choose Hess Spinal & Medical?
         </h1>
         <div className="w-[50%] mx-auto mt-4">
           <p className="text-md md:text-lg text-[#55545A] text-center  flex justify-center">
@@ -70,7 +79,12 @@ const SpinalMedical = () => {
               {leftFeatures.map((item, index) => (
                 <div key={index} className="flex items-start  gap-4 ">
                   <div className="text-green-500 bg-white p-3 rounded-full">
-                    {item.icon}
+                    <Image
+                      src={item.image}
+                      alt="icon"
+                      width={40}
+                      height={40}
+                    ></Image>
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900">{item.title}</h3>
@@ -98,7 +112,12 @@ const SpinalMedical = () => {
               {rightFeatures.map((item, index) => (
                 <div key={index} className="flex items-start  gap-4 ">
                   <div className="text-green-500 bg-white p-3 rounded-full">
-                    {item.icon}
+                    <Image
+                      src={item.image}
+                      alt="icon"
+                      width={40}
+                      height={40}
+                    ></Image>
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900">{item.title}</h3>
