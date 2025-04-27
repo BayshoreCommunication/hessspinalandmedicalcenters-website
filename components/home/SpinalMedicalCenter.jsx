@@ -36,7 +36,7 @@ const SpinalMedicalCenter = () => {
         <ScrollMotionEffect effect="fade-up" duration="2000">
           <div className="pt-8 flex justify-center ">
             <Link
-              href={"/about"}
+              href={"/"}
               className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-green-800"
             >
               Discover More
