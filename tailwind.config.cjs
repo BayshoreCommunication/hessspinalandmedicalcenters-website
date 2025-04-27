@@ -21,10 +21,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#012C6D",
-        secondary: "#ED8500",
-        black: "#000000",
-        white: "#FFFFFF",
+        primary: "#009D4F",
+        secondary: "#009D4F",
+        pblack: "#232222",
+        pwhite: "#F1F1F1",
       },
     },
     container: {
