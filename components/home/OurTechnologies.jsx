@@ -45,7 +45,7 @@ const OurTechnologies = () => {
         <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
           Our Technologies
         </h1>
-        <div className="2xl:w-[60%] mx-auto mt-4">
+        <div className="2xl:w-[60%] mx-auto mt-4 mb-8">
           <p className="text-md md:text-lg text-[#55545A] text-center  flex justify-center">
             {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
           </p>
