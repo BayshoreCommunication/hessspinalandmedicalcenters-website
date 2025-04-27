@@ -4,6 +4,7 @@ import FindOurLocation from "@/components/home/FindOurLocation";
 import HeroSection from "@/components/home/HeroSection";
 import LatestBlogs from "@/components/home/LatestBlogs";
 import WhatPeopleSay from "@/components/home/WhatPeopleSay";
+import GoogleMap from "@/components/shared/GoogleMap";
 import TestimonialSlideSection from "@/components/shared/TestimonialSlider";
 
 export const metadata = {
@@ -29,11 +30,11 @@ export default function Home() {
 
       {/* Abu design part */}
 
-      <FindOurLocation />
-      <TestimonialSlideSection />
+      {/* <FindOurLocation /> */}
+      {/* <TestimonialSlideSection /> */}
       <WhatPeopleSay />
       <LatestBlogs />
-      {/* <GoogleMap /> */}
+      <GoogleMap />
       <ContactUs />
     </main>
   );

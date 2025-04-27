@@ -41,7 +41,7 @@ const LatestBlogs = async () => {
               <div className="flex justify-center md:justify-start mx-auto items-center  my-4">
                 <Link
                   href={`/blog/${blog.slug}`}
-                  className="text-secondary font-normal text-lg bg-none px-4 py-1 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary "
+                  className="text-secondary font-normal text-lg bg-none px-4 py-1 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary duration-500 "
                 >
                   Read More
                 </Link>
@@ -53,48 +53,30 @@ const LatestBlogs = async () => {
   };
 
   return (
-    <SectionLayout bg="bg-slate-50">
+    <div className="container py-10 lg:py-14">
       <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          <CardMotion
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { duration: 1.1 },
-            }}
-            initial={{ opacity: 0, y: 100 }}
-          >
-            <div className="">
-              <h2
-                className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center md:text-left`}
-              >
-                Our Recent Blogs
-              </h2>
-              <hp className="text-stone-950 font-normal text-md">
-                Professionally handling Property Damage Claims, we’re committed
-                to protecting both your space and your peace of mind in times of
-                need.
-              </hp>
-            </div>
-          </CardMotion>
-          <CardMotion
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { duration: 1.1 },
-            }}
-            initial={{ opacity: 0, y: 100 }}
-          >
-            <div className="flex justify-end md:visible invisible">
-              <Link
-                href={"/blog"}
-                className="text-secondary font-normal text-lg bg-none px-6 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
-              >
-                Read All Blogs
-              </Link>
-            </div>
-          </CardMotion>
-        </div>
+        <CardMotion
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1.1 },
+          }}
+          initial={{ opacity: 0, y: 100 }}
+        >
+          <div className=" text-center">
+            <h2
+              className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center `}
+            >
+              Our Recent Blogs
+            </h2>
+            <hp className="text-stone-950 font-normal text-md">
+              Professionally handling Property Damage Claims, we’re committed to
+              protecting both your space and your peace of mind in times of
+              need.
+            </hp>
+          </div>
+        </CardMotion>
+
         <CardMotion
           whileInView={{
             opacity: 1,
@@ -115,17 +97,17 @@ const LatestBlogs = async () => {
           }}
           initial={{ opacity: 0, y: 100 }}
         >
-          <div className="flex justify-center md:invisible mt-12 md:mt-[-60px] visible">
+          <div className="flex justify-center  mt-12  ">
             <Link
               href={"/blog"}
-              className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
+              className="text-white lg:px-10 font-normal text-lg bg-primary px-4 py-2 rounded-full hover:bg-transparent hover:text-primary duration-500 border-2 border-secondary  "
             >
-              Read All Blogs
+              Discover More Blogs
             </Link>
           </div>
         </CardMotion>
       </div>
-    </SectionLayout>
+    </div>
   );
 };
 
