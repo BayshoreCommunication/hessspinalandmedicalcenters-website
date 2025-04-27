@@ -5,6 +5,7 @@ import FindOurLocation from "@/components/home/FindOurLocation";
 import HeroSection from "@/components/home/HeroSection";
 import LatestBlogs from "@/components/home/LatestBlogs";
 import OurKeyOfferings from "@/components/home/OurKeyOfferings";
+import OurTechnologies from "@/components/home/OurTechnologies";
 import SpinalMedicalCenter from "@/components/home/SpinalMedicalCenter";
 import SummarySection from "@/components/home/SummarySection";
 import WhatPeopleSay from "@/components/home/WhatPeopleSay";
@@ -39,6 +40,7 @@ export default function Home() {
 
       {/* <FindOurLocation /> */}
       {/* <TestimonialSlideSection /> */}
+      <OurTechnologies />
       <WhatPeopleSay />
       <LatestBlogs />
       <GoogleMap />
