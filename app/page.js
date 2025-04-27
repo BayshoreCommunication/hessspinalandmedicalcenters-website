@@ -1,6 +1,7 @@
 import AboutSection from "@/components/home/AboutSection";
 import CanHelpYou from "@/components/home/CanHelpYou";
 import ContactUs from "@/components/home/ContactUs";
+import FindOurLocation from "@/components/home/FindOurLocation";
 import HeroSection from "@/components/home/HeroSection";
 import LatestBlogs from "@/components/home/LatestBlogs";
 import OurKeyOfferings from "@/components/home/OurKeyOfferings";
