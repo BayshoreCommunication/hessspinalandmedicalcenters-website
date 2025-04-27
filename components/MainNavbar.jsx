@@ -64,18 +64,6 @@ const MainNavbar = () => {
     []
   );
 
-  const navLogoList = useMemo(
-    () => [
-      { title: "Home", slug: "/" },
-      { title: "About Us", slug: "/about" },
-      { title: "Practice Areas", slug: "/practice-areas" },
-      // { title: "Se Habla Español", slug: "" },
-      { title: "Testimonials", slug: "" },
-      { title: "Blog", slug: "/blog" },
-    ],
-    []
-  );
-
   const handleScroll = useCallback(
     debounce(() => {
       setNavbarColor(window.scrollY >= 100);
@@ -97,8 +85,8 @@ const MainNavbar = () => {
   return (
     <section className={"relative z-50 "}>
       <div className="bg-primary w-full navbar ">
-        <div className="bg-white hidden md:block">
-          <div className="flex items-center container  justify-between">
+        <div className="bg-white hidden md:block py-2 border-b-2">
+          <div className="flex items-center container justify-between">
             <div className=" flex items-center gap-x-10 2xl:gap-x-16">
               <Link href={"/"}>
                 <Image
@@ -106,18 +94,18 @@ const MainNavbar = () => {
                   alt="footer logo"
                   width={500}
                   height={500}
-                  className="cursor-pointer w-[180px] xl:w-[260px]  h-auto mt-3 mb-3"
+                  className="cursor-pointer w-[120px] xl:w-[240px]  h-auto mt-3 mb-3"
                 />
               </Link>
             </div>
 
             <div className="">
-              <div className="flex items-center justify-stretch gap-x-2  xl:gap-x-8">
+              <div className="flex items-center justify-stretch gap-x-2  xl:gap-x-5">
                 {menuItems.map((el, index) => (
                   <Link
                     key={el.slug}
                     href={`${el.slug}`}
-                    className={`cursor-pointer  text-sm xl:text-[16px] text-black font-medium capitalize hover:text-secondary ${pathname === el.slug ? " border bg-secondary bg-opacity-30 rounded-full  py-1 lg:py-2 px-2 lg:px-5" : ""} `}
+                    className={`cursor-pointer text-sm xl:text-[16px] text-black font-medium capitalize  bg-opacity-30 rounded-full  py-1 lg:py-2.5 px-2.5 lg:px-5 hover:bg-opacity-25 hover:bg-secondary ${pathname === el.slug ? " border bg-secondary" : ""} `}
                   >
                     {el.title}
                   </Link>

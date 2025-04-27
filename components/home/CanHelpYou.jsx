@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BsHospital } from "react-icons/bs";
 import { TbStretching2 } from "react-icons/tb";
+import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const treatments = [
   {
@@ -51,51 +52,60 @@ const treatments = [
 const CanHelpYou = () => {
   return (
     <section className="">
-      <div className="container  p-6 md:p-16">
-        <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
-          How We Can Help You
-        </h1>
-        <div className="w-[50%] mx-auto mt-4">
-          <p className="text-md md:text-lg text-[#55545A] text-center  flex justify-center">
-            {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
-          </p>
-        </div>
+      <div className="container p-6 md:p-16">
+        <ScrollMotionEffect effect="fade-right" duration="2000">
+          <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
+            How We Can Help You
+          </h1>
+        </ScrollMotionEffect>
+
+        <ScrollMotionEffect effect="fade-left" duration="2000">
+          <div className="w-full md:w-[50%] mx-auto mt-4">
+            <p className="text-md md:text-lg text-[#55545A] text-center  flex justify-center">
+              {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
+            </p>
+          </div>
+        </ScrollMotionEffect>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 mt-6">
-          {treatments.map((item) => (
-            <div
-              key={item.id}
-              className="group relative flex flex-col justify-between bg-white border border-gray-300 rounded-xl p-6 transition duration-300 hover:bg-green-600"
-            >
-              <div className="my-3 text-gray-800 group-hover:text-white transition">
-                {item?.icon}
-              </div>
-              <div className="flex items-start gap-4">
-                <div>
-                  <h3 className="font-bold text-lg text-gray-800 group-hover:text-white transition">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-gray-600 group-hover:text-white transition">
-                    {item.description}
-                  </p>
+          {treatments.map((item, index) => (
+            <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
+              <div
+                key={item.id}
+                className="group relative flex flex-col justify-between bg-white border border-gray-300 rounded-xl p-6 transition duration-300 hover:bg-[#135420]"
+              >
+                <div className="my-3 text-gray-800 group-hover:text-white transition">
+                  {item?.icon}
                 </div>
-              </div>
+                <div className="flex items-start gap-4">
+                  <div>
+                    <h3 className="font-bold text-lg text-gray-800 group-hover:text-white transition">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-600 group-hover:text-white transition">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
 
-              <button className="mt-6 w-fit px-3 text-sm py-2 rounded-full border border-gray-800 text-gray-600 group-hover:text-white transition group-hover:border-white">
-                Learn More
-              </button>
-            </div>
+                <button className="mt-6 w-fit px-3 text-sm py-2 rounded-full border border-gray-800 text-gray-600 group-hover:text-white transition group-hover:border-white">
+                  Learn More
+                </button>
+              </div>
+            </ScrollMotionEffect>
           ))}
         </div>
 
-        <div className="mt-8 flex justify-center">
-          <Link
-            href={"/about"}
-            className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-green-800"
-          >
-            Discover More Services
-          </Link>
-        </div>
+        <ScrollMotionEffect effect="fade-up" duration="2000">
+          <div className="mt-8 flex justify-center">
+            <Link
+              href={"/about"}
+              className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-green-800"
+            >
+              Discover More Services
+            </Link>
+          </div>
+        </ScrollMotionEffect>
       </div>
     </section>
   );

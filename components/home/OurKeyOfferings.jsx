@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const services = [
   {
@@ -47,35 +48,42 @@ const OurKeyOfferings = () => {
   return (
     <section className="bg-pwhite">
       <div className="container  p-6 md:p-16">
-        <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
-          Our Key Offerings
-        </h1>
-        <div className="w-[50%] mx-auto mt-4">
-          <p className="text-md md:text-lg text-[#55545A] text-center  flex justify-center">
-            {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
-          </p>
-        </div>
+        <ScrollMotionEffect effect="fade-right" duration="2000">
+          <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
+            Our Key Offerings
+          </h1>
+        </ScrollMotionEffect>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-gray-100 mt-4">
-          {services.map((service) => (
-            <div
-              key={service.id}
-              className="flex items-start gap-4 bg-white p-6 rounded-xl shadow-sm"
-            >
-              <Image
-                width={500}
-                height={500}
-                src={service.icon}
-                alt={service.title}
-                className="w-12 h-12"
-              />
-              <div>
-                <h3 className="font-bold text-lg">{service.title}</h3>
-                <p className="text-gray-600 text-sm mt-1">
-                  {service.description}
-                </p>
+        <ScrollMotionEffect effect="fade-left" duration="2000">
+          <div className="w-full md:w-[50%] mx-auto mt-4">
+            <p className="text-md md:text-lg text-[#55545A] text-center  flex justify-center">
+              {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
+            </p>
+          </div>
+        </ScrollMotionEffect>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+          {services.map((service, index) => (
+            <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
+              <div
+                key={service.id}
+                className="flex items-start gap-4 bg-white p-6 rounded-xl shadow-sm"
+              >
+                <Image
+                  width={500}
+                  height={500}
+                  src={service.icon}
+                  alt={service.title}
+                  className="w-12 h-12"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">{service.title}</h3>
+                  <p className="text-gray-600 text-sm mt-1">
+                    {service.description}
+                  </p>
+                </div>
               </div>
-            </div>
+            </ScrollMotionEffect>
           ))}
         </div>
       </div>
