@@ -1,15 +1,14 @@
 import AboutSection from "@/components/home/AboutSection";
 import CanHelpYou from "@/components/home/CanHelpYou";
 import ContactUs from "@/components/home/ContactUs";
-import FindOurLocation from "@/components/home/FindOurLocation";
 import HeroSection from "@/components/home/HeroSection";
 import LatestBlogs from "@/components/home/LatestBlogs";
 import OurKeyOfferings from "@/components/home/OurKeyOfferings";
+import SpinalMedical from "@/components/home/SpinalMedical";
 import SpinalMedicalCenter from "@/components/home/SpinalMedicalCenter";
 import SummarySection from "@/components/home/SummarySection";
 import WhatPeopleSay from "@/components/home/WhatPeopleSay";
 import GoogleMap from "@/components/shared/GoogleMap";
-import TestimonialSlideSection from "@/components/shared/TestimonialSlider";
 
 export const metadata = {
   title: `Property Damage Attorney in Florida | Insurance attorney in Ojus, Florida | property damage lawyer in ojus, florida | Melamed Law PLLC
@@ -35,6 +34,7 @@ export default function Home() {
       <SpinalMedicalCenter />
       <OurKeyOfferings />
       <CanHelpYou />
+      <SpinalMedical />
       {/* Abu design part */}
 
       {/* <FindOurLocation /> */}
