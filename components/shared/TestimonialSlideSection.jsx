@@ -29,7 +29,7 @@ const TestimonialSlideSection = ({ className }) => {
       <div className="flex items-center gap-4">
         <button
           ref={prevButtonRef}
-          className="text-white hover:text-gray-100 p-3 border border-white rounded-full"
+          className="text-white bg-primary  hover:text-primary hover:bg-transparent hover:border-primary p-3 border border-white rounded-full duration-400"
         >
           <FaArrowLeft size={20} />
         </button>
@@ -49,14 +49,14 @@ const TestimonialSlideSection = ({ className }) => {
         >
           {[...testimonialsData].reverse().map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="p-6 md:p-8 lg:p-10  text-center  ">
-                <p className="text-base md:text-lg font-semibold text-white mb-4">
+              <div className="p-6 md:px-8 lg:px-10  text-center  ">
+                <p className="text-base md:text-lg font-semibold text-[#5E5E5E] mb-4">
                   {testimonial.review}
                 </p>
                 <div className="text-yellow-500 mb-2 text-xl">
                   {"★".repeat(testimonial.rating)}
                 </div>
-                <p className="font-semibold text-white text-lg md:text-xl">
+                <p className="font-semibold text-[#5E5E5E] text-lg md:text-xl">
                   {testimonial.name}
                 </p>
               </div>
@@ -65,7 +65,7 @@ const TestimonialSlideSection = ({ className }) => {
         </Swiper>
         <button
           ref={nextButtonRef}
-          className="text-white hover:text-gray-100 p-3 border border-white rounded-full"
+          className="text-white bg-primary  hover:text-primary hover:bg-transparent hover:border-primary p-3 border border-white rounded-full duration-400"
         >
           <FaArrowRight size={20} />
         </button>

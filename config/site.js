@@ -15,7 +15,27 @@ export const SITECONFIG = {
   footer: {
     footer_logo: "",
     description: "",
-    company: [
+    resources: [
+      {
+        title: "About Us",
+        slug: "/about",
+      },
+      {
+        title: "Services",
+        slug: "/services", // <- Add this slug
+      },
+      {
+        title: "Technology",
+        slug: "/technology", // <- Add this slug
+      },
+      {
+        title: "Blogs",
+        slug: "/blogs", // <- Adjusted to match 'Blogs' plural
+      },
+      {
+        title: "Contact",
+        slug: "/contact",
+      },
       {
         title: "Disclaimers",
         slug: "/disclaimers",
@@ -24,7 +44,6 @@ export const SITECONFIG = {
         title: "Privacy Policy",
         slug: "/privacy-policy",
       },
-
       {
         title: "Terms of Service",
         slug: "/terms-of-service",
@@ -32,28 +51,6 @@ export const SITECONFIG = {
       {
         title: "Cookie Policy",
         slug: "/cookie-policy",
-      },
-    ],
-    quick_links: [
-      {
-        title: "About Us",
-        slug: "/about",
-      },
-      {
-        title: "Practice Areas",
-        slug: "/practice-areas",
-      },
-      {
-        title: "Blog",
-        slug: "/blog",
-      },
-      {
-        title: "Testimonials",
-        slug: "/testimonials",
-      },
-      {
-        title: "Contact Us",
-        slug: "/contact",
       },
     ],
   },

@@ -24,7 +24,10 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className="bg-white">
+      <footer
+        className="bg-white overflow-hidden text-white"
+        style={{ backgroundImage: "url('/assets/shared/footer-bg.jpg')" }}
+      >
         <div className="container py-16">
           <div className="md:flex md:justify-center">
             <div className="grid justify-center grid-cols-2 gap-8 sm:gap-6 md:grid-cols-5 ">
@@ -41,28 +44,32 @@ const Footer = () => {
                     className="object-cover"
                   />
                 </Link>
-                <p className="py-5 text-[18px] font-normal text-center text-black md:text-left max-w-[450px] leading-8">
-                  Contact us today to get your free case review. We answer calls
-                  & texts 24/7.
+                <p className="py-5 text-[18px] font-normal text-center text-white md:text-left max-w-[450px] leading-8">
+                  The physicians and staff at Hess Spinal and Medical Centers
+                  understand that being injured in an auto accident can be
+                  extremely stressful for you and your family.
+                </p>
+                <p className=" text-[18px] font-normal text-center text-white md:text-left max-w-[450px] leading-8">
+                  <strong> Hours:</strong> 8:30am - 7:00pm
                 </p>
 
                 <div className="text-white flex justify-center md:justify-start gap-3 mt-4 md:mt-6 ">
                   <Link
-                    href="https://www.facebook.com/MelamedLawPLLC"
+                    href="https://www.facebook.com/"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
                     <FaFacebookF className="size-5" />
                   </Link>
                   <Link
-                    href="https://www.linkedin.com/company/melamedlawpllc"
+                    href="https://www.linkedin.com/company/"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
                     <FaLinkedinIn className="size-5" />
                   </Link>
                   <Link
-                    href="https://x.com/Melamedlawpllc"
+                    href="https://x.com/"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
@@ -76,7 +83,7 @@ const Footer = () => {
                     <FaInstagram className="size-5" />
                   </Link>
                   <Link
-                    href="https://www.youtube.com/@melamedlawpllc"
+                    href="https://www.youtube.com/@"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary duration-300"
                   >
@@ -84,13 +91,13 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-              <div className="">
-                <h2 className="text-[22px] font-semibold text-black">
+              <div className="w-full col-span-2">
+                <h2 className="text-[22px] font-semibold text-white">
                   Quick Links
                 </h2>
                 <hr className="mt-2 mb-6 w-28 border-secondary" />
-                <ul className="ml-0 text-black list-none text-[18px] font-medium">
-                  {SITECONFIG?.footer?.quick_links?.map((el, index) => (
+                <ul className="ml-0 text-white list-none text-[18px] font-medium grid grid-cols-2 w">
+                  {SITECONFIG?.footer?.resources?.map((el, index) => (
                     <li className="mb-4" key={index}>
                       <Link href={el.slug} className="hover:underline">
                         {el.title}
@@ -102,62 +109,43 @@ const Footer = () => {
                   ))}
                 </ul>
               </div>
-              <div className="">
-                <h2 className="text-[22px] font-semibold text-black">
-                  Legal Areas
-                </h2>
-                <hr className="w-32 mt-2 mb-6 border-secondary" />
-                <ul className="ml-0 text-[18px] font-medium text-black list-none">
-                  {SITECONFIG?.footer?.company?.map((el, index) => (
-                    <li className="mb-4" key={index}>
-                      <Link href={el.slug} className="hover:underline">
-                        {el.title}
-                      </Link>{" "}
-                      {/* <p className="hover:underline cursor-pointer text-base"> */}
-                      {/*   {" "} */}
-                      {/*   {el.title} */}
-                      {/* </p> */}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
               <div className="col-span-2 md:col-span-1">
-                <h2 className="font-semibold text-black text-[22px]">
+                <h2 className="font-semibold text-white text-[22px]">
                   Contact us
                 </h2>
                 <hr className="w-24 mt-2 mb-6 border-secondary" />
-                <ul className="ml-0 text-[18px] font-medium text-black list-none">
+                <ul className="ml-0 text-[18px] font-medium text-white list-none">
                   <li className="mb-4">
                     <div className="flex items-center gap-x-1">
                       <IoLocationSharp className="size-6 text-secondary" />
 
-                      <h3 className="font-semibold text-black text-[20px]">
+                      <h3 className="font-semibold text-white text-[20px]">
                         Location
                       </h3>
                     </div>
                     <Link
-                      href="https://maps.app.goo.gl/gPaF4mQkx4wGQjaK8"
+                      href=""
                       className=" hover:underline duration-300 "
                       target="_blank"
                     >
-                      3040 NE 190th St APT 303, Aventura, FL 33180,
-                      United States
+                      4505 Town N Country Blvd, Tampa, FL 33615
                     </Link>
                   </li>
                   <li className="mb-4">
                     <div className="flex items-center gap-x-1">
                       <RiPhoneFill className="size-6 text-secondary" />
 
-                      <h3 className="font-semibold text-black text-[20px]">
+                      <h3 className="font-semibold text-white text-[20px]">
                         Contact
                       </h3>
                     </div>
                     <div className="flex flex-wrap gap-x-3 gap-y-1">
                       <Link
-                        href="tel:954-529-0695"
+                        href="tel:(800) 618-4377"
                         className="hover:underline duration-300 text-base"
                       >
-                        {`954-529-0695`}
+                        {`(800) 618-4377`}
                       </Link>
                       {/* <Link
                         href="tel:+18635996735"
@@ -172,22 +160,22 @@ const Footer = () => {
                     <div className="flex items-center gap-x-1">
                       <MdMarkEmailUnread className="size-6 text-secondary" />
 
-                      <h3 className="font-semibold text-black text-[20px]">
+                      <h3 className="font-semibold text-white text-[20px]">
                         Email
                       </h3>
                     </div>
                     <div className="flex flex-col gap-px">
                       <Link
-                        href="mailto: info@melamedlawpllc.com"
+                        href="mailto: info@hessspinalcenters.com"
                         className="hover:underline duration-300 text-base"
                       >
-                        info@melamedlawpllc.com
+                        info@hessspinalcenters.com
                       </Link>
                       {/* <Link
-                        href="mailto:myra@melamedlawpllc.com"
+                        href="mailto:myra@.com"
                         className="hover:underline duration-300"
                       >
-                        myra@melamedlawpllc.com
+                        myra@.com
                       </Link> */}
                     </div>
                   </li>
@@ -195,20 +183,17 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <hr className="my-6 border-black sm:mx-auto lg:my-8" />
+          <hr className="my-6 border-white/20 sm:mx-auto lg:my-8" />
           <div className="md:flex :items-center sm:justify-between">
-            <div className="text-[18px] font-medium text-center text-black">
+            <div className="text-[18px] font-medium text-center text-white">
               © 2024{" "}
-              <a
-                href="https://www.melamedlawpllc.com/"
-                className="hover:underline text-secondary"
-              >
-                Melamed Law
+              <a href="/" className="hover:underline text-secondary">
+                Hess Spinal & Medical Centers
               </a>
               . All Rights Reserved.
             </div>
 
-            <div className="text-[18px] font-medium text-center text-black">
+            <div className="text-[18px] font-medium text-center text-white">
               Design & Developed by{" "}
               <a
                 href="https://www.bayshorecommunication.com/"

@@ -8,6 +8,7 @@ import OurKeyOfferings from "@/components/home/OurKeyOfferings";
 import SpinalMedicalCenter from "@/components/home/SpinalMedicalCenter";
 import SummarySection from "@/components/home/SummarySection";
 import WhatPeopleSay from "@/components/home/WhatPeopleSay";
+import GoogleMap from "@/components/shared/GoogleMap";
 import TestimonialSlideSection from "@/components/shared/TestimonialSlider";
 
 export const metadata = {
@@ -36,11 +37,11 @@ export default function Home() {
       <CanHelpYou />
       {/* Abu design part */}
 
-      <FindOurLocation />
-      <TestimonialSlideSection />
+      {/* <FindOurLocation /> */}
+      {/* <TestimonialSlideSection /> */}
       <WhatPeopleSay />
       <LatestBlogs />
-      {/* <GoogleMap /> */}
+      <GoogleMap />
       <ContactUs />
     </main>
   );
