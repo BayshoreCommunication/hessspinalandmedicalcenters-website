@@ -1,8 +1,7 @@
-
+import Footer from "@/components/Footer";
+import MainNavbar from "@/components/MainNavbar";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
-import MainNavbar from "@/components/MainNavbar";
-import Footer from "@/components/Footer";
 import { Providers } from "./providers";
 
 const open_sans = Open_Sans({
@@ -10,7 +9,9 @@ const open_sans = Open_Sans({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://www.melamedlawpllc.com"),
+  metadataBase: new URL(
+    "https://hessspinalandmedicalcenters-website.vercel.app"
+  ),
 };
 
 export default function RootLayout({ children }) {

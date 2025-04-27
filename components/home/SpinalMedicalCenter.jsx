@@ -37,7 +37,7 @@ const SpinalMedicalCenter = () => {
           <div className="pt-8 flex justify-center ">
             <Link
               href={"/about"}
-              className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-orange-400"
+              className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-green-800"
             >
               Discover More
             </Link>
