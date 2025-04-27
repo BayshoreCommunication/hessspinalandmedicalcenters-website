@@ -39,15 +39,12 @@ const DatePickerInputField = ({
   return (
     <div className="w-full space-y-1">
       <div className="relative">
-        {/* <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-          <CalendarIcon />
-        </div> */}
         <input
           id={id}
           type="date"
-          className={`${
-            isFocused ? "border-primary" : "border-gray-300"
-          } bg-white  border  text-lg rounded-lg focus:ring-primary focus:border-primary block w-full pl-4 py-2 placeholder-gray-400 active:border-primary outline-none pr-3`}
+          className={`appearance-none ${isFocused ? "border-primary" : "border-gray-300"} 
+    bg-white border text-lg rounded-lg focus:ring-primary focus:border-primary 
+    block w-full pl-4 py-2 placeholder-gray-400 active:border-primary outline-none pr-3`}
           placeholder={placeholder}
           name={name}
           value={formattedDate}
