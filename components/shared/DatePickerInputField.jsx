@@ -38,12 +38,6 @@ const DatePickerInputField = ({
 
   return (
     <div className="w-full space-y-1">
-      {label && (
-        <label htmlFor={id} className="block text-sm font-medium text-gray-700">
-          {label}
-          {required && <span className="text-red-500 ml-1">*</span>}
-        </label>
-      )}
       <div className="relative">
         {/* <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
           <CalendarIcon />
