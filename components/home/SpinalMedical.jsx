@@ -64,7 +64,7 @@ const SpinalMedical = () => {
     <section className="bg-pwhite">
       <div className="container  p-6 md:p-16">
         <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
-          Our Key Offerings
+          Why choose Hess Spinal & Medical?
         </h1>
         <div className="w-[50%] mx-auto mt-4">
           <p className="text-md md:text-lg text-[#55545A] text-center  flex justify-center">

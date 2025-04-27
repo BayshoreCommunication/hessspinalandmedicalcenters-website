@@ -6,6 +6,7 @@ import digitalXRayMachine from "@/public/assets/our-technologies/digital-x-ray-m
 import spinalMachine from "@/public/assets/our-technologies/spinal-decompression-machine-2.png";
 import therapeuticMachine from "@/public/assets/our-technologies/therapeutic-ultrasound-devices.png";
 import spinalDecompressionMachine from "@/public/assets/our-technologies/spinal-decompression-machine.png";
+import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const OurTechnologies = () => {
   const technologies = [
@@ -54,13 +55,17 @@ const OurTechnologies = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 ">
           {technologies.map((item) => (
             <div key={item.id}>
-              <div>
-                <Image src={item.image} alt={item.title} />
-              </div>
-              <div className="mt-2">
-                <h2 className="text-lg font-bold">{item.title}</h2>
-                <p className="text-sm text-gray-500">{item.description}</p>
-              </div>
+              <ScrollMotionEffect effect="fade-up" duration="1000">
+                <div>
+                  <Image src={item.image} alt={item.title} />
+                </div>
+              </ScrollMotionEffect>
+              <ScrollMotionEffect effect="fade-up" duration="2000">
+                <div className="mt-2">
+                  <h2 className="text-lg font-bold">{item.title}</h2>
+                  <p className="text-sm text-gray-500">{item.description}</p>
+                </div>
+              </ScrollMotionEffect>
             </div>
           ))}
         </div>

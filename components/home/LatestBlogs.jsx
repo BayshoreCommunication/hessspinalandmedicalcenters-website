@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const LatestBlogsData = [
   {
@@ -47,27 +48,31 @@ const LatestBlogs = async () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
           {LatestBlogsData.map((item, index) => (
             <div key={item.slug} className="rounded-lg overflow-hidden">
-              <div className="w-full h-60 relative">
-                <Image
-                  src={item.featuredImage}
-                  alt={item.altText}
-                  layout="fill"
-                  objectFit="cover"
-                  className="hover:scale-105 transition-transform duration-500 rounded-2xl"
-                />
-              </div>
-              <div className="p-4">
-                <h2 className="text-lg font-bold text-black">{item.title}</h2>
-                <p className="text-sm text-gray-600 mt-2">
-                  {item.shortDescription}
-                </p>
-                <Link
-                  href={`#`}
-                  className="inline-block mt-4 text-primary font-medium hover:underline duration-500"
-                >
-                  Read More →
-                </Link>
-              </div>
+              <ScrollMotionEffect effect="fade-up" duration="1000">
+                <div className="w-full h-60 relative overflow-hidden">
+                  <Image
+                    src={item.featuredImage}
+                    alt={item.altText}
+                    layout="fill"
+                    objectFit="cover"
+                    className="hover:scale-105 transition-transform duration-500 rounded-2xl"
+                  />
+                </div>
+              </ScrollMotionEffect>
+              <ScrollMotionEffect effect="fade-up" duration="2000">
+                <div className="p-4">
+                  <h2 className="text-lg font-bold text-black">{item.title}</h2>
+                  <p className="text-sm text-gray-600 mt-2">
+                    {item.shortDescription}
+                  </p>
+                  <Link
+                    href={`#`}
+                    className="inline-block mt-4 text-primary font-medium hover:underline duration-500"
+                  >
+                    Read More →
+                  </Link>
+                </div>
+              </ScrollMotionEffect>
             </div>
           ))}
         </div>
