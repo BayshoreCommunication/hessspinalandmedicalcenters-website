@@ -1,11 +1,9 @@
-import GetAllPostData from "@/lib/GetAllPostData";
-import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import Image from "next/image";
 import Link from "next/link";
-import CardMotion from "../motion/CardMotion";
 
 const LatestBlogsData = [
   {
-    featuredImage: "/images/blog1.jpg",
+    featuredImage: "/assets/homepage/blog-1.jpg",
     altText: "Doctor showing spine model to a patient",
     title: "Understanding Spinal Injuries After Car Accidents",
     slug: "understanding-spinal-injuries",
@@ -14,7 +12,7 @@ const LatestBlogsData = [
       "Learn how spinal injuries occur after accidents and what treatments are available to ensure a full recovery.",
   },
   {
-    featuredImage: "/images/blog2.jpg",
+    featuredImage: "/assets/homepage/blog-2.jpg",
     altText: "Therapist assisting a patient during recovery",
     title: "Top 5 Recovery Tips After a Major Accident",
     slug: "top-recovery-tips",
@@ -23,7 +21,7 @@ const LatestBlogsData = [
       "Follow these expert tips to speed up your healing process and regain strength after a serious injury.",
   },
   {
-    featuredImage: "/images/blog3.jpg",
+    featuredImage: "/assets/homepage/blog-3.jpg",
     altText: "Advanced spinal treatment technology",
     title: "How Technology is Changing Spinal Care",
     slug: "technology-in-spinal-care",
@@ -34,107 +32,53 @@ const LatestBlogsData = [
 ];
 
 const LatestBlogs = async () => {
-  const blogPostData = await GetAllPostData();
+  return (
+    <div className="bg-[#F1F1F1]">
+      <div className="container p-6 md:p-16">
+        <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
+          Our Technologies
+        </h1>
+        <div className="2xl:w-[60%] mx-auto mt-4">
+          <p className="text-md md:text-lg text-[#55545A] text-center">
+            {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
+          </p>
+        </div>
 
-  const postDate = (date) => {
-    return new Date(date).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  };
-
-  const renderBlogPosts = () => {
-    return blogPostData?.data
-      ?.filter((pub, index) => pub.published && index < 3)
-      ?.map((blog, index) => (
-        <Link href={`/blog/${blog.slug}`} key={index}>
-          <div>
-            <div className="p-0 rounded-2xl">
-              <Image
-                shadow="none"
-                width="100%"
-                className="w-full object-cover h-[300px]"
-                src={blog.featuredImage?.image?.url}
-                alt={blog.featuredImage?.altText}
-              />
-            </div>
-            <div className="text-small block text-left">
-              <p className="text-default-500 block">
-                {postDate(blog.createdAt)}
-              </p>
-              <h2 className="text-default-500 text-lg font-bold line-clamp-2 mt-2">
-                {blog.title}
-              </h2>
-              <div className="flex justify-center md:justify-start mx-auto items-center  my-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+          {LatestBlogsData.map((item, index) => (
+            <div key={item.slug} className="rounded-lg overflow-hidden">
+              <div className="w-full h-60 relative">
+                <Image
+                  src={item.featuredImage}
+                  alt={item.altText}
+                  layout="fill"
+                  objectFit="cover"
+                  className="hover:scale-105 transition-transform duration-500 rounded-2xl"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="text-lg font-bold text-black">{item.title}</h2>
+                <p className="text-sm text-gray-600 mt-2">
+                  {item.shortDescription}
+                </p>
                 <Link
-                  href={`/blog/${blog.slug}`}
-                  className="text-secondary font-normal text-lg bg-none px-4 py-1 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary duration-500 "
+                  href={`#`}
+                  className="inline-block mt-4 text-primary font-medium hover:underline duration-500"
                 >
-                  Read More
+                  Read More →
                 </Link>
               </div>
             </div>
-          </div>
-        </Link>
-      ));
-  };
+          ))}
+        </div>
 
-  return (
-    <div className="bg-[#F1F1F1]">
-      <div className="container py-10 lg:py-14">
-        <div className="">
-          <CardMotion
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { duration: 1.1 },
-            }}
-            initial={{ opacity: 0, y: 100 }}
+        <div className="mt-5 text-center">
+          <Link
+            href={"/testimonials"}
+            className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary duration-500 "
           >
-            <div className=" text-center">
-              <h2
-                className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center `}
-              >
-                Our Recent Blogs
-              </h2>
-              <hp className="text-stone-950 font-normal text-md">
-                Professionally handling Property Damage Claims, we’re committed
-                to protecting both your space and your peace of mind in times of
-                need.
-              </hp>
-            </div>
-          </CardMotion>
-
-          <CardMotion
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { duration: 1.1 },
-            }}
-            initial={{ opacity: 0, y: 100 }}
-          >
-            <div className="gap-4 grid grid-cols-1 sm:grid-cols-3 mt-0 md:mt-12">
-              {renderBlogPosts()}
-            </div>
-          </CardMotion>
-          <CardMotion
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { duration: 1.1 },
-            }}
-            initial={{ opacity: 0, y: 100 }}
-          >
-            <div className="flex justify-center  mt-12  ">
-              <Link
-                href={"/blog"}
-                className="text-white lg:px-10 font-normal text-lg bg-primary px-4 py-2 rounded-full hover:bg-transparent hover:text-primary duration-500 border-2 border-secondary  "
-              >
-                Discover More Blogs
-              </Link>
-            </div>
-          </CardMotion>
+            View All Reviews
+          </Link>
         </div>
       </div>
     </div>
