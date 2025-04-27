@@ -54,10 +54,9 @@ const MainNavbar = () => {
   const menuItems = useMemo(
     () => [
       { title: "Home", slug: "/" },
-      { title: "About Us", slug: "/about" },
+      { title: "About", slug: "/about" },
       { title: "Services", slug: "/services" },
-      { title: "Testimonials", slug: "/testimonials" },
-      { title: "Location", slug: "/location" },
+      // { title: "Testimonials", slug: "/testimonials" },
       { title: "Location", slug: "/location" },
       { title: "Contact", slug: "/contact" },
     ],
@@ -94,18 +93,18 @@ const MainNavbar = () => {
                   alt="footer logo"
                   width={500}
                   height={500}
-                  className="cursor-pointer w-[120px] md:w-[240px] h-[60px] md:h-[90px] mt-3 mb-3"
+                  className="cursor-pointer w-[120px] md:w-[230px] h-[60px] md:h-[90px] mt-3 mb-3"
                 />
               </Link>
             </div>
 
             <div className="">
-              <div className="flex items-center justify-stretch gap-x-2 xl:gap-x-2">
+              <div className="flex items-center justify-stretch gap-x-2 md:gap-x-0">
                 {menuItems.map((el, index) => (
                   <Link
                     key={el.slug}
                     href={"/"}
-                    className={`cursor-pointer text-sm xl:text-[16px] text-black font-medium capitalize  bg-opacity-30 rounded-full  py-1 lg:py-2.5 px-2.5 lg:px-5 hover:bg-opacity-25 hover:bg-secondary ${pathname === el.slug ? " border bg-secondary" : ""} `}
+                    className={`cursor-pointer text-sm xl:text-[16px] text-black font-medium capitalize  bg-opacity-30 rounded-full  py-1 lg:py-2 px-2 lg:px-5 hover:bg-opacity-25 hover:bg-secondary ${pathname === el.slug ? " border bg-secondary" : ""} `}
                   >
                     {el.title}
                   </Link>
@@ -117,7 +116,7 @@ const MainNavbar = () => {
               <div className="md:px-1 lg:px-1 xl:px-2">
                 <Link
                   href={"/"}
-                  className="text-white font-normal text-lg bg-primary px-8 py-3 rounded-full hover:bg-green-700"
+                  className="text-white font-normal text-lg bg-primary px-5 py-3 rounded-full hover:bg-green-700"
                 >
                   Emergency Call
                 </Link>

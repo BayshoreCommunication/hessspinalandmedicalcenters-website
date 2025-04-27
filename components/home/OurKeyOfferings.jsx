@@ -62,7 +62,7 @@ const OurKeyOfferings = () => {
           </div>
         </ScrollMotionEffect>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 items-stretch">
           {services.map((service, index) => (
             <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
               <div
