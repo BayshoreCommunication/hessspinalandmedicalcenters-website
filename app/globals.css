@@ -21,7 +21,7 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e2538;
+  background: #009d4f;
   -webkit-border-radius: 1ex;
 }
 
@@ -166,8 +166,7 @@ h1 {
 
 /* Popup button color */
 
-
-.navbar{
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;

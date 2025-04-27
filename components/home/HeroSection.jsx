@@ -23,7 +23,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative w-full h-[920px] md:h-[750px] flex items-center justify-center mt-[64px] md:mt-20">
+    <div className="relative w-full h-[930px] md:h-[750px] flex items-center justify-center mt-[64px] md:mt-[110px]">
       <Image
         className="absolute inset-0 object-cover bg-top w-full h-full"
         width={1920}
@@ -53,7 +53,7 @@ const HeroSection = () => {
           <ScrollMotionEffect effect="fade-up" duration="2000">
             <div className="mt-4 md:mt-8 flex justify-center md:justify-start z-50">
               <Link
-                href={"/contact"}
+                href={"/"}
                 // href={"/appointment"}
                 className="text-white font-normal text-md md:text-lg bg-primary px-8 md:px-16 py-4 rounded-full hover:bg-green-800  cursor-pointer"
               >
@@ -64,7 +64,7 @@ const HeroSection = () => {
         </div>
         <div className="w-full md:w-[40%] mt-10 md:mt-0">
           <ScrollMotionEffect effect="fade-up" duration="2000">
-            <div className="bg-white py-14 px-8 rounded-2xl">
+            <div className="bg-white py-8 md:py-14 px-4 md:px-8 rounded-2xl">
               <h2 className=" md:mt-6 text-[26px] md:text-[30px] font-semibold text-gray-800 text-center leading-tight">
                 Request a Consultation
               </h2>
@@ -156,7 +156,7 @@ const HeroSection = () => {
                   placeholder="Select birth date"
                 />
               </div>
-              <div className="flex flex-col md:flex-row items-center space-y-4 md:space-x-4 mt-5">
+              <div className="flex flex-col md:flex-row items-center gap-5 mt-5">
                 <div className="w-full">
                   <input
                     autoComplete="off"
@@ -168,7 +168,7 @@ const HeroSection = () => {
                   />
                   <span className="text-red-500"></span>
                 </div>
-                <div className="w-full">
+                <div className="w-full ">
                   <input
                     autoComplete="off"
                     type="text"
@@ -179,6 +179,14 @@ const HeroSection = () => {
                   />
                   <span className="text-red-500"></span>
                 </div>
+              </div>
+              <div className="mt-4 md:mt-8 flex justify-center z-50">
+                <Link
+                  href={"/"}
+                  className="text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-2 rounded-full hover:bg-green-800  cursor-pointer"
+                >
+                  Submit
+                </Link>
               </div>
             </div>
           </ScrollMotionEffect>

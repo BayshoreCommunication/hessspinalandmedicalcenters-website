@@ -85,26 +85,26 @@ const MainNavbar = () => {
   return (
     <section className={"relative z-50 "}>
       <div className="bg-primary w-full navbar ">
-        <div className="bg-white hidden md:block py-2 border-b-2">
+        <div className="bg-white hidden md:block border-b-2">
           <div className="flex items-center container justify-between">
-            <div className=" flex items-center gap-x-10 2xl:gap-x-16">
+            <div className="flex items-center gap-x-10 2xl:gap-x-16">
               <Link href={"/"}>
                 <Image
                   src="/assets/site-logo/main-logo.png"
                   alt="footer logo"
                   width={500}
                   height={500}
-                  className="cursor-pointer w-[120px] xl:w-[240px]  h-auto mt-3 mb-3"
+                  className="cursor-pointer w-[120px] md:w-[240px] h-[60px] md:h-[90px] mt-3 mb-3"
                 />
               </Link>
             </div>
 
             <div className="">
-              <div className="flex items-center justify-stretch gap-x-2  xl:gap-x-5">
+              <div className="flex items-center justify-stretch gap-x-2 xl:gap-x-2">
                 {menuItems.map((el, index) => (
                   <Link
                     key={el.slug}
-                    href={`${el.slug}`}
+                    href={"/"}
                     className={`cursor-pointer text-sm xl:text-[16px] text-black font-medium capitalize  bg-opacity-30 rounded-full  py-1 lg:py-2.5 px-2.5 lg:px-5 hover:bg-opacity-25 hover:bg-secondary ${pathname === el.slug ? " border bg-secondary" : ""} `}
                   >
                     {el.title}
@@ -116,7 +116,7 @@ const MainNavbar = () => {
             <div className="">
               <div className="md:px-1 lg:px-1 xl:px-2">
                 <Link
-                  href={"/about"}
+                  href={"/"}
                   className="text-white font-normal text-lg bg-primary px-8 py-3 rounded-full hover:bg-green-700"
                 >
                   Emergency Call
@@ -154,7 +154,7 @@ const MainNavbar = () => {
                 <NavbarMenuItem key={el.slug} className="flex flex-row">
                   <Link
                     className={`w-full text-black text-center !text-xl font-medium py-1 ${pathname === el.slug ? "!text-primary" : ""} ${index === 0 ? "mt-6" : ""}`}
-                    href={el.slug}
+                    href={"/"}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {el.title}
