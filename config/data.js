@@ -1480,59 +1480,27 @@ export const areaspracticeData = [
 
 export const testimonialsData = [
   {
-    name: "Lisa S.",
+    name: "Alex Carter",
     review:
-      "Aaron Melamed’s negotiating/legal skills in dealing with my very difficult mitigation/rebuild condo situation saved the day! He is industry knowledgeable, conscientious, thorough, professional, trustworthy, caring and diligent. Should I ever need his services again, I would not hesitate to reach out. His network of colleagues are as dependable as he is. Aaron guides his client with the human touch, a rarity in today’s legal world. Aaron is a lawyer who goes the extra mile in every aspect, from listening & explaining, to planning and proceeding. Highly recommended!",
+      "Outstanding service from start to finish. They made everything easy and kept me updated every step of the way.",
     rating: 5,
   },
   {
-    name: "Mackiesh Taylor",
+    name: "Brooke Evans",
     review:
-      "If you’re looking for a dedicated and a detail-oriented attorney, look no further than Aaron Melamed at Melamed Law. Aaron is an incredibly hardworking lawyer who goes above and beyond for his clients. His meticulous attention to detail and his deep understanding of the law make him the right person to handle your case. He is committed to achieving the best possible outcome, providing clear communication, and ensuring that every aspect of your legal matter is thoroughly addressed. With Aaron Melamed on your side, you can trust that you are in capable and reliable hands. Highly recommend!",
+      "The team was quick, efficient, and truly cared about my case. I felt supported and confident throughout the entire process.",
     rating: 5,
   },
-
   {
-    name: "Monica Amor",
+    name: "Chase Morgan",
     review:
-      "If you want a law firm who will aggressively fight for your rights, look no further. I have only good things to say about this firm. Through their hard work, dedication, and expertise, this firm secured an excellent outcome on my case. I could not be happier. Highly recommended!!",
+      "Excellent experience! They explained everything clearly and worked hard to achieve the best outcome.",
     rating: 5,
   },
-
   {
-    name: "Linda Shiflet",
+    name: "Dylan Foster",
     review:
-      "I was referred to Aaron by a mutual friend. My insurance company was giving me problems on my hurricane claims and even though I am an attorney I was unable to get through the hurdles arising from my carrier. I turned everything over to Aaron and he handled things as efficiently as possible in the circumstances and saved me months of stress and aggravation. He was able to settle my claims and recovered all my expenses. I am very pleased with the work Aaron did for me and recommend him to anyone dealing with an insurance issue.",
+      "Very smooth process with great communication. Their attention to detail and professionalism really stood out.",
     rating: 5,
   },
-  // {
-  //   name: "Devon Lane",
-  //   review:
-  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-  //   rating: 5,
-  // },
-  // {
-  //   name: "Jane Cooper",
-  //   review:
-  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-  //   rating: 5,
-  // },
-  // {
-  //   name: "Theresa Webb",
-  //   review:
-  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-  //   rating: 5,
-  // },
-  // {
-  //   name: "Wade Warren",
-  //   review:
-  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-  //   rating: 5,
-  // },
-  // {
-  //   name: "Albert Flores",
-  //   review:
-  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-  //   rating: 5,
-  // },
 ];

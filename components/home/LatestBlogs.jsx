@@ -2,7 +2,36 @@ import GetAllPostData from "@/lib/GetAllPostData";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import Link from "next/link";
 import CardMotion from "../motion/CardMotion";
-import SectionLayout from "../shared/SectionLayout";
+
+const LatestBlogsData = [
+  {
+    featuredImage: "/images/blog1.jpg",
+    altText: "Doctor showing spine model to a patient",
+    title: "Understanding Spinal Injuries After Car Accidents",
+    slug: "understanding-spinal-injuries",
+    createdAt: "2025-04-10T09:00:00Z",
+    shortDescription:
+      "Learn how spinal injuries occur after accidents and what treatments are available to ensure a full recovery.",
+  },
+  {
+    featuredImage: "/images/blog2.jpg",
+    altText: "Therapist assisting a patient during recovery",
+    title: "Top 5 Recovery Tips After a Major Accident",
+    slug: "top-recovery-tips",
+    createdAt: "2025-04-15T11:30:00Z",
+    shortDescription:
+      "Follow these expert tips to speed up your healing process and regain strength after a serious injury.",
+  },
+  {
+    featuredImage: "/images/blog3.jpg",
+    altText: "Advanced spinal treatment technology",
+    title: "How Technology is Changing Spinal Care",
+    slug: "technology-in-spinal-care",
+    createdAt: "2025-04-20T15:45:00Z",
+    shortDescription:
+      "Discover how innovations in technology are revolutionizing the way spinal injuries are treated today.",
+  },
+];
 
 const LatestBlogs = async () => {
   const blogPostData = await GetAllPostData();
@@ -20,18 +49,17 @@ const LatestBlogs = async () => {
       ?.filter((pub, index) => pub.published && index < 3)
       ?.map((blog, index) => (
         <Link href={`/blog/${blog.slug}`} key={index}>
-          <Card shadow="sm" radius="none" isPressable>
-            <CardBody className="p-0">
+          <div>
+            <div className="p-0 rounded-2xl">
               <Image
                 shadow="none"
-                radius="none"
                 width="100%"
                 className="w-full object-cover h-[300px]"
                 src={blog.featuredImage?.image?.url}
                 alt={blog.featuredImage?.altText}
               />
-            </CardBody>
-            <CardFooter className="text-small block text-left">
+            </div>
+            <div className="text-small block text-left">
               <p className="text-default-500 block">
                 {postDate(blog.createdAt)}
               </p>
@@ -46,8 +74,8 @@ const LatestBlogs = async () => {
                   Read More
                 </Link>
               </div>
-            </CardFooter>
-          </Card>
+            </div>
+          </div>
         </Link>
       ));
   };

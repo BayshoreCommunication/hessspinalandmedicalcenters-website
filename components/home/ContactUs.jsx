@@ -6,7 +6,7 @@ const ContactUs = () => {
     <div className="container py-10 lg:py-14">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-14 items-center">
         {/* Left side - Contact Form */}
-        <ScrollMotionEffect effect="left" duration="2000">
+        <ScrollMotionEffect effect="fade-right" duration="2000">
           <div className="flex flex-col justify-center">
             <h1 className="text-3xl md:text-5xl font-bold text-stone-950 text-center md:text-left mb-4 mt-5">
               Contact Us
@@ -57,7 +57,7 @@ const ContactUs = () => {
         </ScrollMotionEffect>
 
         {/* Right side - Image */}
-        <ScrollMotionEffect effect="right" duration="2000">
+        <ScrollMotionEffect effect="fade-left" duration="2000">
           <div className="relative w-full">
             <Image
               src="/assets/homepage/examining-spine.png"
