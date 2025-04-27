@@ -15,6 +15,7 @@ const WhatPeopleSay = () => {
               alt="testimonials"
               width={500}
               height={500}
+              quality={100}
             ></Image>
           </div>
           <div className="relative flex flex-col items-center justify-center w-full h-full ">
@@ -55,6 +56,7 @@ const WhatPeopleSay = () => {
               alt="testimonials"
               width={500}
               height={500}
+              quality={100}
               className="-scale-x-100"
             />
           </div>

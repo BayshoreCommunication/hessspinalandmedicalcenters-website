@@ -48,7 +48,7 @@ const TestimonialSlideSection = ({ className }) => {
           grabCursor={true}
         >
           {[...testimonialsData].reverse().map((testimonial, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="my-auto">
               <div className="p-6 md:px-8 lg:px-10  text-center  ">
                 <p className="text-base md:text-lg font-semibold text-[#5E5E5E] mb-4">
                   {testimonial.review}
