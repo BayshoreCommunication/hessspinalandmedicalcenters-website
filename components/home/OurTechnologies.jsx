@@ -43,14 +43,18 @@ const OurTechnologies = () => {
   return (
     <section className="bg-white">
       <div className="container p-6 md:p-16">
-        <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
-          Our Technologies
-        </h1>
-        <div className="2xl:w-[60%] mx-auto mt-4 mb-8">
-          <p className="text-md md:text-lg text-[#55545A] text-center  flex justify-center">
-            {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
-          </p>
-        </div>
+        <ScrollMotionEffect effect="fade-right" duration="2000">
+          <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
+            Our Technologies
+          </h1>
+        </ScrollMotionEffect>
+        <ScrollMotionEffect effect="fade-left" duration="2000">
+          <div className="2xl:w-[60%] mx-auto mt-4 mb-8">
+            <p className="text-md md:text-lg text-[#55545A] text-center  flex justify-center">
+              {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
+            </p>
+          </div>
+        </ScrollMotionEffect>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 ">
           {technologies.map((item) => (

@@ -1,42 +1,47 @@
 import Link from "next/link";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
+import Image from "next/image";
+import { FaPlay } from "react-icons/fa";
 
 const SpinalMedicalCenter = () => {
   return (
-    <section className="">
+    <section>
       <div className="container py-6 md:py-16">
         <ScrollMotionEffect effect="fade-up" duration="2000">
           <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
-            About Hess Spinal
+            About Hess Spinal & Medical Center
           </h1>
         </ScrollMotionEffect>
 
         <ScrollMotionEffect effect="fade-up" duration="2000">
-          <div className="w-full md:w-[60%] mx-auto mt-6 md:pt-10">
-            <div className="video-container rounded-3xl overflow-hidden border-2 border-secondary">
-              <iframe
-                src={`https://www.youtube.com/embed/Zoyqx6B6v1o?si=8Dgos67WSxV-j6s-`}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title=" Devit Carter"
-                loading="lazy"
-                className="w-full h-64 md:h-96 "
-              ></iframe>
+          <div className="w-full md:w-[60%] mx-auto  relative">
+            <Link href="#">
+              <Image
+                src="/assets/homepage/thumbnail-img.png"
+                alt="About Hess Spinal & Medical Center"
+                width={1920}
+                height={400}
+                className="w-full h-full object-cover rounded-xl"
+              />
+            </Link>
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <div className="flex items-center justify-center w-14 h-14  lg:w-20 lg:h-20 bg-white text-primary rounded-full text-3xl z-99 cursor-pointer shadow-medium">
+                <FaPlay />
+              </div>
             </div>
           </div>
         </ScrollMotionEffect>
 
         <ScrollMotionEffect effect="fade-up" duration="2000">
           <p className="text-md md:text-lg text-[#55545A] text-center pt-8">
-            {`Video of Name, talking about Hess Spinal & Medical Center`}
+            Video of Name, talking about Hess Spinal & Medical Center
           </p>
         </ScrollMotionEffect>
 
         <ScrollMotionEffect effect="fade-up" duration="2000">
-          <div className="pt-8 flex justify-center ">
+          <div className="pt-8 flex justify-center">
             <Link
-              href={"/about"}
+              href="/about"
               className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-orange-400"
             >
               Discover More

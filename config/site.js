@@ -18,58 +18,58 @@ export const SITECONFIG = {
     resources: [
       {
         title: "About Us",
-        slug: "/about",
+        slug: "/",
       },
       {
         title: "Services",
-        slug: "/services", // <- Add this slug
+        slug: "/", // <- Add this slug
       },
       {
         title: "Technology",
-        slug: "/technology", // <- Add this slug
+        slug: "/", // <- Add this slug
       },
       {
         title: "Blogs",
-        slug: "/blogs", // <- Adjusted to match 'Blogs' plural
+        slug: "/", // <- Adjusted to match 'Blogs' plural
       },
       {
         title: "Contact",
-        slug: "/contact",
+        slug: "/",
       },
       {
         title: "Disclaimers",
-        slug: "/disclaimers",
+        slug: "/",
       },
       {
         title: "Privacy Policy",
-        slug: "/privacy-policy",
+        slug: "/",
       },
       {
         title: "Terms of Service",
-        slug: "/terms-of-service",
+        slug: "/",
       },
       {
         title: "Cookie Policy",
-        slug: "/cookie-policy",
+        slug: "/",
       },
     ],
   },
   socialLinks: [
     {
       title: "Facebook",
-      url: "",
+      url: "/",
     },
     {
       title: "Twitter",
-      url: "#",
+      url: "/",
     },
     {
       title: "Instagram",
-      url: "#",
+      url: "/",
     },
     {
       title: "LinkedIn",
-      url: "#",
+      url: "/",
     },
   ],
 };

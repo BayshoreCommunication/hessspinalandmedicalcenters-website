@@ -41,7 +41,7 @@ const AboutSection = () => {
           <ScrollMotionEffect effect="fade-left" duration="2000">
             <div className="flex flex-col gap-y-6">
               <h1 className="font-bold text-4xl md:text-5xl text-black text-center md:text-left">
-                About Hess Spinal
+                About Hess Spinal & Medical Center
               </h1>
               <p className="text-md md:text-lg text-[#55545A] text-center md:text-left">
                 {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family. Our multi-disciplinary team of Board Certified Medical Doctors (M.D.’s), Board Certified Doctors of Osteopathic Medicine (D.O.’s) and Board Certified Chiropractor (D.C.’s) will tailor an individual treatment plan for your specific injury needs.`}

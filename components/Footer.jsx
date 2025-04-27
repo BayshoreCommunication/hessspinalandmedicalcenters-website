@@ -76,7 +76,7 @@ const Footer = () => {
                     <FaTwitter className="size-5" />
                   </Link>
                   <Link
-                    href="https://www.instagram.com/melamedlaw_pllc"
+                    href="https://www.instagram.com/"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >

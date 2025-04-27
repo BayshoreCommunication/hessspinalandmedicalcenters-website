@@ -36,14 +36,18 @@ const LatestBlogs = async () => {
   return (
     <div className="bg-[#F1F1F1]">
       <div className="container p-6 md:p-16">
-        <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
-          Our Technologies
-        </h1>
-        <div className="2xl:w-[60%] mx-auto mt-4">
-          <p className="text-md md:text-lg text-[#55545A] text-center">
-            {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
-          </p>
-        </div>
+        <ScrollMotionEffect effect="fade-right" duration="2000">
+          <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
+            Our Latest Blogs
+          </h1>
+        </ScrollMotionEffect>
+        <ScrollMotionEffect effect="fade-left" duration="2000">
+          <div className="2xl:w-[60%] mx-auto mt-4">
+            <p className="text-md md:text-lg text-[#55545A] text-center">
+              {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
+            </p>
+          </div>
+        </ScrollMotionEffect>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
           {LatestBlogsData.map((item, index) => (
@@ -78,12 +82,14 @@ const LatestBlogs = async () => {
         </div>
 
         <div className="mt-5 text-center">
-          <Link
-            href={"/testimonials"}
-            className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary duration-500 "
-          >
-            View All Reviews
-          </Link>
+          <ScrollMotionEffect effect="fade-up" duration="2000">
+            <Link
+              href={"/testimonials"}
+              className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary duration-500 "
+            >
+              View All Reviews
+            </Link>
+          </ScrollMotionEffect>
         </div>
       </div>
     </div>
