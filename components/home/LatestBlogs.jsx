@@ -53,59 +53,61 @@ const LatestBlogs = async () => {
   };
 
   return (
-    <div className="container py-10 lg:py-14">
-      <div className="">
-        <CardMotion
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 1.1 },
-          }}
-          initial={{ opacity: 0, y: 100 }}
-        >
-          <div className=" text-center">
-            <h2
-              className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center `}
-            >
-              Our Recent Blogs
-            </h2>
-            <hp className="text-stone-950 font-normal text-md">
-              Professionally handling Property Damage Claims, we’re committed to
-              protecting both your space and your peace of mind in times of
-              need.
-            </hp>
-          </div>
-        </CardMotion>
+    <div className="bg-[#F1F1F1]">
+      <div className="container py-10 lg:py-14">
+        <div className="">
+          <CardMotion
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1.1 },
+            }}
+            initial={{ opacity: 0, y: 100 }}
+          >
+            <div className=" text-center">
+              <h2
+                className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center `}
+              >
+                Our Recent Blogs
+              </h2>
+              <hp className="text-stone-950 font-normal text-md">
+                Professionally handling Property Damage Claims, we’re committed
+                to protecting both your space and your peace of mind in times of
+                need.
+              </hp>
+            </div>
+          </CardMotion>
 
-        <CardMotion
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 1.1 },
-          }}
-          initial={{ opacity: 0, y: 100 }}
-        >
-          <div className="gap-4 grid grid-cols-1 sm:grid-cols-3 mt-0 md:mt-12">
-            {renderBlogPosts()}
-          </div>
-        </CardMotion>
-        <CardMotion
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 1.1 },
-          }}
-          initial={{ opacity: 0, y: 100 }}
-        >
-          <div className="flex justify-center  mt-12  ">
-            <Link
-              href={"/blog"}
-              className="text-white lg:px-10 font-normal text-lg bg-primary px-4 py-2 rounded-full hover:bg-transparent hover:text-primary duration-500 border-2 border-secondary  "
-            >
-              Discover More Blogs
-            </Link>
-          </div>
-        </CardMotion>
+          <CardMotion
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1.1 },
+            }}
+            initial={{ opacity: 0, y: 100 }}
+          >
+            <div className="gap-4 grid grid-cols-1 sm:grid-cols-3 mt-0 md:mt-12">
+              {renderBlogPosts()}
+            </div>
+          </CardMotion>
+          <CardMotion
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1.1 },
+            }}
+            initial={{ opacity: 0, y: 100 }}
+          >
+            <div className="flex justify-center  mt-12  ">
+              <Link
+                href={"/blog"}
+                className="text-white lg:px-10 font-normal text-lg bg-primary px-4 py-2 rounded-full hover:bg-transparent hover:text-primary duration-500 border-2 border-secondary  "
+              >
+                Discover More Blogs
+              </Link>
+            </div>
+          </CardMotion>
+        </div>
       </div>
     </div>
   );
