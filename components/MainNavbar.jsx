@@ -102,11 +102,11 @@ const MainNavbar = () => {
             <div className=" flex items-center gap-x-10 2xl:gap-x-16">
               <Link href={"/"}>
                 <Image
-                  src="/assets/site-logo/logo.png"
+                  src="/assets/site-logo/main-logo.png"
                   alt="footer logo"
                   width={500}
                   height={500}
-                  className="cursor-pointer w-[180px] xl:w-[300px]  h-auto mt-2 mb-2"
+                  className="cursor-pointer w-[180px] xl:w-[260px]  h-auto mt-3 mb-3"
                 />
               </Link>
             </div>
@@ -147,7 +147,7 @@ const MainNavbar = () => {
               <NavbarBrand>
                 <Link href="/">
                   <Image
-                    src="/assets/site-logo/logo.png"
+                    src="/assets/site-logo/main-logo.png"
                     alt="footer logo"
                     width={500}
                     height={500}
