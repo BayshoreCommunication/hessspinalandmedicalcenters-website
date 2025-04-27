@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import TestimonialSlideSection from "../shared/TestimonialSlideSection";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
+import TestimonialSlideSection from "../shared/TestimonialSlideSection";
 
 const WhatPeopleSay = () => {
   return (
     <div className="">
       <div className="container py-10 md:py-20">
-        <div className=" flex gap-10 items-center">
+        <div className=" flex gap-0 md:gap-10 items-center">
           <div>
             <Image
               src="/assets/homepage/testimonials.png"
