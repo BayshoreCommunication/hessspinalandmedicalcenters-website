@@ -1,14 +1,14 @@
-import Link from "next/link";
-import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 import Image from "next/image";
+import Link from "next/link";
 import { FaPlay } from "react-icons/fa";
+import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const SpinalMedicalCenter = () => {
   return (
     <section>
       <div className="container py-6 md:py-16">
         <ScrollMotionEffect effect="fade-up" duration="2000">
-          <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
+          <h1 className="font-bold text-4xl md:text-5xl text-black text-center mb-4  md:mb-10 ">
             About Hess Spinal & Medical Center
           </h1>
         </ScrollMotionEffect>
