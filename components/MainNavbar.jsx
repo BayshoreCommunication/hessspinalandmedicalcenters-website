@@ -93,13 +93,13 @@ const MainNavbar = () => {
                   alt="footer logo"
                   width={500}
                   height={500}
-                  className="cursor-pointer w-[120px] md:w-[230px] h-[60px] md:h-[90px] mt-3 mb-3"
+                  className="cursor-pointer w-[120px] md:w-[220px] h-[60px] md:h-[90px] mt-3 mb-3"
                 />
               </Link>
             </div>
 
             <div className="">
-              <div className="flex items-center justify-stretch gap-x-2 md:gap-x-0">
+              <div className="flex items-center justify-stretch gap-x-2 md:gap-x-2">
                 {menuItems.map((el, index) => (
                   <Link
                     key={el.slug}
