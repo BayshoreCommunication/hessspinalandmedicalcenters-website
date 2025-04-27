@@ -5,7 +5,7 @@ import { testimonialsData } from "@/config/data";
 
 const TestimonialsSection = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-[#F1F1F1]">
       <div className="container py-10 md:py-20">
         <div className=" w-full  mb-6 lg:mb-10">
           <ScrollMotionEffect effect="fade-up" duration="2000">
