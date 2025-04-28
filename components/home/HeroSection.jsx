@@ -26,43 +26,46 @@ const HeroSection = () => {
     <div className="relative w-full h-[930px] md:h-[750px] flex items-center justify-center mt-[64px] md:mt-[110px]">
       <Image
         className="absolute inset-0 object-cover bg-top w-full h-full"
-        width={1920}
+        width={3000}
         height={700}
-        src={"/assets/homepage/home-banner.jpg"}
+        src={"/assets/homepage/home-banner1.jpg"}
         alt="Bg Image "
       />
 
       {/* Centered text */}
 
       <div className="container relative flex md:flex-row flex-col items-center justify-center w-full space-x-0 md:space-x-16">
-        <div className="w-full md:w-[60%]">
-          <ScrollMotionEffect effect="fade-up" duration="2000">
-            <h1 className="text-[35px] md:text-[85px] font-bold text-black text-center md:text-left leading-snug md:leading-none">
-              Dedicated to your <br />
-              Recovery
+        <div className="w-full md:w-[65%]">
+          <ScrollMotionEffect effect="fade-right" duration="1000">
+            <h1 className="text-[35px] md:text-[48px] lg:text-6xl font-bold text-black text-center md:text-left leading-snug md:leading-none">
+              After an Accident, You're Family- Specialized Medical Care When
+              You Need It Most.
             </h1>
           </ScrollMotionEffect>
 
-          <ScrollMotionEffect effect="fade-up" duration="2000">
+          <ScrollMotionEffect effect="fade-right" duration="2000">
             <h2 className="mt-2 md:mt-6 text-[18px] md:text-[20px] font-semibold text-gray-700 text-center md:text-left leading-tight">
               We have specialized in treating the victims of auto accidents
               since 2001. Let our team of dedicated medical professionals help
-              you find relief from your pain and suffering.
+              you find relief from your pain and suffering. Request Appointment
             </h2>
           </ScrollMotionEffect>
-          <ScrollMotionEffect effect="fade-up" duration="2000">
+          <ScrollMotionEffect effect="fade-right" duration="3000">
             <div className="mt-4 md:mt-8 flex justify-center md:justify-start z-50">
-              <Link
-                href={"/"}
-                // href={"/appointment"}
-                className="text-white font-normal text-md md:text-lg bg-primary px-8 md:px-16 py-4 rounded-full hover:bg-green-800  cursor-pointer"
-              >
-                Request Appointment
-              </Link>
+              <div className="group">
+                <Link href="/">
+                  <button className="relative overflow-hidden text-white font-normal text-lg bg-primary px-8 md:px-16 py-4 rounded-full cursor-pointer">
+                    <span className="relative z-10 transition-colors duration-300">
+                      Request Appointment
+                    </span>
+                    <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+                  </button>
+                </Link>
+              </div>
             </div>
           </ScrollMotionEffect>
         </div>
-        <div className="w-full md:w-[40%] mt-10 md:mt-0">
+        <div className="w-full md:w-[35%] mt-10 md:mt-0">
           <ScrollMotionEffect effect="fade-up" duration="2000">
             <div className="bg-white py-8 md:py-14 px-4 md:px-8 rounded-2xl">
               <h2 className=" md:mt-6 text-[26px] md:text-[30px] font-semibold text-gray-800 text-center leading-tight">
@@ -147,7 +150,7 @@ const HeroSection = () => {
                   )}
                 </div>
               </div>
-              <div className="w-full mt-5">
+              {/* <div className="w-full mt-5">
                 <DatePickerInputField
                   id="basicInformation.dateOfBirth"
                   name="basicInformation.dateOfBirth"
@@ -179,13 +182,15 @@ const HeroSection = () => {
                   />
                   <span className="text-red-500"></span>
                 </div>
-              </div>
-              <div className="mt-4 md:mt-8 flex justify-center z-50">
-                <Link
-                  href={"/"}
-                  className="text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-2 rounded-full hover:bg-green-800  cursor-pointer"
-                >
-                  Submit
+              </div> */}
+              <div className="group mt-8 text-center">
+                <Link href="/">
+                  <button className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-3 rounded-full hover:bg-green-800  cursor-pointer">
+                    <span className="relative z-10 transition-colors duration-300">
+                      Submit
+                    </span>
+                    <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+                  </button>
                 </Link>
               </div>
             </div>

@@ -102,12 +102,14 @@ const CanHelpYou = () => {
         </div>
 
         <ScrollMotionEffect effect="fade-up" duration="2000">
-          <div className="mt-8 flex justify-center">
-            <Link
-              href={"/about"}
-              className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-green-800"
-            >
-              Discover More Services
+          <div className="group mt-8 text-center">
+            <Link href="/">
+              <button className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-3 rounded-full hover:bg-green-800  cursor-pointer">
+                <span className="relative z-10 transition-colors duration-300">
+                  Discover More Services
+                </span>
+                <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+              </button>
             </Link>
           </div>
         </ScrollMotionEffect>

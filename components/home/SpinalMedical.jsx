@@ -79,7 +79,7 @@ const SpinalMedical = () => {
         <div className="py-12">
           <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-16 items-center">
             {/* Left Features */}
-            <ScrollMotionEffect effect="fade-right" duration="1000">
+            <ScrollMotionEffect effect="fade-right" duration="2000">
               <div className="flex flex-col gap-8">
                 {leftFeatures.map((item, index) => (
                   <div key={index} className="flex items-start gap-4 ">
@@ -102,9 +102,9 @@ const SpinalMedical = () => {
               </div>
             </ScrollMotionEffect>
 
-            <ScrollMotionEffect effect="fade-right" duration="2000">
+            <ScrollMotionEffect effect="zoom-in" duration="2000">
               {/* Center Image */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center overflow-hidden rounded-3xl">
                 <Image
                   width={500}
                   height={400}
@@ -114,8 +114,8 @@ const SpinalMedical = () => {
                 />
               </div>
             </ScrollMotionEffect>
-            
-            <ScrollMotionEffect effect="fade-right" duration="3000">
+
+            <ScrollMotionEffect effect="fade-left" duration="2000">
               {/* Right Features */}
               <div className="flex flex-col gap-12">
                 {rightFeatures.map((item, index) => (

@@ -25,8 +25,12 @@ const SpinalMedicalCenter = () => {
               />
             </Link>
             <div className="absolute inset-0 flex items-center justify-center z-10">
-              <div className="flex items-center justify-center w-14 h-14  lg:w-20 lg:h-20 bg-white text-primary rounded-full text-3xl z-99 cursor-pointer shadow-medium">
-                <FaPlay />
+              <div className="relative flex items-center justify-center w-14 h-14 lg:w-20 lg:h-20 bg-white text-primary rounded-full text-3xl cursor-pointer shadow-medium">
+                {/* Animated border */}
+                <span className="absolute inline-flex h-full w-full rounded-full bg-gradient-to-r from-primary to-secondary animate-spin-slow opacity-30"></span>
+
+                {/* Button icon */}
+                <FaPlay className="relative z-10" />
               </div>
             </div>
           </div>
@@ -39,12 +43,14 @@ const SpinalMedicalCenter = () => {
         </ScrollMotionEffect>
 
         <ScrollMotionEffect effect="fade-up" duration="2000">
-          <div className="pt-8 flex justify-center">
-            <Link
-              href={"/"}
-              className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-green-800"
-            >
-              Discover More
+          <div className="group mt-8 text-center">
+            <Link href="/">
+              <button className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-3 rounded-full hover:bg-green-800  cursor-pointer">
+                <span className="relative z-10 transition-colors duration-300">
+                  Discover More
+                </span>
+                <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+              </button>
             </Link>
           </div>
         </ScrollMotionEffect>

@@ -3,22 +3,26 @@ import { IoCalendarClearOutline } from "react-icons/io5";
 import { MdOutlineMedicalServices } from "react-icons/md";
 import { RiCustomerService2Line } from "react-icons/ri";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
+import NumberAnimation from "../shared/NumberAnimation";
 
 const summaryList = [
   {
     icon: <IoCalendarClearOutline className="size-10" />,
-    title: "24+",
+    title: 24,
     desc: "Years Experience",
+    bgImg: "/assets/homepage/summary-bg-1.png",
   },
   {
     icon: <MdOutlineMedicalServices className="size-10" />,
-    title: "16+",
+    title: 16,
     desc: "Medical Center",
+    bgImg: "/assets/homepage/summary-bg-2.png",
   },
   {
     icon: <GiWorld className="size-10" />,
-    title: "6+",
+    title: 6,
     desc: "Counties",
+    bgImg: "/assets/homepage/summary-bg-3.png",
   },
   // {
   //   icon: <RiCustomerService2Line className="size-10" />,
@@ -37,10 +41,22 @@ const SummarySection = () => {
               <div
                 className="bg-[#323232] flex items-center justify-center space-x-4 text-white px-16 py-16 rounded-lg"
                 key={index}
+                style={{
+                  backgroundImage: `url('${el?.bgImg}')`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
               >
                 <div className="">{el?.icon}</div>
                 <div className="">
-                  <h1 className="text-xl font-bold text-left">{el?.title}</h1>
+                  {/* <h1 className="text-xl font-bold text-left">{el?.title}</h1> */}
+                  <NumberAnimation
+                    className="text-xl font-bold text-left"
+                    value={el?.title}
+                    incrementPlus={1}
+                    duration={200}
+                  />
                   <p className="text-xs text-left">{el?.desc}</p>
                 </div>
               </div>
