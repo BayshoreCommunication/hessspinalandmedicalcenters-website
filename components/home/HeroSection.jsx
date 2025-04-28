@@ -27,7 +27,7 @@ const HeroSection = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
@@ -80,7 +80,10 @@ const HeroSection = () => {
             relief from your pain and suffering. Request Appointment
           </motion.h2>
 
-          <motion.div className="mt-4 md:mt-8 flex justify-center md:justify-start z-50">
+          <motion.div
+            variants={variants}
+            className="mt-4 md:mt-8 flex justify-center md:justify-start z-50"
+          >
             <div className="group">
               <Link href="/">
                 <button className="relative overflow-hidden text-white font-normal text-lg bg-primary px-8 md:px-16 py-4 rounded-full cursor-pointer">
