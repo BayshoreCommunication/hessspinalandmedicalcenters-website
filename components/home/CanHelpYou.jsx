@@ -66,9 +66,9 @@ const CanHelpYou = () => {
           </div>
         </ScrollMotionEffect>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-          {treatments.map((item, index) => (
-            <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
+        <ScrollMotionEffect effect="fade-up" duration="2000">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-stretch gap-6 mt-6">
+            {treatments.map((item, index) => (
               <div
                 key={item.id}
                 className="group relative flex flex-col justify-between bg-white border border-gray-300 rounded-xl p-6 transition duration-300 hover:bg-[#135420]"
@@ -97,9 +97,9 @@ const CanHelpYou = () => {
                   Learn More
                 </button>
               </div>
-            </ScrollMotionEffect>
-          ))}
-        </div>
+            ))}
+          </div>
+        </ScrollMotionEffect>
 
         <ScrollMotionEffect effect="fade-up" duration="2000">
           <div className="group mt-8 text-center">

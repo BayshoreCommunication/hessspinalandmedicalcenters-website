@@ -35,11 +35,11 @@ const SummarySection = () => {
   return (
     <section className="bg-pblack">
       <div className="container  p-6 md:p-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-center justify-between gap-8">
-          {summaryList?.map((el, index) => (
-            <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
+        <ScrollMotionEffect effect="fade-up" duration="2000">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-stretch justify-between gap-8">
+            {summaryList?.map((el, index) => (
               <div
-                className="bg-[#323232] flex items-center justify-center space-x-4 text-white px-16 py-16 rounded-lg"
+                className="bg-[#323232] flex items-stretch justify-center space-x-4 text-white px-16 py-16 rounded-lg"
                 key={index}
                 style={{
                   backgroundImage: `url('${el?.bgImg}')`,
@@ -60,9 +60,8 @@ const SummarySection = () => {
                   <p className="text-xs text-left">{el?.desc}</p>
                 </div>
               </div>
-            </ScrollMotionEffect>
-          ))}
-          <ScrollMotionEffect effect="fade-up" duration="2000">
+            ))}
+
             <div className="bg-[#323232] flex items-center justify-center space-x-4 text-white px-16 py-16 rounded-lg">
               <div className="">
                 <RiCustomerService2Line className="size-10" />
@@ -72,8 +71,8 @@ const SummarySection = () => {
                 <p className="text-xs text-left">Availability</p>
               </div>
             </div>
-          </ScrollMotionEffect>
-        </div>
+          </div>
+        </ScrollMotionEffect>
       </div>
     </section>
   );

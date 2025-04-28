@@ -31,10 +31,7 @@ const HeroSection = () => {
     },
   };
 
-  const text =
-    "After an Accident, You're Family- Specialized Medical Care When You Need It Most.".split(
-      " "
-    );
+  const text = "Care for You After an Accident.".split(" ");
 
   return (
     <div className="relative w-full h-[930px] md:h-[750px] flex items-center justify-center mt-[64px] md:mt-[110px]">
@@ -84,17 +81,17 @@ const HeroSection = () => {
             variants={variants}
             className=" flex justify-center md:justify-start z-50"
           >
-            <ul className=" flex items-center gap-3 mt-5">
-              <li className="px-4 py-3 bg-white shadow-small rounded">
+            <ul className=" flex items-center gap-3 mt-5 text-base">
+              <li className="px-3 py-3 bg-white shadow-small rounded">
                 Walk-Ins Welcome
               </li>
-              <li className="px-4 py-3 bg-white shadow-small rounded">
+              <li className="px-3 py-3 bg-white shadow-small rounded">
                 Same Day Appointments
               </li>
-              <li className="px-4 py-3 bg-white shadow-small rounded">
+              <li className="px-3 py-3 bg-white shadow-small rounded">
                 16 Convenient Locations
               </li>
-              <li className="px-4 py-3 bg-white shadow-small rounded">
+              <li className="px-3 py-3 bg-white shadow-small rounded">
                 Hablamos Su Idioma
               </li>
             </ul>
