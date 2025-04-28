@@ -81,11 +81,11 @@ const LatestBlogs = async () => {
           ))}
         </div>
 
-        <div className="mt-5 text-center">
+        <div className="mt-5 text-center hover:scale-105  transition duration-300">
           <ScrollMotionEffect effect="fade-up" duration="2000">
             <Link
               href={"/"}
-              className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary duration-500 "
+              className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary duration-500 hover:scale-105  transition "
             >
               View All Reviews
             </Link>
