@@ -53,7 +53,7 @@ const CanHelpYou = () => {
     <section className="">
       <div className="container p-6 md:p-16">
         <ScrollMotionEffect effect="fade-right" duration="2000">
-          <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
+          <h1 className="font-bold text-3xl  md:text-4xl lg:text-5xl text-black text-center">
             How We Can Help You
           </h1>
         </ScrollMotionEffect>

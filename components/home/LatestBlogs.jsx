@@ -37,7 +37,7 @@ const LatestBlogs = async () => {
     <div className="bg-[#F1F1F1]">
       <div className="container p-6 md:p-16">
         <ScrollMotionEffect effect="fade-right" duration="2000">
-          <h1 className="font-bold text-4xl md:text-5xl text-black text-center">
+          <h1 className="font-bold text-3xl  md:text-4xl lg:text-5xl text-black text-center">
             Our Latest Blogs
           </h1>
         </ScrollMotionEffect>

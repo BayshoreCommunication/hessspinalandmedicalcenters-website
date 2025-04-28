@@ -10,7 +10,7 @@ const AreasPractice = () => {
       <div className="container py-10 md:py-20">
         <div className="max-w-[700px] mx-auto">
           <ScrollMotionEffect effect="fade-right" duration="2000">
-            <h1 className="font-black text-4xl md:text-5xl text-black text-center">
+            <h1 className="font-black text-3xl  md:text-4xl lg:text-5xl text-black text-center">
               Legal Practice Areas
             </h1>
           </ScrollMotionEffect>
