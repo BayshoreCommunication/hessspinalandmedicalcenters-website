@@ -104,7 +104,7 @@ const SpinalMedical = () => {
 
             <ScrollMotionEffect effect="zoom-in" duration="2000">
               {/* Center Image */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center overflow-hidden rounded-3xl">
                 <Image
                   width={500}
                   height={400}

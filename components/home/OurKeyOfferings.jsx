@@ -4,14 +4,14 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 const services = [
   {
     id: 1,
-    icon: "/assets/homepage/key-offering-1.png",
+    icon: "/assets/homepage/key-offering-01.png",
     title: "Multi-Disciplinary Care",
     description:
       "Offers digital X-rays, physical therapy, chiropractic care, trigger point injections, and medical evaluations at each location.",
   },
   {
     id: 2,
-    icon: "/assets/homepage/key-offering-2.png",
+    icon: "/assets/homepage/key-offering-02.png",
     title: "Care without Upfront Costs",
     description:
       "Assistance with auto insurance claims, covered under PIP benefits in Florida with no upfront costs.",
@@ -78,7 +78,7 @@ const OurKeyOfferings = () => {
             <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
               <div
                 key={service.id}
-                className="flex items-start gap-4 bg-white p-6 rounded-xl shadow-sm"
+                className="flex  gap-4 bg-white p-6 rounded-xl shadow-sm items-center"
               >
                 <Image
                   width={500}
