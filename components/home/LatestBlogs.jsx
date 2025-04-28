@@ -84,7 +84,7 @@ const LatestBlogs = async () => {
         <div className="mt-5 text-center">
           <ScrollMotionEffect effect="fade-up" duration="2000">
             <Link
-              href={"/testimonials"}
+              href={"/"}
               className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary duration-500 "
             >
               View All Reviews

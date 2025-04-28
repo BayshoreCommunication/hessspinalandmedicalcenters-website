@@ -113,12 +113,14 @@ const MainNavbar = () => {
             </div>
 
             <div className="">
-              <div className="md:px-1 lg:px-1 xl:px-2">
-                <Link
-                  href={"/"}
-                  className="text-white font-normal text-lg bg-primary px-5 py-3 rounded-full hover:bg-green-700"
-                >
-                  Emergency Call
+              <div className="group">
+                <Link href="/">
+                  <button className="relative overflow-hidden text-white font-normal text-lg bg-primary px-6 py-3 rounded-full cursor-pointer">
+                    <span className="relative z-10 transition-colors duration-300">
+                      Emergency Call
+                    </span>
+                    <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+                  </button>
                 </Link>
               </div>
             </div>

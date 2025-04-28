@@ -5,7 +5,7 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 const FindOurLocation = () => {
   return (
     <section
-      className="relative py-16 bg-[#004d40]/80"
+      className="relative py-16"
       style={{
         backgroundImage: "url('/assets/homepage/find-location-bg.png')",
         backgroundSize: "cover",

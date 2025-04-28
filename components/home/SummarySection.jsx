@@ -9,21 +9,25 @@ const summaryList = [
     icon: <IoCalendarClearOutline className="size-10" />,
     title: "24+",
     desc: "Years Experience",
+    bgImg: "/assets/homepage/summary-bg-1.png",
   },
   {
     icon: <MdOutlineMedicalServices className="size-10" />,
     title: "16+",
     desc: "Medical Center",
+    bgImg: "/assets/homepage/summary-bg-2.png",
   },
   {
     icon: <GiWorld className="size-10" />,
     title: "6+",
     desc: "Counties",
+    bgImg: "/assets/homepage/summary-bg-3.png",
   },
   {
     icon: <RiCustomerService2Line className="size-10" />,
     title: "24/7",
     desc: "Availability",
+    bgImg: "/assets/homepage/summary-bg-4.png",
   },
 ];
 
@@ -37,6 +41,12 @@ const SummarySection = () => {
               <div
                 className="bg-[#323232] flex items-center justify-center space-x-4 text-white px-16 py-16 rounded-lg"
                 key={index}
+                style={{
+                  backgroundImage: `url('${el?.bgImg}')`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
               >
                 <div className="">{el?.icon}</div>
                 <div className="">

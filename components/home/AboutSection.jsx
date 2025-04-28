@@ -27,7 +27,7 @@ const AboutSection = () => {
                 width={500}
                 height={400}
                 className="w-[500px] object-cover"
-                src={"/assets/homepage/about-image.png"}
+                src={"/assets/homepage/about-image-1.png"}
                 alt={"about image"}
               />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -51,12 +51,16 @@ const AboutSection = () => {
               </p>
 
               <div className="py-4 flex justify-center md:justify-start">
-                <Link
-                  href={"/"}
-                  className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-green-800"
-                >
-                  Discover More
-                </Link>
+                <div className="group text-center">
+                  <Link href="/">
+                    <button className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-3 rounded-full hover:bg-green-800  cursor-pointer">
+                      <span className="relative z-10 transition-colors duration-300">
+                        Discover More
+                      </span>
+                      <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </ScrollMotionEffect>
