@@ -137,33 +137,37 @@ const MainNavbar = () => {
             </div>
 
             <div className="">
-              <div className="md:px-1 lg:px-1 xl:px-2">
-                {/* <Link
+              {/* <Link
                   href={"/"}
                   className="text-white font-normal text-lg bg-primary px-8 py-3 rounded-full hover:bg-green-700"
                 >
                   Emergency Call
                 </Link> */}
-                <motion.div
-                  animate={
-                    isAlarm
-                      ? { scale: [1, 1.1, 1], rotate: [0, 5, -5, 0] }
-                      : {}
-                  }
-                  transition={{
-                    duration: 0.6,
-                    repeat: isAlarm ? Infinity : 0,
-                    ease: "easeInOut",
-                  }}
+              <motion.div
+                animate={
+                  isAlarm ? { scale: [1, 1.1, 1], rotate: [0, 5, -5, 0] } : {}
+                }
+                transition={{
+                  duration: 0.6,
+                  repeat: isAlarm ? Infinity : 0,
+                  ease: "easeInOut",
+                }}
+              >
+                <Link
+                  href="/"
+                  className={`
+                            text-white font-normal
+                            text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl
+                            px-3 sm:px-4 md:px-5 lg:px-6 xl:px-8
+                            py-2 md:py-3
+                            rounded-full
+                            transition-colors duration-500 ease-in-out
+                            ${isAlarm ? "bg-orange-400 text-black" : "bg-primary hover:bg-green-700"}
+                          `}
                 >
-                  <Link
-                    href="/"
-                    className={`text-white font-normal text-lg  px-8 py-3 rounded-full hover:bg-green-700  ${isAlarm ? "bg-orange-400 text-black" : "bg-primary hover:bg-green-700"}`}
-                  >
-                    Emergency Call
-                  </Link>
-                </motion.div>
-              </div>
+                  Emergency Call
+                </Link>
+              </motion.div>
             </div>
           </div>
         </div>
