@@ -7,6 +7,7 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from "@nextui-org/react";
+import { motion } from "framer-motion";
 import { Orbitron } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -81,6 +82,29 @@ const MainNavbar = () => {
     (el) => pathname === `/practice-areas/${el?.slug}`
   );
 
+  const [isAlarm, setIsAlarm] = useState(false);
+
+  useEffect(() => {
+    let timeoutId; // <-- just number
+
+    const startCycle = () => {
+      // Start alarm after 5 seconds
+      timeoutId = window.setTimeout(() => {
+        // safer
+        setIsAlarm(true); // Alarm ON
+
+        timeoutId = window.setTimeout(() => {
+          setIsAlarm(false); // Alarm OFF
+          startCycle(); // Start the cycle again
+        }, 2000);
+      }, 5000);
+    };
+
+    startCycle(); // Start initial cycle
+
+    return () => clearTimeout(timeoutId); // Cleanup timeout on unmount
+  }, []);
+
   return (
     <section className={"relative z-50 "}>
       <div className="bg-primary w-full navbar ">
@@ -113,15 +137,32 @@ const MainNavbar = () => {
             </div>
 
             <div className="">
-              <div className="group">
-                <Link href="/">
-                  <button className="relative overflow-hidden text-white font-normal text-lg bg-primary px-6 py-3 rounded-full cursor-pointer">
-                    <span className="relative z-10 transition-colors duration-300">
-                      Emergency Call
-                    </span>
-                    <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
-                  </button>
-                </Link>
+              <div className="md:px-1 lg:px-1 xl:px-2">
+                {/* <Link
+                  href={"/"}
+                  className="text-white font-normal text-lg bg-primary px-8 py-3 rounded-full hover:bg-green-700"
+                >
+                  Emergency Call
+                </Link> */}
+                <motion.div
+                  animate={
+                    isAlarm
+                      ? { scale: [1, 1.1, 1], rotate: [0, 5, -5, 0] }
+                      : {}
+                  }
+                  transition={{
+                    duration: 0.6,
+                    repeat: isAlarm ? Infinity : 0,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <Link
+                    href="/"
+                    className={`text-white font-normal text-lg  px-8 py-3 rounded-full hover:bg-green-700  ${isAlarm ? "bg-orange-400 text-black" : "bg-primary hover:bg-green-700"}`}
+                  >
+                    Emergency Call
+                  </Link>
+                </motion.div>
               </div>
             </div>
           </div>

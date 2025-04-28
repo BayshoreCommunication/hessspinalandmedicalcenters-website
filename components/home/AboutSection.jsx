@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
+import NumberAnimation from "../shared/NumberAnimation";
 
 const AboutSection = () => {
   return (
@@ -32,7 +33,14 @@ const AboutSection = () => {
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-primary p-3 rounded-full w-32 h-32 flex flex-col items-center justify-center text-white">
-                  <h1 className="text-3xl font-bold text-left">24+</h1>
+                  <h1 className="text-3xl font-bold text-left">
+                    <NumberAnimation
+                      className="text-3xl font-bold text-left"
+                      value={24}
+                      incrementPlus={1}
+                      duration={200}
+                    />
+                  </h1>
                   <p className="text-xs text-left">Years Experience</p>
                 </div>
               </div>

@@ -24,12 +24,11 @@ const summaryList = [
     desc: "Counties",
     bgImg: "/assets/homepage/summary-bg-3.png",
   },
-  {
-    icon: <RiCustomerService2Line className="size-10" />,
-    title: 24 / 7,
-    desc: "Availability",
-    bgImg: "/assets/homepage/summary-bg-4.png",
-  },
+  // {
+  //   icon: <RiCustomerService2Line className="size-10" />,
+  //   title: "24/7",
+  //   desc: "Availability",
+  // },
 ];
 
 const SummarySection = () => {
@@ -63,6 +62,17 @@ const SummarySection = () => {
               </div>
             </ScrollMotionEffect>
           ))}
+          <ScrollMotionEffect effect="fade-up" duration="2000">
+            <div className="bg-[#323232] flex items-center justify-center space-x-4 text-white px-16 py-16 rounded-lg">
+              <div className="">
+                <RiCustomerService2Line className="size-10" />
+              </div>
+              <div className="">
+                <h1 className="text-xl font-bold text-left">24/7</h1>
+                <p className="text-xs text-left">Availability</p>
+              </div>
+            </div>
+          </ScrollMotionEffect>
         </div>
       </div>
     </section>
