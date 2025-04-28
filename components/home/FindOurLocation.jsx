@@ -50,7 +50,7 @@ const FindOurLocation = () => {
                   className="w-full appearance-none bg-white text-gray-700 py-4 px-6 rounded-full shadow focus:outline-none"
                   placeholder="Enter your address"
                 ></input>
-                <div className="group text-center absolute right-0 top-1/2 transform -translate-y-1/2 z-40">
+                <div className="group hover:scale-105  transition duration-300 text-center absolute right-0 top-1/2 transform -translate-y-1/2 z-40">
                   <Link href="/">
                     <button className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-4 rounded-full hover:bg-green-800 cursor-pointer">
                       <span className="relative z-10 transition-colors duration-300">
