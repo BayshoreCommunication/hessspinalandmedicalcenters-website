@@ -80,7 +80,7 @@ const HeroSection = () => {
             relief from your pain and suffering. Request Appointment
           </motion.h2>
 
-          {/* <motion.div
+          <motion.div
             variants={variants}
             className=" flex justify-center md:justify-start z-50"
           >
@@ -98,7 +98,7 @@ const HeroSection = () => {
                 Hablamos Su Idioma
               </li>
             </ul>
-          </motion.div> */}
+          </motion.div>
 
           <motion.div
             variants={variants}
