@@ -40,7 +40,7 @@ const AboutSection = () => {
           </ScrollMotionEffect>
           <ScrollMotionEffect effect="fade-left" duration="2000">
             <div className="flex flex-col gap-y-6">
-              <h1 className="font-bold text-4xl md:text-5xl text-black text-center md:text-left">
+              <h1 className="font-bold text-3xl  md:text-4xl lg:text-5xl text-black text-center md:text-left">
                 About Hess Spinal & Medical Center
               </h1>
               <p className="text-md md:text-lg text-[#55545A] text-center md:text-left">

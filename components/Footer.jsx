@@ -44,12 +44,12 @@ const Footer = () => {
                     className="object-cover"
                   />
                 </Link>
-                <p className="py-5 text-[18px] font-normal text-center text-white md:text-left max-w-[450px] leading-8">
+                <p className="py-5 text-base xl:text-[18px] font-normal text-center text-white md:text-left max-w-[450px] leading-8">
                   The physicians and staff at Hess Spinal and Medical Centers
                   understand that being injured in an auto accident can be
                   extremely stressful for you and your family.
                 </p>
-                <p className=" text-[18px] font-normal text-center text-white md:text-left max-w-[450px] leading-8">
+                <p className=" text-base xl:text-[18px] font-normal text-center text-white md:text-left max-w-[450px] leading-8">
                   <strong> Hours:</strong> 8:30am - 7:00pm
                 </p>
 
@@ -96,7 +96,7 @@ const Footer = () => {
                   Quick Links
                 </h2>
                 <hr className="mt-2 mb-6 w-28 border-secondary" />
-                <ul className="ml-0 text-white list-none text-[18px] font-medium grid grid-cols-2 w">
+                <ul className="ml-0 text-white list-none text-base xl:text-[18px] font-medium grid grid-cols-2 w">
                   {SITECONFIG?.footer?.resources?.map((el, index) => (
                     <li className="mb-4" key={index}>
                       <Link href={el.slug} className="hover:underline">
@@ -115,7 +115,7 @@ const Footer = () => {
                   Contact us
                 </h2>
                 <hr className="w-24 mt-2 mb-6 border-secondary" />
-                <ul className="ml-0 text-[18px] font-medium text-white list-none">
+                <ul className="ml-0 text-base xl:text-[18px] font-medium text-white list-none">
                   <li className="mb-4">
                     <div className="flex items-center gap-x-1">
                       <IoLocationSharp className="size-6 text-secondary" />
@@ -160,7 +160,7 @@ const Footer = () => {
                     <div className="flex items-center gap-x-1">
                       <MdMarkEmailUnread className="size-6 text-secondary" />
 
-                      <h3 className="font-semibold text-white text-[20px]">
+                      <h3 className="font-semibold text-white text-base xl:text-[20px]">
                         Email
                       </h3>
                     </div>
@@ -185,7 +185,7 @@ const Footer = () => {
           </div>
           <hr className="my-6 border-white/20 sm:mx-auto lg:my-8" />
           <div className="md:flex :items-center sm:justify-between">
-            <div className="text-[18px] font-medium text-center text-white">
+            <div className="text-base xl:text-[18px] font-medium text-center text-white">
               © 2024{" "}
               <a href="/" className="hover:underline text-secondary">
                 Hess Spinal & Medical Centers
@@ -193,7 +193,7 @@ const Footer = () => {
               . All Rights Reserved.
             </div>
 
-            <div className="text-[18px] font-medium text-center text-white">
+            <div className="text-base xl:text-[18px] font-medium text-center text-white">
               Design & Developed by{" "}
               <a
                 href="https://www.bayshorecommunication.com/"

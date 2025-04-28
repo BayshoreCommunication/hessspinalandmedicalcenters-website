@@ -44,12 +44,29 @@ const HeroSection = () => {
           </ScrollMotionEffect>
 
           <ScrollMotionEffect effect="fade-right" duration="2000">
-            <h2 className="mt-2 md:mt-6 text-[18px] md:text-[20px] font-semibold text-gray-700 text-center md:text-left leading-tight">
+            <p className="mt-2 md:mt-6 text-base md:text-lg font-semibold text-gray-700 text-center md:text-left leading-tight">
               We have specialized in treating the victims of auto accidents
               since 2001. Let our team of dedicated medical professionals help
               you find relief from your pain and suffering. Request Appointment
-            </h2>
+            </p>
           </ScrollMotionEffect>
+          <ScrollMotionEffect effect="fade-right" duration="3000">
+            <ul className=" flex items-center gap-3 mt-5">
+              <li className="px-4 py-3 bg-white shadow-small rounded">
+                Walk-Ins Welcome
+              </li>
+              <li className="px-4 py-3 bg-white shadow-small rounded">
+                Same Day Appointments
+              </li>
+              <li className="px-4 py-3 bg-white shadow-small rounded">
+                16 Convenient Locations
+              </li>
+              <li className="px-4 py-3 bg-white shadow-small rounded">
+                Hablamos Su Idioma
+              </li>
+            </ul>
+          </ScrollMotionEffect>
+
           <ScrollMotionEffect effect="fade-right" duration="3000">
             <div className="mt-4 md:mt-8 flex justify-center md:justify-start z-50">
               <div className="group">

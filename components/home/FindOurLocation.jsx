@@ -18,7 +18,7 @@ const FindOurLocation = () => {
           {/* Left Section */}
           <div className="w-full  text-white max-w-[1000px] mx-auto text-center">
             <ScrollMotionEffect effect="fade-right" duration="2000">
-              <h2 className="font-bold text-4xl md:text-5xl mb-6">
+              <h2 className="font-bold text-3xl  md:text-4xl lg:text-5xl mb-6">
                 Find our location near you.
               </h2>
               {/* Select Days */}
