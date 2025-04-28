@@ -80,11 +80,31 @@ const HeroSection = () => {
             relief from your pain and suffering. Request Appointment
           </motion.h2>
 
+          {/* <motion.div
+            variants={variants}
+            className=" flex justify-center md:justify-start z-50"
+          >
+            <ul className=" flex items-center gap-3 mt-5">
+              <li className="px-4 py-3 bg-white shadow-small rounded">
+                Walk-Ins Welcome
+              </li>
+              <li className="px-4 py-3 bg-white shadow-small rounded">
+                Same Day Appointments
+              </li>
+              <li className="px-4 py-3 bg-white shadow-small rounded">
+                16 Convenient Locations
+              </li>
+              <li className="px-4 py-3 bg-white shadow-small rounded">
+                Hablamos Su Idioma
+              </li>
+            </ul>
+          </motion.div> */}
+
           <motion.div
             variants={variants}
             className="mt-4 md:mt-8 flex justify-center md:justify-start z-50"
           >
-            <div className="group">
+            <div className="group hover:scale-105  transition duration-300">
               <Link href="/">
                 <button className="relative overflow-hidden text-white font-normal text-lg bg-primary px-8 md:px-16 py-4 rounded-full cursor-pointer">
                   <span className="relative z-10 transition-colors duration-300">
@@ -214,7 +234,7 @@ const HeroSection = () => {
                   <span className="text-red-500"></span>
                 </div>
               </div> */}
-              <div className="group mt-8 text-center">
+              <div className="group hover:scale-105  transition duration-300 mt-8 text-center">
                 <Link href="/">
                   <button className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-3 rounded-full hover:bg-green-800  cursor-pointer">
                     <span className="relative z-10 transition-colors duration-300">
