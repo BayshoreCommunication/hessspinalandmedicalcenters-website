@@ -15,10 +15,10 @@ const PageHeroSection = ({ image, title, link }) => {
       <div className=" relative z-10 w-full  pt-16 lg:pt-24 ">
         <div className=" relative w-full h-[350px] px-4 lg:px-10">
           <Image
-            src={image} // Make sure `image` is a valid path or import
+            src={image ? image : "/assets/shared/aboutpage.jpg"} // Make sure `image` is a valid path or import
             alt="Page Hero Image"
             fill
-            className="absolute inset-0 w-full h-full object-cover object-bottom"
+            className="absolute inset-0 w-full h-full object-cover object-centers  "
             quality={100}
             priority
           />

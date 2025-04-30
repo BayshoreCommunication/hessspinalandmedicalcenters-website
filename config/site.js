@@ -25,8 +25,12 @@ export const SITECONFIG = {
         slug: "/", // <- Add this slug
       },
       {
-        title: "Technology",
-        slug: "/", // <- Add this slug
+        title: "Testimonials",
+        slug: "/testimonials", // <- Add this slug
+      },
+      {
+        title: "Locations",
+        slug: "/location", // <- Adjusted to match 'Blogs' plural
       },
       {
         title: "Blogs",

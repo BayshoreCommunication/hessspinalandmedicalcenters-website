@@ -1,6 +1,8 @@
+import LatedAndGretest from "@/components/home/LatedAndGretest";
+import Services from "@/components/practice-area/Services";
+import AreasPractice from "@/components/practice-area/Services";
 import CallToAction from "@/components/shared/CallToAction";
 import PageHeroSection from "@/components/shared/PageHeroSection";
-import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
 import Head from "next/head";
 import React from "react";
 
@@ -20,15 +22,15 @@ export const metadata = {
 
 const page = () => {
   return (
-    <>
+    <div>
       <PageHeroSection
-        image={""}
-        title={"Testimonials"}
-        link={"Testimonials"}
+        image={"/assets/shared/aboutpage.jpg"}
+        title={"Services"}
+        link={"services"}
       />
-      <TestimonialsSection />
+      <Services />
       <CallToAction />
-    </>
+    </div>
   );
 };
 

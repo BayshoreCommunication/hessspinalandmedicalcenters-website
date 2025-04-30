@@ -1504,3 +1504,182 @@ export const testimonialsData = [
     rating: 5,
   },
 ];
+
+// Location data for the location page
+
+export const locationsData = [
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Grandon Clinic",
+    slug: "grandon-clinic",
+    address: "Dowson, St. 2019",
+    phone: "888-8422",
+    openingHours: [
+      { day: "Monday", time: "8:30 am–7:00 pm" },
+      // { day: "Tuesday", time: "8:30 am–7:00 pm" },
+      // { day: "Wednesday", time: "8:30 am–7:00 pm" },
+      // { day: "Friday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Lareland Clinic",
+    slug: "lareland-clinic",
+    address: "Chapleton, St. 2016",
+    phone: "888-8430",
+    openingHours: [
+      { day: "Monday", time: "8:30 am–7:00 pm" },
+      // { day: "Wednesday", time: "8:30 am–7:00 pm" },
+      // { day: "Thursday", time: "8:30 am–7:00 pm" },
+      // { day: "Friday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Leisure Hills Clinic",
+    slug: "leisure-hills-clinic",
+    address: "Bullard, St. 2016",
+    phone: "888-8830",
+    openingHours: [
+      { day: "Monday", time: "8:30 am–7:00 pm" },
+      // { day: "Wednesday", time: "8:30 am–7:00 pm" },
+      // { day: "Friday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Uffangely Cadre Clinic",
+    slug: "uffangely-cadre-clinic",
+    address: "Holden S.A., Liver, St. 2020",
+    phone: "222-86432",
+    openingHours: [
+      { day: "Tuesday", time: "8:30 am–7:00 pm" },
+      // { day: "Thursday", time: "8:30 am–7:00 pm" },
+      // { day: "Saturday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "New Fort Right Clinic",
+    slug: "new-fort-right-clinic",
+    address: "STS Main St., New York (Tokyo), St. 1945",
+    phone: "221-88422",
+    openingHours: [
+      { day: "Tuesday", time: "8:30 am–7:00 pm" },
+      // { day: "Sunday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Pnellas Park Clinic",
+    slug: "pnellas-park-clinic",
+    address: "Pinklin Lake, St. 2017",
+    phone: "221-88422",
+    openingHours: [
+      { day: "Monday", time: "8:30 am–7:00 pm" },
+      // { day: "Wednesday", time: "8:30 am–7:00 pm" },
+      // { day: "Friday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Plaint Gity Clinic",
+    slug: "plaint-gity-clinic",
+    address: "Holden Worship St., Park Co., St. 1944",
+    phone: "226-8227",
+    openingHours: [{ day: "Tuesday", time: "8:30 am–7:00 pm" }],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Enterview Clinic",
+    slug: "enterview-clinic",
+    address: "St/Sville (Western St.), Campus, Florida (West)",
+    phone: "225-2209",
+    openingHours: [
+      { day: "Monday", time: "8:30 am–7:00 pm" },
+      // { day: "Tuesday", time: "8:30 am–7:00 pm" },
+      // { day: "Sunday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Ruskin Clinic",
+    slug: "ruskin-clinic",
+    address: "St/S. C.L. Way, Campus, Florida (West)",
+    phone: "226-380",
+    openingHours: [
+      { day: "Monday", time: "8:30 am–7:00 pm" },
+      // { day: "Tuesday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Opinion Mill Clinic",
+    slug: "opinion-mill-clinic",
+    address: "Royal Valley High",
+    phone: "206-8022",
+    openingHours: [
+      { day: "Monday", time: "8:30 am–7:00 pm" },
+      // { day: "Wednesday", time: "8:30 am–7:00 pm" },
+      // { day: "Friday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "St Pete Clinic",
+    slug: "st-pete-clinic",
+    address: "25th Western Ave, Park Co., St. 2014",
+    phone: "206-8022",
+    openingHours: [
+      { day: "Monday", time: "8:30 am–7:00 pm" },
+      // { day: "Wednesday", time: "8:30 am–7:00 pm" },
+      // { day: "Friday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Tampa Down & Comptey",
+    slug: "tampa-down-comptey",
+    address: "BEST on Volkswagen Auto, Std. 200, Park Co., St. 1968",
+    phone: "208-8622",
+    openingHours: [
+      { day: "Tuesday", time: "8:30 am–7:00 pm" },
+      // { day: "Thursday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Tampa Down Tampa",
+    slug: "tampa-down-tampa",
+    address: "195.7 Ames Lane, Temple, St. 1936",
+    phone: "208-8622",
+    openingHours: [
+      { day: "Monday", time: "8:30 am–7:00 pm" },
+      // { day: "Wednesday", time: "8:30 am–7:00 pm" },
+      // { day: "Friday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Templa Terrace Clinic",
+    slug: "templa-terrace-clinic",
+    address: "400 E South Rd, Temple (Texas), St. 2017",
+    phone: "208-8612",
+    openingHours: [
+      { day: "Tuesday", time: "8:30 am–7:00 pm" },
+      // { day: "Wednesday", time: "8:30 am–7:00 pm" },
+      // { day: "Friday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+  {
+    image: "/assets/location/grandon-clinic.jpg",
+    locationName: "Vinkeer Manual Clinic",
+    slug: "vinkeer-manual-clinic",
+    address: "G'S East Central Ave, Water Tower, St. 1980",
+    phone: "216-827",
+    openingHours: [
+      { day: "Tuesday", time: "8:30 am–7:00 pm" },
+      // { day: "Thursday", time: "8:30 am–7:00 pm" },
+    ],
+  },
+];

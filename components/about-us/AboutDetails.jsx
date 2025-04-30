@@ -14,7 +14,7 @@ const AboutDetails = () => {
                 <Image
                   width={500}
                   height={400}
-                  className="w-[500px] object-cover"
+                  className="w-[550px] object-cover"
                   src={"/assets/homepage/about-image-1.png"}
                   alt={"about image"}
                 />
