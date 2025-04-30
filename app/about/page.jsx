@@ -1,7 +1,10 @@
 import AboutDetails from "@/components/about-us/AboutDetails";
 import GoogleMapSection from "@/components/about-us/GoogleMapSection";
-import ProfessionalLawGroup from "@/components/about-us/ProfessionalLawGroup";
+import OurDoctors from "@/components/about-us/OurDoctors";
 import LatedAndGretest from "@/components/home/LatedAndGretest";
+import SpinalMedical from "@/components/home/SpinalMedical";
+import SummarySection from "@/components/home/SummarySection";
+import CallToAction from "@/components/shared/CallToAction";
 import PageHeroSection from "@/components/shared/PageHeroSection";
 
 export const metadata = {
@@ -22,19 +25,18 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      {/* <PageHeroSection
+      <PageHeroSection
         image={"/assets/shared/aboutpage.jpg"}
         title={"About Us"}
-        description={
-          "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
-        }
-      /> */}
-      {/* <ProfessionalLawGroup /> */}
+        link={"about us"}
+      />
       <div className="mt-10 lg:mt-12">
         <AboutDetails />
       </div>
-      {/* <LatedAndGretest />
-      <GoogleMapSection /> */}
+      <SummarySection />
+      <OurDoctors />
+      <SpinalMedical />
+      <CallToAction />
     </>
   );
 };

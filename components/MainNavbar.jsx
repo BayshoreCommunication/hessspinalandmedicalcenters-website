@@ -28,19 +28,19 @@ const debounce = (func, wait) => {
 };
 
 const MainNavbar = () => {
-  useEffect(() => {
-    var prevScrollpos = window.scrollY;
-    window.onscroll = function () {
-      var currentScrollPos = window.scrollY;
+  // useEffect(() => {
+  //   var prevScrollpos = window.scrollY;
+  //   window.onscroll = function () {
+  //     var currentScrollPos = window.scrollY;
 
-      if (prevScrollpos > currentScrollPos) {
-        document.querySelector(".navbar").style.top = "0";
-      } else {
-        document.querySelector(".navbar").style.top = "-200px";
-      }
-      prevScrollpos = currentScrollPos;
-    };
-  });
+  //     if (prevScrollpos > currentScrollPos) {
+  //       document.querySelector(".navbar").style.top = "0";
+  //     } else {
+  //       document.querySelector(".navbar").style.top = "-200px";
+  //     }
+  //     prevScrollpos = currentScrollPos;
+  //   };
+  // });
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -64,19 +64,19 @@ const MainNavbar = () => {
     []
   );
 
-  const handleScroll = useCallback(
-    debounce(() => {
-      setNavbarColor(window.scrollY >= 100);
-    }, 100),
-    []
-  );
+  // const handleScroll = useCallback(
+  //   debounce(() => {
+  //     setNavbarColor(window.scrollY >= 100);
+  //   }, 100),
+  //   []
+  // );
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [handleScroll]);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [handleScroll]);
 
   const setPathSlug = areaspracticeData?.some(
     (el) => pathname === `/practice-areas/${el?.slug}`
@@ -127,7 +127,7 @@ const MainNavbar = () => {
                 {menuItems.map((el, index) => (
                   <Link
                     key={el.slug}
-                    href={"/"}
+                    href={el.slug}
                     className={`cursor-pointer text-sm xl:text-[16px] text-black font-medium capitalize  bg-opacity-30 rounded-full  py-1 lg:py-2 px-2 lg:px-5 hover:bg-opacity-25 hover:bg-secondary ${pathname === el.slug ? " border bg-secondary" : ""} `}
                   >
                     {el.title}
@@ -200,7 +200,7 @@ const MainNavbar = () => {
                 <NavbarMenuItem key={el.slug} className="flex flex-row">
                   <Link
                     className={`w-full text-black text-center !text-xl font-medium py-1 ${pathname === el.slug ? "!text-primary" : ""} ${index === 0 ? "mt-6" : ""}`}
-                    href={"/"}
+                    href={el?.slug}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {el.title}

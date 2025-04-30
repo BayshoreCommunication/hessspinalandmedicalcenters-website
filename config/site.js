@@ -18,7 +18,7 @@ export const SITECONFIG = {
     resources: [
       {
         title: "About Us",
-        slug: "/",
+        slug: "/about",
       },
       {
         title: "Services",

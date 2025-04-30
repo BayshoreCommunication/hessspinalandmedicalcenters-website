@@ -1,42 +1,48 @@
-import SectionLayout from "./SectionLayout";
-import { PiPhoneCallFill } from "react-icons/pi";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 import Link from "next/link";
-import { BsTelephoneForwardFill } from "react-icons/bs";
+import Image from "next/image";
 
 const CallToAction = () => {
   return (
-    <section className="w-full bg-primary">
-      <div className="container py-10 md:py-20">
-        <div className="flex flex-col  items-center justify-center lg:flex-row md:justify-between gap-4">
-          <ScrollMotionEffect effect="fade-right" duration="2000">
-            <h2
-              className={`text-white font-semibold text-2xl md:text-4xl text-center lg:text-start uppercasetext-center md:text-left`}
-            >
-              Let Melamed Law Lead the Way—
-            </h2>
-            <p className="text-white font-normal text-lg md:text-xl mt-2 text-center md:text-left">
-              Contact Us for Trusted Guidance!
-            </p>
-          </ScrollMotionEffect>
+    <section className="relative w-full h-[400px]  overflow-hidden">
+      {/* ✅ Background Image */}
+      <Image
+        src="/assets/shared/cta-bg.jpg" // <-- Make sure this image exists in /public/assets/aboutpage/
+        alt="CTA BG Image"
+        fill
+        className="object-cover"
+        quality={100}
+        priority
+      />
 
-          <div className="w-fit">
-            <ScrollMotionEffect effect="fade-left" duration="2000">
-              <Link
-                href="tel:954-529-0695"
-                className="text-white font-normal text-lg bg-secondary px-12 py-2 rounded-full hover:bg-orange-400 w-full flex flex-col justify-center"
-              >
-                <p className="text-white text-[12px]  2xl:text-md">
-                  Call For A Free Consultation
-                </p>
-                <div className="flex items-center gap-x-2 mt-[-8px]">
-                  <BsTelephoneForwardFill className="text-white size-4" />
-                  <h6 className="text-white font-bold text-lg">954-529-0695</h6>
-                </div>
-              </Link>
-            </ScrollMotionEffect>
+      {/* ✅ Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#032D18]/90 to-[#032D18]/90 z-10" />
+
+      {/* ✅ Centered Content */}
+      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center px-4 text-center">
+        <ScrollMotionEffect effect="fade-right" duration="2000">
+          <h2 className="text-white font-bold text-3xl md:text-4xl lg:text-5xl max-w-[1000px] mx-auto">
+            Get Appointment From Our Specialist
+          </h2>
+          <p className="text-white text-base md:text-lg font-normal mt-4 max-w-[700px] mx-auto">
+            The physicians and staff at Hess Spinal and Medical Centers
+            understand that being injured in an auto accident can be extremely
+            stressful for you and your family.
+          </p>
+        </ScrollMotionEffect>
+
+        <ScrollMotionEffect effect="fade-left" duration="2000">
+          <div className="mt-6 group hover:scale-105 transition duration-300">
+            <Link href="tel:(800) 618-4377">
+              <button className="relative overflow-hidden text-white font-normal text-lg bg-primary px-8 md:px-16 py-4 rounded-full cursor-pointer border-2 border-white">
+                <h6 className="relative z-10 transition-colors duration-300">
+                  Request Appointment
+                </h6>
+                <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+              </button>
+            </Link>
           </div>
-        </div>
+        </ScrollMotionEffect>
       </div>
     </section>
   );
