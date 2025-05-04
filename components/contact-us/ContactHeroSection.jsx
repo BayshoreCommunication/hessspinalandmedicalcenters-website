@@ -99,7 +99,7 @@ const ContactHeroSection = () => {
                   Working Hours
                 </h3>
 
-                <div className="grid grid-cols-2 gap-x-3 lg:gap-x-5 gap-y-2">
+                <div className="grid grid-cols-1  lg:grid-cols-2 gap-x-3 lg:gap-x-5 gap-y-2">
                   <p className="  mb-1">
                     <span className="font-semibold">Mon</span> 08:30 AM – 7:00
                     PM
