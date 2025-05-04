@@ -58,38 +58,36 @@ const ContactHeroSection = () => {
                 </div>
               </div>
               {/* Email */}
-              <div className="bg-[#F1F1F1] p-5 lg:p-8 rounded-2xl flex flex-col gap-3 lg:gap-5">
-                <h3 className="pb-2  border-b-2 border-[#D4D4D4] text-2xl font-bold text-start">
+              <div className="bg-[#F1F1F1] p-5 lg:p-8 rounded-2xl flex flex-col gap-6">
+                <h3 className="pb-2 border-b border-[#D4D4D4] text-2xl font-bold">
                   Email Information
                 </h3>
-                <div className="flex gap-2">
-                  <IoLocationOutline className="text-xl mt-1" />
+
+                <div className="flex items-start gap-3">
+                  <IoLocationOutline className="text-2xl mt-1" />
                   <div>
-                    <p className="text-xl font-semibold mb-1">Email:</p>
-                    <p>
-                      <Link
-                        href="#"
-                        className="hover:text-primary duration-300"
-                      >
-                        info@hessspinalcenters.com
-                      </Link>
-                    </p>
+                    <p className="text-lg font-semibold">Email:</p>
+                    <Link
+                      href="mailto:info@hessspinalcenters.com"
+                      className="text-base hover:text-primary duration-300 break-all"
+                    >
+                      info@hessspinalcenters.com
+                    </Link>
                   </div>
                 </div>
-                <div className="flex gap-2">
-                  <IoCallOutline className="text-xl mt-1" />
+
+                <div className="flex items-start gap-3">
+                  <IoCallOutline className="text-2xl mt-1" />
                   <div>
-                    <p className="text-xl font-semibold mb-1">
+                    <p className="text-lg font-semibold">
                       Billing & Medical Records:
                     </p>
-                    <p>
-                      <Link
-                        href="#"
-                        className="hover:text-primary duration-300"
-                      >
-                        medicalrecords@hessspinalcenters.com
-                      </Link>
-                    </p>
+                    <Link
+                      href="mailto:medicalrecords@hessspinalcenters.com"
+                      className="text-base hover:text-primary duration-300 break-all"
+                    >
+                      medicalrecords@hessspinalcenters.com
+                    </Link>
                   </div>
                 </div>
               </div>
