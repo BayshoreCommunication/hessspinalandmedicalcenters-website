@@ -34,7 +34,7 @@ export const SITECONFIG = {
       },
       {
         title: "Blogs",
-        slug: "/", // <- Adjusted to match 'Blogs' plural
+        slug: "/blog", // <- Adjusted to match 'Blogs' plural
       },
       {
         title: "Contact",

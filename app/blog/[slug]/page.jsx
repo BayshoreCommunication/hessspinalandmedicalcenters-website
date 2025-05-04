@@ -56,7 +56,7 @@ export async function generateMetadata({ params }) {
   const blogPostData = await GetAllPostData();
 
   const blogDetails = blogPostData?.data?.find(
-    (blogs) => blogs.slug === params.slug,
+    (blogs) => blogs.slug === params.slug
   );
 
   if (!blogDetails) {
@@ -88,7 +88,7 @@ const page = async ({ params }) => {
   const blogPostData = await GetAllPostData();
 
   const blogDetails = blogPostData?.data?.filter(
-    (blogs) => blogs.slug === params.slug,
+    (blogs) => blogs.slug === params.slug
   );
 
   const postDate = (date) => {
@@ -104,11 +104,9 @@ const page = async ({ params }) => {
     <>
       <style>{css}</style>
       <PageHeroSection
-        image={"/assets/shared/blogs.jpg"}
+        image={"/assets/shared/aboutpage.jpg"}
         title={blogDetails[0]?.title}
-        description={
-          "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
-        }
+        link={blogDetails[0]?.title}
       />
       <SectionLayout bg="bg-white">
         <CardMotion

@@ -36,9 +36,7 @@ const page = async () => {
       <PageHeroSection
         image={"/assets/shared/blogs.jpg"}
         title={"Blogs"}
-        description={
-          "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
-        }
+        link={"blogs"}
       />
       <BlogMainSection blogPostData={blogPostData} />
       <CallToAction />
