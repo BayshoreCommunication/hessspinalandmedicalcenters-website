@@ -1,27 +1,72 @@
 // "use client";
-// import Link from "next/link";
-// import ScrollMotionEffect from "../motion/ScrollMotionEffect";
-// import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Mousewheel, Navigation, Pagination } from "swiper/modules"; // ✅ Import Navigation module
-// import { mapLocationsData } from "@/config/data";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import { useEffect, useRef } from "react";
+
+// import { locationsInfo } from "@/config/locationsInfo";
+// import { useEffect, useRef, useState } from "react";
+// import GoogleMapShowNearbyClinic from "../shared/GoogleMapShowNearbyClinic";
+
+// const normalizeClinics = (clinics) =>
+//   clinics.map((clinic) => ({
+//     ...clinic,
+//     searchIndex:
+//       `${clinic.title} ${clinic.address} ${clinic.phone}`.toLowerCase(),
+//     availableDays: clinic.availableSchedule.map((s) => s.day.toLowerCase()),
+//   }));
+
+// const normalizedClinics = normalizeClinics(locationsInfo);
 
 // const FindOurLocation = () => {
-//   const prevButtonRef = useRef(null);
-//   const nextButtonRef = useRef(null);
-//   const swiperRef = useRef(null);
+//   const dropdownRef = useRef(null);
+//   const [searchText, setSearchText] = useState("");
+//   const [selectedDay, setSelectedDay] = useState("");
+//   const [selectedClinic, setSelectedClinic] = useState(null);
+//   const [filteredClinics, setFilteredClinics] = useState([]);
+//   const [showDropdown, setShowDropdown] = useState(false);
+//   const [loading, setLoading] = useState(false);
+
+//   const handleClinicSelect = (clinic) => {
+//     setSelectedClinic(clinic);
+//     setSearchText(`${clinic.address}`);
+//     setShowDropdown(false);
+//   };
+
+//   const handleFindNearest = () => {
+//     setLoading(true);
+//     setShowDropdown(true);
+//     setSelectedClinic("");
+
+//     const search = searchText.trim().toLowerCase();
+//     const day = selectedDay.toLowerCase();
+
+//     const matchedClinics = normalizedClinics.filter((clinic) => {
+//       const matchesDay = !day || clinic.availableDays.includes(day);
+//       const matchesSearch = !search || clinic.searchIndex.includes(search);
+//       return matchesDay && matchesSearch;
+//     });
+
+//     setFilteredClinics(matchedClinics);
+//     setLoading(false);
+
+//     // if (matchedClinics.length > 0) {
+//     //   const firstClinic = matchedClinics[0];
+//     //   setSelectedClinic(firstClinic);
+//     //   setSearchText(`${firstClinic.address}`);
+//     // }
+//   };
 
 //   useEffect(() => {
-//     if (swiperRef.current && swiperRef.current.swiper) {
-//       const swiperInstance = swiperRef.current.swiper;
-//       swiperInstance.params.navigation.prevEl = prevButtonRef.current;
-//       swiperInstance.params.navigation.nextEl = nextButtonRef.current;
-//       swiperInstance.navigation.init();
-//       swiperInstance.navigation.update();
-//     }
+//     const handleClickOutside = (event: MouseEvent) => {
+//       if (
+//         dropdownRef.current &&
+//         !dropdownRef.current.contains(event.target as Node)
+//       ) {
+//         setShowDropdown(false); // hide dropdown
+//       }
+//     };
+
+//     document.addEventListener("mousedown", handleClickOutside);
+//     return () => {
+//       document.removeEventListener("mousedown", handleClickOutside);
+//     };
 //   }, []);
 
 //   return (
@@ -36,108 +81,101 @@
 //     >
 //       <div className="container mx-auto px-4">
 //         <div className="flex flex-col items-center justify-between gap-5 lg:gap-8">
-//           {/* Text Content */}
-//           <div className="w-full text-white max-w-[1000px] mx-auto text-center">
-//             <ScrollMotionEffect effect="fade-right" duration="2000">
-//               <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-6">
-//                 Find our location near you.
-//               </h2>
+//           {/* Heading */}
+//           <div className="w-full text-white max-w-[1000px] text-center mx-auto">
+//             <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-6">
+//               Find our location near you.
+//             </h2>
 
-//               {/* Select Days */}
-//               <div className="flex flex-wrap gap-4 mb-6 justify-center">
-//                 {[
-//                   "Monday",
-//                   "Tuesday",
-//                   "Wednesday",
-//                   "Thursday",
-//                   "Friday",
-//                   "Saturday",
-//                   "Sunday",
-//                 ].map((day) => (
-//                   <label
-//                     key={day}
-//                     className="flex items-center space-x-2 cursor-pointer"
-//                   >
-//                     <input
-//                       type="checkbox"
-//                       className="form-checkbox h-5 w-5 text-primary rounded-md border-gray-300"
-//                     />
-//                     <span className="text-white">{day}</span>
-//                   </label>
-//                 ))}
-//               </div>
-
-//               {/* Search Input */}
-//               <div className="relative mb-6">
-//                 <input
-//                   className="w-full appearance-none bg-white text-gray-700 py-4 px-6 rounded-full shadow focus:outline-none"
-//                   placeholder="Enter your address"
-//                 />
-//                 <div className="group hover:scale-105 transition duration-300 text-center absolute right-0 top-1/2 transform -translate-y-1/2 z-40">
-//                   <Link href="/">
-//                     <button className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-4 rounded-full hover:bg-green-800 cursor-pointer">
-//                       <span className="relative z-10 transition-colors duration-300">
-//                         Find Nearest Place
-//                       </span>
-//                       <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
-//                     </button>
-//                   </Link>
-//                 </div>
-//               </div>
-//             </ScrollMotionEffect>
-//           </div>
-
-//           {/* Swiper */}
-//           <div className="w-full relative">
-//             <button
-//               ref={prevButtonRef}
-//               className="absolute -left-20 top-1/2 transform -translate-y-1/2 text-white bg-primary hover:text-white hover:bg-transparent p-3 border border-white rounded-full duration-400 z-40"
-//             >
-//               <FaArrowLeft size={20} />
-//             </button>
-//             <Swiper
-//               modules={[Navigation, Pagination, Mousewheel]}
-//               ref={swiperRef}
-//               spaceBetween={20}
-//               loop={true}
-//               grabCursor={true}
-//               speed={600}
-//               // slidesPerView={2}
-//               className="mySwiper w-full"
-//               breakpoints={{
-//                 0: { slidesPerView: 1 },
-//                 768: { slidesPerView: 2 },
-//                 1024: { slidesPerView: 3 },
-//               }}
-//             >
-//               {mapLocationsData.map((item, idx) => (
-//                 <SwiperSlide key={idx}>
-//                   <div>
-//                     <div className="relative h-[250px] rounded-2xl overflow-hidden shadow-lg p-1 bg-white">
-//                       <iframe
-//                         className="w-full h-full rounded-2xl"
-//                         src={item.mapSrc}
-//                         allowFullScreen
-//                         loading="lazy"
-//                         referrerPolicy="no-referrer-when-downgrade"
-//                       ></iframe>
-//                     </div>
-//                     <h3 className="text-white text-2xl text-center mt-4 font-semibold">
-//                       <p className="">{item.title}</p>
-//                     </h3>
-//                   </div>
-//                 </SwiperSlide>
+//             {/* Day Selector */}
+//             <div className="flex flex-wrap justify-center gap-4 mb-6">
+//               {[
+//                 "Monday",
+//                 "Tuesday",
+//                 "Wednesday",
+//                 "Thursday",
+//                 "Friday",
+//                 "Saturday",
+//                 "Sunday",
+//               ].map((day) => (
+//                 <label
+//                   key={day}
+//                   className="flex items-center space-x-2 cursor-pointer"
+//                 >
+//                   <input
+//                     type="radio"
+//                     name="day"
+//                     value={day}
+//                     checked={selectedDay === day}
+//                     onChange={(e) => setSelectedDay(e.target.value)}
+//                     className="form-radio h-5 w-5 text-primary border-gray-300"
+//                   />
+//                   <span className="text-white">{day}</span>
+//                 </label>
 //               ))}
-//             </Swiper>
+//               <button
+//                 onClick={() => setSelectedDay("")}
+//                 className="text-white underline text-sm"
+//               >
+//                 Clear
+//               </button>
+//             </div>
 
-//             {/* Navigation Buttons */}
+//             {/* Search Input */}
+//             <div className="relative mb-6 w-full max-w-xl mx-auto">
+//               <input
+//                 type="text"
+//                 placeholder="Enter your address or clinic name"
+//                 value={searchText}
+//                 onChange={(e) => setSearchText(e.target.value)}
+//                 className="w-full bg-white text-gray-700 py-4 px-6 rounded-full shadow focus:outline-none"
+//               />
 
-//             <button
-//               ref={nextButtonRef}
-//               className="absolute -right-20 top-1/2 transform -translate-y-1/2 text-white bg-primary hover:text-white hover:bg-transparent p-3 border border-white rounded-full duration-400 z-40"
-//             >
-//               <FaArrowRight size={20} />
-//             </button>
+//               {/* Search Results Dropdown */}
+//               {showDropdown && (
+//   <div
+//     ref={dropdownRef}
+//     className="absolute z-50 w-full mt-1 bg-white rounded-lg shadow-lg max-h-60 overflow-auto"
+//   >
+//     {loading ? (
+//       <div className="p-4 text-center text-gray-500">Loading...</div>
+//     ) : filteredClinics.length > 0 ? (
+//       filteredClinics.map((clinic) => (
+//         <div
+//           key={clinic.id}
+//           className="p-3 hover:bg-gray-100 cursor-pointer border-b text-gray-800"
+//           onClick={() => handleClinicSelect(clinic)}
+//         >
+//           <div className="font-semibold">{clinic.title}</div>
+//           <div className="text-sm">{clinic.address}</div>
+//         </div>
+//       ))
+//     ) : (
+//       <div className="p-4 text-center text-gray-500">No clinics found</div>
+//     )}
+//   </div>
+// )}
+
+//               {/* Find Button */}
+//               <div className="group hover:scale-105 transition duration-300 text-center absolute right-0 top-1/2 transform -translate-y-1/2 z-40">
+//                 <button
+//                   onClick={handleFindNearest}
+//                   className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-4 rounded-full hover:bg-green-800 cursor-pointer"
+//                 >
+//                   <span className="relative z-10">Find Nearest Place</span>
+//                   <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+//                 </button>
+//               </div>
+//             </div>
+//           </div>
+
+//           {/* Google Map Component */}
+//           <div className="w-full">
+//             <GoogleMapShowNearbyClinic
+//               clinics={locationsInfo}
+//               selectedClinic={selectedClinic}
+//               onClinicSelect={setSelectedClinic}
+//             />
 //           </div>
 //         </div>
 //       </div>
@@ -146,106 +184,92 @@
 // };
 
 // export default FindOurLocation;
-
-// *************************************************************************************************
-
-// "use client";
-// import Link from "next/link";
-// import ScrollMotionEffect from "../motion/ScrollMotionEffect";
-
-// const FindOurLocation = () => {
-//   return (
-//     <section
-//       className="relative py-16 bg-[#004d40]/80"
-//       style={{
-//         backgroundImage: "url('/assets/homepage/find-location-bg.png')",
-//         backgroundSize: "cover",
-//         backgroundPosition: "center",
-//         backgroundRepeat: "no-repeat",
-//       }}
-//     >
-//       <div className="container mx-auto px-4">
-//         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-//           {/* Left Section */}
-//           <div className="w-full lg:w-7/12 text-white">
-//             <ScrollMotionEffect effect="fade-right" duration="2000">
-//               <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-6">
-//                 Find our location near you.
-//               </h2>
-//               {/* Select Days */}
-
-//               <div className="flex flex-wrap gap-4 mb-6 justify-start">
-//                 {" "}
-//                 {[
-//                   "Monday",
-//                   "Tuesday",
-//                   "Wednesday",
-//                   "Thursday",
-//                   "Friday",
-//                   "Saturday",
-//                   "Sunday",
-//                 ].map((day) => (
-//                   <label
-//                     key={day}
-//                     className="flex items-center space-x-2 cursor-pointer"
-//                   >
-//                     <input
-//                       type="checkbox"
-//                       className="form-checkbox h-5 w-5 text-primary rounded-md border-gray-300"
-//                     />
-//                     <span className="text-white">{day}</span>
-//                   </label>
-//                 ))}
-//               </div>
-//               {/* Search Input */}
-//               <div className="relative mb-6">
-//                 <input
-//                   className="w-full appearance-none bg-white text-gray-700 py-4 px-6 rounded-full shadow focus:outline-none"
-//                   placeholder="Enter your address"
-//                 />
-//                 <div className="group hover:scale-105 transition duration-300 text-center absolute right-0 top-1/2 transform -translate-y-1/2 z-40">
-//                   <Link href="/">
-//                     <button className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-12 py-4 rounded-full hover:bg-green-800 cursor-pointer">
-//                       <span className="relative z-10 transition-colors duration-300">
-//                         Find Nearest Place
-//                       </span>
-//                       <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
-//                     </button>
-//                   </Link>
-//                 </div>
-//               </div>
-//             </ScrollMotionEffect>
-//           </div>
-
-//           {/* Right Section - Map */}
-//           <div className="w-full lg:w-5/12">
-//             <ScrollMotionEffect effect="fade-left" duration="2000">
-//               <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg border">
-//                 <iframe
-//                   className="w-full h-full"
-//                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4335.284323002121!2d-82.57165912387924!3d27.98536881317317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e9e6e573d881%3A0xb6ed0dc8071923a2!2sHess%20Spinal%20%26%20Medical%20Centers%2C%20Corporate!5e1!3m2!1sen!2sbd!4v1745742651702!5m2!1sen!2sbd"
-//                   allowFullScreen
-//                   loading="lazy"
-//                   referrerPolicy="no-referrer-when-downgrade"
-//                 ></iframe>
-//               </div>
-//             </ScrollMotionEffect>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default FindOurLocation;
-
-// ************************************************************************************************
-
 "use client";
-import Link from "next/link";
-import ScrollMotionEffect from "../motion/ScrollMotionEffect";
+
+import { locationsInfo } from "@/config/locationsInfo";
+import { useEffect, useRef, useState } from "react";
+import GoogleMapShowNearbyClinic from "../shared/GoogleMapShowNearbyClinic";
+
+const normalizeClinics = (clinics) =>
+  clinics.map((clinic) => ({
+    ...clinic,
+    searchIndex:
+      `${clinic.title} ${clinic.address} ${clinic.phone}`.toLowerCase(),
+    availableDays: clinic.availableSchedule.map((s) => s.day.toLowerCase()),
+  }));
+
+const normalizedClinics = normalizeClinics(locationsInfo);
+
+const daysOfWeek = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
 
 const FindOurLocation = () => {
+  const dropdownRef = useRef(null);
+  const [searchText, setSearchText] = useState("");
+  const [selectedDay, setSelectedDay] = useState("");
+  const [selectedClinic, setSelectedClinic] = useState(null);
+  const [filteredClinics, setFilteredClinics] = useState([]);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleClinicSelect = (clinic) => {
+    setSelectedClinic(clinic);
+    setSearchText(clinic.address);
+    setShowDropdown(false);
+  };
+
+  const handleFindNearest = () => {
+    if (!searchText.trim() && !selectedDay) {
+      setFilteredClinics(normalizedClinics);
+      setShowDropdown(true);
+      return;
+    }
+
+    setLoading(true);
+    setShowDropdown(true);
+    setSelectedClinic(null);
+
+    const search = searchText.trim().toLowerCase();
+    const day = selectedDay.toLowerCase();
+
+    const matchedClinics = normalizedClinics.filter((clinic) => {
+      const matchesDay = !day || clinic.availableDays.includes(day);
+      const matchesSearch = !search || clinic.searchIndex.includes(search);
+      return matchesDay && matchesSearch;
+    });
+
+    setTimeout(() => {
+      setFilteredClinics(matchedClinics);
+      setLoading(false);
+    }, 300);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleFindNearest();
+    }
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowDropdown(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <section
       className="relative py-16"
@@ -258,75 +282,103 @@ const FindOurLocation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-between gap-5 lg:gap-8">
-          {/* Text Content */}
-          <div className="w-full text-white max-w-[1000px] mx-auto text-center">
-            <ScrollMotionEffect effect="fade-right" duration="2000">
-              <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-6">
-                Find our location near you.
-              </h2>
+          {/* Heading */}
+          <div className="w-full text-white max-w-[1000px] text-center mx-auto">
+            <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-6">
+              Find our location near you.
+            </h2>
 
-              {/* Select Days */}
-              <div className="flex flex-wrap gap-4 mb-6 justify-center">
-                {[
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday",
-                ].map((day) => (
-                  <label
-                    key={day}
-                    className="flex items-center space-x-2 cursor-pointer"
-                  >
-                    <input
-                      type="checkbox"
-                      className="form-checkbox h-5 w-5 text-primary rounded-md border-gray-300"
-                    />
-                    <span className="text-white">{day}</span>
-                  </label>
-                ))}
-              </div>
+            {/* Day Selector */}
+            <div className="flex flex-wrap justify-center gap-4 mb-6">
+              {daysOfWeek.map((day) => (
+                <label
+                  key={day}
+                  className="flex items-center space-x-2 cursor-pointer"
+                >
+                  <input
+                    type="checkbox"
+                    name="day"
+                    value={day}
+                    checked={selectedDay === day}
+                    onChange={(e) => setSelectedDay(e.target.value)}
+                    className="form-radio h-5 w-5 text-primary border-gray-300"
+                  />
+                  <span className="text-white">{day}</span>
+                </label>
+              ))}
+              <button
+                onClick={() => setSelectedDay("")}
+                className="text-white underline text-sm"
+              >
+                Clear
+              </button>
+            </div>
 
-              {/* Search Input */}
-              <div className="relative mb-6">
-                <input
-                  className="w-full appearance-none bg-white text-gray-700 py-4 px-6 rounded-full shadow focus:outline-none"
-                  placeholder="Enter your address"
-                />
-                <div className="group hover:scale-105 transition duration-300 text-center absolute right-0 top-1/2 transform -translate-y-1/2 z-40">
-                  <Link href="/">
-                    <button className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-4 rounded-full hover:bg-green-800 cursor-pointer">
-                      <span className="relative z-10 transition-colors duration-300">
-                        Find Nearest Place
-                      </span>
-                      <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
-                    </button>
-                  </Link>
+            {/* Search Input */}
+            <div className="relative mb-6 w-full max-w-xl mx-auto">
+              <input
+                type="text"
+                placeholder="Enter your address or clinic name"
+                value={searchText}
+                onChange={(e) => setSearchText(e.target.value)}
+                onKeyDown={handleKeyDown}
+                className="w-full bg-white text-gray-700 py-4 px-6 rounded-full shadow focus:outline-none"
+              />
+
+              {/* Search Results Dropdown */}
+              {showDropdown && (
+                <div
+                  ref={dropdownRef}
+                  className="absolute z-50 w-full mt-1 bg-white rounded-lg shadow-lg max-h-60 overflow-auto"
+                >
+                  {loading ? (
+                    <div className="p-4 text-center text-gray-500">
+                      Loading...
+                    </div>
+                  ) : filteredClinics.length > 0 ? (
+                    filteredClinics.map((clinic) => (
+                      <div
+                        key={clinic.id}
+                        className="p-3 hover:bg-gray-100 cursor-pointer border-b text-gray-800"
+                        onClick={() => handleClinicSelect(clinic)}
+                      >
+                        <div className="font-semibold">{clinic.title}</div>
+                        <div className="text-sm">{clinic.address}</div>
+                        <div className="text-xs text-gray-500">
+                          {clinic.availableSchedule
+                            .map((s) => `${s.day}: ${s.time}`)
+                            .join(", ")}
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="p-4 text-center text-gray-500">
+                      No clinics found
+                    </div>
+                  )}
                 </div>
-              </div>
-            </ScrollMotionEffect>
-          </div>
+              )}
 
-          {/* Swiper */}
-          <div className="w-full relative">
-            <div className="grid grid-cols-1">
-              <div>
-                <div className="relative h-[250px] lg:h-[420px] rounded-2xl overflow-hidden shadow-lg p-1 bg-white">
-                  <iframe
-                    className="w-full h-full rounded-2xl"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4335.284323002121!2d-82.57165912387924!3d27.98536881317317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e9e6e573d881%3A0xb6ed0dc8071923a2!2sHess%20Spinal%20%26%20Medical%20Centers%2C%20Corporate!5e1!3m2!1sen!2sbd!4v1745742651702!5m2!1sen!2sbd"
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
-                <h3 className="text-white text-2xl text-center mt-4 font-semibold">
-                  <p className="">PLANT CITY CLINIC</p>
-                </h3>
+              {/* Find Button */}
+              <div className="group hover:scale-105 transition duration-300 text-center absolute right-0 top-1/2 transform -translate-y-1/2 z-40">
+                <button
+                  onClick={handleFindNearest}
+                  className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-4 rounded-full hover:bg-green-800 cursor-pointer"
+                >
+                  <span className="relative z-10">Find Nearest Place</span>
+                  <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+                </button>
               </div>
             </div>
+          </div>
+
+          {/* Google Map Component */}
+          <div className="w-full">
+            <GoogleMapShowNearbyClinic
+              clinics={locationsInfo}
+              selectedClinic={selectedClinic}
+              onClinicSelect={setSelectedClinic}
+            />
           </div>
         </div>
       </div>
