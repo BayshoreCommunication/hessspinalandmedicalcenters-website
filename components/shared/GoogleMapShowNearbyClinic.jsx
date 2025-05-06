@@ -3,17 +3,17 @@
 import {
   Circle,
   GoogleMap,
+  Marker,
   OverlayView,
   useLoadScript,
 } from "@react-google-maps/api";
 import clsx from "clsx";
-import Image from "next/image";
-import { useEffect, useRef } from "react";
-import isUrl from "../util/isUrl";
+import { useEffect, useRef, useState } from "react";
 
 export default function GoogleMapShowNearbyClinic({
-  connections,
-  selectedFriend,
+  clinics,
+  selectedClinic,
+  onClinicSelect,
 }) {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY || "",
@@ -21,18 +21,39 @@ export default function GoogleMapShowNearbyClinic({
   });
 
   const mapRef = useRef(null);
-  const mapReady = !!mapRef.current;
+  const [highlightedClinic, setHighlightedClinic] = useState(null);
+  const [userLocation, setUserLocation] = useState(null);
+
+  // Default to Florida center if no clinic is selected
+  const defaultCenter = { lat: 27.994402, lng: -81.760254 };
 
   const mapStyles = [
     {
       featureType: "all",
       elementType: "all",
-      stylers: [{ saturation: -100 }, { gamma: 0.8 }],
+      // stylers: [{ saturation: -100 }, { gamma: 0.8 }],
     },
   ];
 
+  // Get user's current location
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setUserLocation({
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          });
+        },
+        (error) => {
+          console.error("Error getting user location:", error);
+        }
+      );
+    }
+  }, []);
+
   const getDistance = (lat1, lng1, lat2, lng2) => {
-    const R = 6371;
+    const R = 6371; // Earth's radius in km
     const dLat = ((lat2 - lat1) * Math.PI) / 180;
     const dLng = ((lng2 - lng1) * Math.PI) / 180;
     const a =
@@ -44,18 +65,30 @@ export default function GoogleMapShowNearbyClinic({
     return R * c;
   };
 
-  const selectedConnection = selectedFriend
-    ? connections.find((c) => c._id === selectedFriend._id)
-    : undefined;
-
-  useEffect(() => {
-    if (mapReady && selectedConnection && mapRef.current) {
+  // Handle clinic selection
+  const handleClinicClick = (clinic) => {
+    setHighlightedClinic(clinic);
+    if (onClinicSelect) {
+      onClinicSelect(clinic);
+    }
+    if (mapRef.current) {
       mapRef.current.panTo({
-        lat: selectedConnection.lat,
-        lng: selectedConnection.lng,
+        lat: clinic.latitude,
+        lng: clinic.longitude,
       });
     }
-  }, [mapReady, selectedConnection]);
+  };
+
+  // Center map when selectedClinic changes
+  useEffect(() => {
+    if (mapRef.current && selectedClinic) {
+      mapRef.current.panTo({
+        lat: selectedClinic.latitude,
+        lng: selectedClinic.longitude,
+      });
+      setHighlightedClinic(selectedClinic);
+    }
+  }, [selectedClinic]);
 
   if (!isLoaded) return <div>Loading Map...</div>;
 
@@ -69,18 +102,18 @@ export default function GoogleMapShowNearbyClinic({
           borderRadius: "10px",
         }}
         center={
-          selectedConnection
-            ? { lat: selectedConnection.lat, lng: selectedConnection.lng }
-            : { lat: 40.7128, lng: -74.006 }
+          selectedClinic
+            ? { lat: selectedClinic.latitude, lng: selectedClinic.longitude }
+            : { lat: 28.0072616, lng: -82.1227991 }
         }
-        zoom={6}
+        zoom={selectedClinic ? 14 : 10}
         onLoad={(map) => {
           mapRef.current = map;
         }}
         options={{
           styles: mapStyles,
           disableDefaultUI: true,
-          zoomControl: false,
+          zoomControl: true,
           mapTypeControl: false,
           streetViewControl: false,
           fullscreenControl: false,
@@ -89,13 +122,29 @@ export default function GoogleMapShowNearbyClinic({
           backgroundColor: "#f9fafb",
         }}
       >
-        {selectedConnection?.lat && selectedConnection?.lng && (
+        {/* Show user location if available */}
+        {userLocation && (
+          <Marker
+            position={userLocation}
+            icon={{
+              path: window.google.maps.SymbolPath.CIRCLE,
+              scale: 8,
+              fillColor: "#4285F4",
+              fillOpacity: 1,
+              strokeWeight: 2,
+              strokeColor: "white",
+            }}
+          />
+        )}
+
+        {/* Highlight selected clinic */}
+        {highlightedClinic && (
           <Circle
             center={{
-              lat: selectedConnection.lat,
-              lng: selectedConnection.lng,
+              lat: highlightedClinic.latitude,
+              lng: highlightedClinic.longitude,
             }}
-            radius={5000}
+            radius={500}
             options={{
               strokeColor: "#4F46E5",
               strokeOpacity: 0.8,
@@ -106,57 +155,52 @@ export default function GoogleMapShowNearbyClinic({
           />
         )}
 
-        {connections
-          ?.filter((conn) => conn.connectionType?.includes("spotlight"))
-          ?.map((connection) => {
-            const isSelected = selectedFriend?._id === connection._id;
-            const isNearby =
-              selectedFriend &&
-              getDistance(
-                connection.lat,
-                connection.lng,
-                selectedFriend.lat,
-                selectedFriend.lng
-              ) < 5;
+        {/* Render all clinics */}
+        {clinics.map((clinic) => {
+          const isSelected = highlightedClinic?.id === clinic.id;
+          const isNearby =
+            userLocation &&
+            getDistance(
+              clinic.latitude,
+              clinic.longitude,
+              userLocation.lat,
+              userLocation.lng
+            ) < 10; // Within 10km is considered nearby
 
-            return (
-              <OverlayView
-                key={connection._id}
-                position={{ lat: connection.lat, lng: connection.lng }}
-                mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
-              >
-                <div className="relative w-16 h-16">
-                  <div
-                    className={clsx(
-                      "rounded-full p-1 flex items-center justify-center shadow-lg border-4 transition-all duration-300 transform overflow-hidden",
-                      {
-                        "border-[#5E20FE] bg-blue-100 scale-110 z-50 absolute":
-                          isSelected,
-                        "border-purple-500 bg-purple-100":
-                          isNearby && !isSelected,
-                        "border-gray-300 bg-white": !isSelected && !isNearby,
-                      }
-                    )}
-                  >
-                    {connection?.childId?.profilePic && (
-                      <Image
-                        src={
-                          isUrl(connection.childId.profilePic)
-                            ? connection.childId.profilePic
-                            : `/images/user_avator/${connection.childId.profilePic}@3x.png`
-                        }
-                        alt="Profile"
-                        className="w-full h-full rounded-full object-cover"
-                        width={1200}
-                        height={700}
-                      />
-                    )}
+          return (
+            <OverlayView
+              key={clinic.id}
+              position={{ lat: clinic.latitude, lng: clinic.longitude }}
+              mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
+            >
+              <div className="relative w-16 h-16">
+                <div
+                  className={clsx(
+                    "rounded-full p-1 flex items-center justify-center shadow-lg border-4 transition-all duration-300 transform overflow-hidden cursor-pointer",
+                    {
+                      "border-[#5E20FE] bg-blue-100 scale-110 z-50": isSelected,
+                      "border-purple-500 bg-purple-100":
+                        isNearby && !isSelected,
+                      "border-gray-300 bg-white": !isSelected && !isNearby,
+                    }
+                  )}
+                  onClick={() => handleClinicClick(clinic)}
+                >
+                  <div className="w-full h-full rounded-full bg-primary flex items-center justify-center text-white font-bold">
+                    {clinic.title.charAt(0)}
                   </div>
-                  <div className="absolute inset-0 rounded-full animate-ping bg-indigo-500 opacity-30 z-[-1]" />
                 </div>
-              </OverlayView>
-            );
-          })}
+                {isSelected && (
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white p-2 rounded shadow-lg z-50 min-w-[200px]">
+                    <h3 className="font-bold">{clinic.title}</h3>
+                    <p className="text-sm">{clinic.address}</p>
+                    <p className="text-sm">{clinic.phone}</p>
+                  </div>
+                )}
+              </div>
+            </OverlayView>
+          );
+        })}
       </GoogleMap>
     </div>
   );
