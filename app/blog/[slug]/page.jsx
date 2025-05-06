@@ -77,7 +77,7 @@ export async function generateMetadata({ params }) {
       title: blogDetails?.title,
       description: shortDescription,
       images: blogDetails?.featuredImage?.image?.url,
-      url: `https://www.melamedlawpllc.com/blog/${blogDetails?.slug}`,
+      url: `https://hessspinalandmedicalcenters-website.vercel.app/blog/${blogDetails?.slug}`,
       type: "article",
       site_name: "melamedlawpllc.com",
     },
