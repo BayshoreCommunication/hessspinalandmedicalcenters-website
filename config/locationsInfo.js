@@ -38,7 +38,7 @@ export const locationsInfo = [
   },
   // 4
   {
-    id: "lutz/wesley_chapel_clinic",
+    id: "wesley_chapel_clinic",
     title: "LUTZ/WESLEY CHAPEL CLINIC",
     address: "24650 FL-54 Lutz, FL 33559",
     phone: "(813) 909-4433",
