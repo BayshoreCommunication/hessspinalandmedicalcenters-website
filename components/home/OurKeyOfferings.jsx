@@ -72,11 +72,8 @@ const OurKeyOfferings = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 lg:mt-8 items-stretch">
           {services.map((service, index) => (
-            <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
-              <div
-                key={service.id}
-                className="flex  gap-4 bg-white p-6 rounded-xl shadow-sm items-center"
-              >
+            <div key={index} className="h-full">
+              <div className="flex gap-4 bg-white p-6 rounded-xl shadow-sm items-center h-full">
                 <Image
                   width={500}
                   height={500}
@@ -91,7 +88,7 @@ const OurKeyOfferings = () => {
                   </p>
                 </div>
               </div>
-            </ScrollMotionEffect>
+            </div>
           ))}
         </div>
       </div>

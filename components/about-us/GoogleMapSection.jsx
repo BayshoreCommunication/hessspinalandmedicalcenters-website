@@ -4,9 +4,9 @@ import CardMotion from "../motion/CardMotion";
 
 const GoogleMapSection = () => {
   return (
-    <div className="bg-[#ffffff]">
+    <div className="">
       <div>
-        <div className="relative h-[400px] lg:h-[600px] w-full">
+        <div className=" h-[400px] lg:h-[600px] w-full">
           <GoogleMap />
         </div>
       </div>
