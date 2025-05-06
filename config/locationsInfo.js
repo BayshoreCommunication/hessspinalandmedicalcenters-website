@@ -50,57 +50,61 @@ export const locationsInfo = [
   },
   // 5
   {
-    id: "",
-    title: "",
-    address: "",
-    phone: "",
+    id: "new_port_richey_clinic",
+    title: "NEW PORT RICHEY CLINIC",
+    address: "5713 Main St New Port Richey, FL 34652",
+    phone: "(727) 848-9144",
     availableSchedule: [
-      { day: "", time: [""] },
-      { day: "", time: [""] },
-      { day: "", time: [""] },
+      { day: "Tuesday", time: ["8:30 am-1:00 pm", "2:30 pm-7:00 pm"] },
+      { day: "Tuesday", time: ["8:30 am-1:00 pm", "2:30 pm-7:00 pm"] },
+      { day: "Saturday", time: ["8:30 am-1:00 pm"] },
     ],
   },
   // 6
   {
-    id: "",
-    title: "",
-    address: "",
-    phone: "",
+    id: "pinellas_park_clinic",
+    title: "PINELLAS PARK CLINIC",
+    address: "8130 66th Street N, Pinellas Park, FL 33781",
+    phone: "(727) 548-4377",
     availableSchedule: [
-      { day: "", time: [""] },
-      { day: "", time: [""] },
-      { day: "", time: [""] },
+      { day: "Monday", time: ["2:30 pm-7:00 pm"] },
+      { day: "Wednesday", time: ["8:30 am-1:00 pm", "2:30 pm-7:00 pm"] },
+      { day: "Friday", time: ["8:30 am-1:00 pm"] },
     ],
   },
+
   // 7
   {
-    id: "",
-    title: "",
-    address: "",
-    phone: "",
+    id: "plant_city_clinic",
+    title: "PLANT CITY CLINIC",
+    address: "1408 W Reynolds St, Plant City, FL 33566",
+    phone: "(813) 659-4377",
     availableSchedule: [
-      { day: "", time: [""] },
-      { day: "", time: [""] },
-      { day: "", time: [""] },
+      { day: "Monday", time: ["8:30 am-7:00 pm"] },
+      { day: "Tuesday", time: ["8:30 am-7:00 pm"] },
+      { day: "Thursday", time: ["8:30 am-7:00 pm"] },
     ],
   },
+
   // 8
   {
-    id: "",
-    title: "",
-    address: "",
-    phone: "",
+    id: "riverview_clinic",
+    title: "RIVERVIEW CLINIC",
+    address: "9376 Balm Riverview Rd, Riverview, Florida 33569",
+    phone: "(813) 672-4393",
     availableSchedule: [
-      { day: "", time: [""] },
-      { day: "", time: [""] },
-      { day: "", time: [""] },
+      { day: "Monday", time: ["8:30 am-7:00 pm"] },
+      { day: "Tuesday", time: ["8:30 am-7:00 pm"] },
+      { day: "Thursday", time: ["8:30 am-7:00 pm"] },
+      { day: "Saturday", time: ["8:30 am-1:00 pm"] },
     ],
   },
+
   // 9
   {
     id: "ruskin_clinic",
     title: "RUSKIN CLINIC",
-    address: "Ruskin, Florida 33570",
+    address: "205 S. U.S. Hwy 41, Ruskin, Florida 33570",
     phone: "(813) 645-4480",
     availableSchedule: [
       { day: "Monday", time: ["8:30 am-1:00 pm", "2:30 pm-7:00 pm"] },
@@ -108,88 +112,89 @@ export const locationsInfo = [
       { day: "Friday", time: ["8:30 am-1:00 pm", "2:30 pm-7:00 pm"] },
     ],
   },
+
   // 10
   {
-    id: "",
-    title: "",
-    address: "",
-    phone: "",
+    id: "spring_hill_clinic",
+    title: "SPRING HILL CLINIC",
+    address: "8022 Spring Hill Dr, Spring Hill, Florida 34606",
+    phone: "(352) 596-3877",
     availableSchedule: [
-      { day: "", time: [""] },
-      { day: "", time: [""] },
-      { day: "", time: [""] },
+      { day: "Monday", time: ["8:30 am-7:00 pm"] },
+      { day: "Wednesday", time: ["8:30 am-7:00 pm"] },
+      { day: "Friday", time: ["8:30 am-7:00 pm"] },
     ],
   },
+
   // 11
   {
-    id: "",
-    title: "",
-    address: "",
-    phone: "",
+    id: "st_pete_clinic",
+    title: "ST PETE CLINIC",
+    address: "3157 4th St N, St. Petersburg, Florida 33704",
+    phone: "(727) 898-8689",
     availableSchedule: [
-      { day: "", time: [""] },
-      { day: "", time: [""] },
-      { day: "", time: [""] },
+      { day: "Tuesday", time: ["8:30 am-7:00 pm"] },
+      { day: "Thursday", time: ["8:30 am-7:00 pm"] },
     ],
   },
+
   // 12
   {
-    id: "",
-    title: "",
-    address: "",
-    phone: "",
+    id: "tampa_carrollwood_clinic",
+    title: "TAMPA (CARROLLWOOD)",
+    address: "2516 W Waters Ave, Tampa, FL 33614",
+    phone: "(813) 265-4377",
     availableSchedule: [
-      { day: "", time: [""] },
-      { day: "", time: [""] },
-      { day: "", time: [""] },
+      { day: "Monday", time: ["8:30 am-7:00 pm"] },
+      { day: "Wednesday", time: ["8:30 am-7:00 pm"] },
+      { day: "Friday", time: ["8:30 am-7:00 pm"] },
     ],
   },
+
   // 13
   {
-    id: "",
-    title: "",
-    address: "",
-    phone: "",
+    id: "tampa_town_country_clinic",
+    title: "TAMPA (TOWN & COUNTRY)",
+    address: "8313 W Hillsborough Ave, Ste 330, Tampa, FL 33615",
+    phone: "(813) 243-4377",
     availableSchedule: [
-      { day: "", time: [""] },
-      { day: "", time: [""] },
-      { day: "", time: [""] },
+      { day: "Tuesday", time: ["8:30 am-7:00 pm"] },
+      { day: "Thursday", time: ["8:30 am-7:00 pm"] },
     ],
   },
+
   // 14
   {
-    id: "",
-    title: "",
-    address: "",
-    phone: "",
+    id: "tampa_south_tampa_clinic",
+    title: "TAMPA (SOUTH TAMPA)",
+    address: "106 S Armenia Ave, Tampa, FL 33609",
+    phone: "(813) 254-4377",
     availableSchedule: [
-      { day: "", time: [""] },
-      { day: "", time: [""] },
-      { day: "", time: [""] },
+      { day: "Monday", time: ["2:30 pm-7:00 pm"] },
+      { day: "Wednesday", time: ["8:30 am-1:00 pm", "2:30 pm-7:00 pm"] },
+      { day: "Friday", time: ["8:30 am-1:00 pm"] },
     ],
   },
   // 15
   {
-    id: "",
-    title: "",
-    address: "",
-    phone: "",
+    id: "temple_terrace_clinic",
+    title: "TEMPLE TERRACE CLINIC",
+    address: "4809 E Busch Blvd, Temple Terrace, FL 33617",
+    phone: "(813) 899-4377",
     availableSchedule: [
-      { day: "", time: [""] },
-      { day: "", time: [""] },
-      { day: "", time: [""] },
+      { day: "Monday", time: ["8:30 am-7:00 pm"] },
+      { day: "Wednesday", time: ["8:30 am-7:00 pm"] },
     ],
   },
   // 16
   {
-    id: "",
-    title: "",
-    address: "",
-    phone: "",
+    id: "winter_haven_clinic",
+    title: "WINTER HAVEN CLINIC",
+    address: "475 East Central Ave, Winter Haven, FL 33880",
+    phone: "(863) 298-4377",
     availableSchedule: [
-      { day: "", time: [""] },
-      { day: "", time: [""] },
-      { day: "", time: [""] },
+      { day: "Tuesday", time: ["8:30 am-1:00 pm", "2:30 pm-7:00 pm"] },
+      { day: "Thursday", time: ["8:30 am-1:00 pm", "2:30 pm-7:00 pm"] },
     ],
   },
 ];
