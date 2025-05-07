@@ -45,8 +45,8 @@ const ContactUs = () => {
         phone: formData.phone,
         subject: formData.subject || "No Subject",
         message: formData.message,
-        to_name: "Hess Spinal Centers Team",
-        to_email: "info@hessspinalcenters.com",
+        to_name: "Hess Spinal & Medical Centers",
+        to_email: "marketing.hessspinal@gmail.com",
       };
 
       send(
