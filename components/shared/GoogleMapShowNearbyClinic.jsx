@@ -109,7 +109,7 @@ export default function GoogleMapShowNearbyClinic({
         center={
           selectedClinic
             ? { lat: selectedClinic.latitude, lng: selectedClinic.longitude }
-            : userLocation || defaultCenter
+            : { lat: 28.0072616, lng: -82.1227991 }
         }
         zoom={selectedClinic ? 14 : 10}
         onLoad={(map) => {
