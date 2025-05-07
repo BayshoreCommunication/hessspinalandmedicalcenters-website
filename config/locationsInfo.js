@@ -1,6 +1,7 @@
 export const locationsInfo = [
   {
     id: "brandon_clinic",
+    image: "/assets/location/brandon_clinic.jpg",
     title: "BRANDON CLINIC",
     address: "1216 Oakfield Dr Brandon, FL 33511",
     phone: "(813) 868-4377",
@@ -14,6 +15,7 @@ export const locationsInfo = [
   },
   {
     id: "clearwater_clinic",
+    image: "/assets/location/clearwater_clinic.jpg",
     title: "CLEARWATER CLINIC",
     address: "901 N Hercules Ave Clearwater, FL 33765",
     phone: "(727) 442-5569",
@@ -28,6 +30,7 @@ export const locationsInfo = [
   },
   {
     id: "lakeland_clinic",
+    image: "/assets/location/lakeland_clinic.jpg",
     title: "LAKELAND CLINIC",
     address: "1519 Lakeland Hills Blvd Lakeland, FL 33805",
     phone: "(863) 688-3388",
@@ -41,6 +44,7 @@ export const locationsInfo = [
   },
   {
     id: "lutz_wesley_chapel_clinic",
+    image: "/assets/location/wesley_chapel_clinic.jpg",
     title: "LUTZ/WESLEY CHAPEL CLINIC",
     address: "24650 FL-54 Lutz, FL 33559",
     phone: "(813) 909-4433",
@@ -54,6 +58,7 @@ export const locationsInfo = [
   },
   {
     id: "new_port_richey_clinic",
+    image: "/assets/location/new_port_richey_clinic.jpg",
     title: "NEW PORT RICHEY CLINIC",
     address: "5713 Main St New Port Richey, FL 34652",
     phone: "(727) 848-9144",
@@ -67,6 +72,7 @@ export const locationsInfo = [
   },
   {
     id: "pinellas_park_clinic",
+    image: "/assets/location/pinellas_park_clinic.jpg",
     title: "PINELLAS PARK CLINIC",
     address: "8130 66th Street N, Pinellas Park, FL 33781",
     phone: "(727) 548-4377",
@@ -80,6 +86,7 @@ export const locationsInfo = [
   },
   {
     id: "plant_city_clinic",
+    image: "/assets/location/plant_city_clinic.jpg",
     title: "PLANT CITY CLINIC",
     address: "1408 W Reynolds St, Plant City, FL 33566",
     phone: "(813) 659-4377",
@@ -93,6 +100,7 @@ export const locationsInfo = [
   },
   {
     id: "riverview_clinic",
+    image: "/assets/location/riverview_clinic.jpg",
     title: "RIVERVIEW CLINIC",
     address: "9376 Balm Riverview Rd, Riverview, Florida 33569",
     phone: "(813) 672-4393",
@@ -107,6 +115,7 @@ export const locationsInfo = [
   },
   {
     id: "ruskin_clinic",
+    image: "/assets/location/ruskin_clinic.jpg",
     title: "RUSKIN CLINIC",
     address: "205 S. U.S. Hwy 41, Ruskin, Florida 33570",
     phone: "(813) 645-4480",
@@ -120,6 +129,7 @@ export const locationsInfo = [
   },
   {
     id: "spring_hill_clinic",
+    image: "/assets/location/spring_hill_clinic.jpg",
     title: "SPRING HILL CLINIC",
     address: "8022 Spring Hill Dr, Spring Hill, Florida 34606",
     phone: "(352) 596-3877",
@@ -133,6 +143,7 @@ export const locationsInfo = [
   },
   {
     id: "st_pete_clinic",
+    image: "/assets/location/st_pete_clinic.jpg",
     title: "ST PETE CLINIC",
     address: "3157 4th St N, St. Petersburg, Florida 33704",
     phone: "(727) 898-8689",
@@ -145,6 +156,7 @@ export const locationsInfo = [
   },
   {
     id: "tampa_carrollwood_clinic",
+    image: "/assets/location/tampa_carrollwood_clinic.jpg",
     title: "TAMPA (CARROLLWOOD)",
     address: "2516 W Waters Ave, Tampa, FL 33614",
     phone: "(813) 265-4377",
@@ -158,6 +170,7 @@ export const locationsInfo = [
   },
   {
     id: "tampa_town_country_clinic",
+    image: "/assets/location/tampa_town_country_clinic.jpg",
     title: "TAMPA (TOWN & COUNTRY)",
     address: "8313 W Hillsborough Ave, Ste 330, Tampa, FL 33615",
     phone: "(813) 243-4377",
@@ -170,6 +183,7 @@ export const locationsInfo = [
   },
   {
     id: "tampa_south_tampa_clinic",
+    image: "/assets/location/tampa_south_tampa_clinic.jpg",
     title: "TAMPA (SOUTH TAMPA)",
     address: "106 S Armenia Ave, Tampa, FL 33609",
     phone: "(813) 254-4377",
@@ -183,6 +197,7 @@ export const locationsInfo = [
   },
   {
     id: "temple_terrace_clinic",
+    image: "/assets/location/temple_terrace_clinic.jpg",
     title: "TEMPLE TERRACE CLINIC",
     address: "4809 E Busch Blvd, Temple Terrace, FL 33617",
     phone: "(813) 899-4377",
