@@ -203,17 +203,23 @@ export default function GoogleMapShowNearbyClinic({
                 {isSelected && (
                   <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white p-3 rounded shadow-lg z-50 min-w-[220px]">
                     <div className="flex items-start gap-1">
-                      <IoLocationOutline className="text-red-400 size-5 mt-[2px]" />
+                      <div className="w-5 h-5">
+                        <IoLocationOutline className="text-red-400 size-5 mt-[2px]" />
+                      </div>
                       <p className="text-sm font-semibold">{clinic.address}</p>
                     </div>
                     <div className="flex items-start gap-2 mt-2">
-                      <LuPhone className="text-red-400 size-4 mt-[1px]" />
+                      <div className="w-5 h-5">
+                        <LuPhone className="text-red-400 size-4 mt-[1px]" />
+                      </div>
                       <p className="text-sm font-semibold">{clinic.phone}</p>
                     </div>
                     <ul className="mt-2 space-y-1">
                       {clinic.availableSchedule.map((schedule, index) => (
                         <li key={index} className="flex items-start gap-1">
-                          <LuClock className="text-red-400 size-4 mt-[1px]" />
+                          <div className="w-5 h-5">
+                            <LuClock className="text-red-400 size-4 mt-[1px]" />
+                          </div>
                           <p className="text-xs font-semibold">
                             {schedule.day} - {schedule.time.join(", ")}
                           </p>
