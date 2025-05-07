@@ -318,7 +318,7 @@ const FindOurLocation = () => {
             <div className="relative mb-6 w-full max-w-xl mx-auto">
               <input
                 type="text"
-                placeholder="Enter your address or clinic name"
+                placeholder="Enter your address"
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
                 onKeyDown={handleKeyDown}
