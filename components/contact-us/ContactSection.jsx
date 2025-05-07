@@ -43,8 +43,8 @@ const ContactSection = () => {
         phone: formData.phone,
         subject: formData.subject || "No Subject",
         message: formData.message,
-        to_name: "Hess Spinal Centers Team", // Static recipient name
-        to_email: "info@hessspinalcenters.com",
+        to_name: "Hess Spinal & Medical Centers", // Static recipient name
+        to_email: "marketing.hessspinal@gmail.com",
       };
 
       send(
