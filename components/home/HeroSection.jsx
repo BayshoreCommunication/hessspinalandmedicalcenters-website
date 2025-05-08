@@ -236,7 +236,7 @@ const HeroSection = () => {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-3 rounded-full hover:bg-green-800 cursor-pointer"
+                    className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-3 rounded-full hover:bg-green-800 cursor-pointer w-full"
                   >
                     <span className="relative z-10">
                       {loading ? "Sending..." : "Submit"}
