@@ -178,9 +178,9 @@ export default function GoogleMapShowNearbyClinic({
               <div className="relative w-[200px]">
                 <div
                   className={clsx(
-                    "rounded p-1 flex items-center justify-center shadow-lg border-4 transition-transform duration-300 transform cursor-pointer overflow-hidden",
+                    "rounded p-1 flex items-center justify-center shadow-lg border-2 transition-transform duration-300 transform cursor-pointer overflow-hidden",
                     {
-                      "border-[#5E20FE] bg-blue-100 scale-110 z-50": isSelected,
+                      "border-primary bg-blue-100 scale-110 z-50": isSelected,
                       "border-purple-500 bg-purple-100":
                         isNearby && !isSelected,
                       "border-gray-300 bg-white": !isSelected && !isNearby,

@@ -270,6 +270,30 @@ const FindOurLocation = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (!searchText.trim() && !selectedDay) {
+      setFilteredClinics(normalizedClinics);
+      return;
+    }
+
+    setLoading(true);
+    setSelectedClinic(null);
+
+    const search = searchText.trim().toLowerCase();
+    const day = selectedDay.toLowerCase();
+
+    const matchedClinics = normalizedClinics.filter((clinic) => {
+      const matchesDay = !day || clinic.availableDays.includes(day);
+      const matchesSearch = !search || clinic.searchIndex.includes(search);
+      return matchesDay && matchesSearch;
+    });
+
+    setTimeout(() => {
+      setFilteredClinics(matchedClinics);
+      setLoading(false);
+    }, 300);
+  }, [selectedDay]);
+
   return (
     <section
       className="relative py-16"
@@ -375,7 +399,9 @@ const FindOurLocation = () => {
           {/* Google Map Component */}
           <div className="w-full">
             <GoogleMapShowNearbyClinic
-              clinics={locationsInfo}
+              clinics={
+                filteredClinics.length !== 0 ? filteredClinics : locationsInfo
+              }
               selectedClinic={selectedClinic}
               onClinicSelect={setSelectedClinic}
             />
