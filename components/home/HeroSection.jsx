@@ -72,7 +72,7 @@ const HeroSection = () => {
       });
   };
 
-  const text = "Dedicated to your Recovery.".split(" ");
+  const text = `Dedicated to your   Recovery.`.split("  ");
   const variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -108,7 +108,7 @@ const HeroSection = () => {
             <motion.h1 className="text-[35px] md:text-[48px] lg:text-6xl font-bold text-white text-center md:text-left leading-snug md:leading-none">
               {text.map((word, index) => {
                 // Check if the word is "Accident."
-                const isAccident = word.includes("Recovery");
+                const isAccident = word.includes("Recovery.");
 
                 return (
                   <motion.span
@@ -130,7 +130,7 @@ const HeroSection = () => {
                           ease: "easeInOut",
                           delay: 0.5,
                         }}
-                        className="inline-block"
+                        className="inline-block ms-3"
                       >
                         {word}
                       </motion.span>
