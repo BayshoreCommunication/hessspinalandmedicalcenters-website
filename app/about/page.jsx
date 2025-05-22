@@ -1,5 +1,4 @@
 import AboutDetails from "@/components/about-us/AboutDetails";
-// import OurDoctors from "@/components/about-us/OurDoctors";
 import SpinalMedical from "@/components/home/SpinalMedical";
 import SummarySection from "@/components/home/SummarySection";
 import CallToAction from "@/components/shared/CallToAction";
