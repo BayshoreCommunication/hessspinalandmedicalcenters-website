@@ -7,7 +7,7 @@ import LatestBlogs from "@/components/home/LatestBlogs";
 import OurKeyOfferings from "@/components/home/OurKeyOfferings";
 import OurTechnologies from "@/components/home/OurTechnologies";
 import SpinalMedical from "@/components/home/SpinalMedical";
-import SpinalMedicalCenter from "@/components/home/SpinalMedicalCenter";
+// import SpinalMedicalCenter from "@/components/home/SpinalMedicalCenter";
 import SummarySection from "@/components/home/SummarySection";
 import WhatPeopleSay from "@/components/home/WhatPeopleSay";
 import GoogleMap from "@/components/shared/GoogleMap";
@@ -32,7 +32,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <SummarySection />
-      <SpinalMedicalCenter />
+      {/* <SpinalMedicalCenter /> */}
       <OurKeyOfferings />
       <CanHelpYou />
       <SpinalMedical />

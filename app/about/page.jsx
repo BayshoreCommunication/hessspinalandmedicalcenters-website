@@ -1,7 +1,5 @@
 import AboutDetails from "@/components/about-us/AboutDetails";
-import GoogleMapSection from "@/components/about-us/GoogleMapSection";
-import OurDoctors from "@/components/about-us/OurDoctors";
-import LatedAndGretest from "@/components/home/LatedAndGretest";
+// import OurDoctors from "@/components/about-us/OurDoctors";
 import SpinalMedical from "@/components/home/SpinalMedical";
 import SummarySection from "@/components/home/SummarySection";
 import CallToAction from "@/components/shared/CallToAction";
@@ -33,7 +31,7 @@ const page = () => {
         <AboutDetails />
       </div>
       <SummarySection />
-      <OurDoctors />
+      {/* <OurDoctors /> */}
       <SpinalMedical />
       <CallToAction />
     </>
