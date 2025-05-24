@@ -1,4 +1,5 @@
 export const locationsInfo = [
+  //1
   {
     id: "brandon_clinic",
     image: "/assets/location/brandon_clinic.jpg",
@@ -11,13 +12,17 @@ export const locationsInfo = [
     availableSchedule: [
       { day: "Saturday", time: ["Closed"] },
       { day: "Sunday", time: ["Closed"] },
-      { day: "Monday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
+      {
+        day: "Monday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
       { day: "Tuesday", time: ["8:30 AM–1 PM"] },
       { day: "Wednesday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
       { day: "Thursday", time: ["2:30–7 PM"] },
       { day: "Friday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
     ],
   },
+  //2
   {
     id: "clearwater_clinic",
     image: "/assets/location/clearwater_clinic.jpg",
@@ -30,13 +35,29 @@ export const locationsInfo = [
     availableSchedule: [
       { day: "Saturday", time: ["Closed"] },
       { day: "Sunday", time: ["Closed"] },
-      { day: "Monday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Tuesday", time: ["Closed"] },
-      { day: "Wednesday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Thursday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Friday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
+      {
+        day: "Monday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Tuesday",
+        time: ["Closed"],
+      },
+      {
+        day: "Wednesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Thursday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Friday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
     ],
   },
+  //3
   {
     id: "lakeland_clinic",
     image: "/assets/location/lakeland_clinic.jpg",
@@ -49,13 +70,23 @@ export const locationsInfo = [
     availableSchedule: [
       { day: "Saturday", time: ["Closed"] },
       { day: "Sunday", time: ["Closed"] },
-      { day: "Monday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
+      {
+        day: "Monday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
       { day: "Tuesday", time: ["Closed"] },
-      { day: "Wednesday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
+      {
+        day: "Wednesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
       { day: "Thursday", time: ["Closed"] },
-      { day: "Friday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
+      {
+        day: "Friday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
     ],
   },
+  //4
   {
     id: "lutz_wesley_chapel_clinic",
     image: "/assets/location/wesley_chapel_clinic.jpg",
@@ -68,13 +99,23 @@ export const locationsInfo = [
     availableSchedule: [
       { day: "Saturday", time: ["8:30 AM–1 PM"] },
       { day: "Sunday", time: ["Closed"] },
-      { day: "Monday", time: ["Closed"] },
-      { day: "Tuesday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
+      {
+        day: "Monday",
+        time: ["Closed"],
+      },
+      {
+        day: "Tuesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
       { day: "Wednesday", time: ["Closed"] },
-      { day: "Thursday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
+      {
+        day: "Thursday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
       { day: "Friday", time: ["Closed"] },
     ],
   },
+  //5
   {
     id: "new_port_richey_clinic",
     image: "/assets/location/new_port_richey_clinic.jpg",
@@ -87,19 +128,29 @@ export const locationsInfo = [
     availableSchedule: [
       { day: "Saturday", time: ["8:30 AM–1 PM"] },
       { day: "Sunday", time: ["Closed"] },
-      { day: "Monday", time: ["Closed"] },
-      { day: "Tuesday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
+      {
+        day: "Monday",
+        time: ["Closed"],
+      },
+      {
+        day: "Tuesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
       { day: "Wednesday", time: ["Closed"] },
-      { day: "Thursday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
+      {
+        day: "Thursday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
       { day: "Friday", time: ["Closed"] },
     ],
   },
+  //6
   {
     id: "pinellas_park_clinic",
     image: "/assets/location/pinellas_park_clinic.jpg",
     title: "Pinellas Park",
     address: "8130 66th St. N., Suites 1 & 2 Pinellas Park, FL 33781",
-    phone: "727-548-4377",
+    phone: "(727) 548-4377",
     fax: "727-544-0419",
     latitude: 27.844138,
     longitude: -82.728263,
@@ -113,6 +164,7 @@ export const locationsInfo = [
       { day: "Friday", time: ["8:30 AM–1:00 PM"] },
     ],
   },
+  //7
   {
     id: "plant_city",
     image: "/assets/location/plant_city_clinic.jpg",
@@ -125,13 +177,29 @@ export const locationsInfo = [
     availableSchedule: [
       { day: "Saturday", time: ["Closed"] },
       { day: "Sunday", time: ["Closed"] },
-      { day: "Monday", time: ["Closed"] },
-      { day: "Tuesday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Wednesday", time: ["Closed"] },
-      { day: "Thursday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Friday", time: ["Closed"] },
+      {
+        day: "Monday",
+        time: ["Closed"],
+      },
+      {
+        day: "Tuesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Wednesday",
+        time: ["Closed"],
+      },
+      {
+        day: "Thursday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Friday",
+        time: ["Closed"],
+      },
     ],
   },
+  //8
   {
     id: "riverview",
     image: "/assets/location/plant_city_clinic.jpg",
@@ -144,32 +212,64 @@ export const locationsInfo = [
     availableSchedule: [
       { day: "Saturday", time: ["8:30 AM–1 PM"] },
       { day: "Sunday", time: ["Closed"] },
-      { day: "Monday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Tuesday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Wednesday", time: ["Closed"] },
-      { day: "Thursday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Friday", time: ["Closed"] },
+      {
+        day: "Monday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Tuesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Wednesday",
+        time: ["Closed"],
+      },
+      {
+        day: "Thursday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Friday",
+        time: ["Closed"],
+      },
     ],
   },
+  //9
   {
     id: "ruskin",
     image: "/assets/location/riverview_clinic.jpg",
     title: "Ruskin",
     address: "205 U.S. Hwy. 41, Ste B Ruskin, FL 33570",
     phone: "813-645-4480",
-    fax: "813-645-4479",
+    phone: "813-645-4479",
     latitude: 27.86335,
     longitude: -82.32315,
     availableSchedule: [
       { day: "Saturday", time: ["Closed"] },
       { day: "Sunday", time: ["Closed"] },
-      { day: "Monday", time: ["2:30–7 PM", "8:30 PM–12 AM"] },
-      { day: "Tuesday", time: ["12 AM–1 PM"] },
-      { day: "Wednesday", time: ["Closed"] },
-      { day: "Thursday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Friday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
+      {
+        day: "Monday",
+        time: ["2:30–7 PM", "8:30 PM–12 AM"],
+      },
+      {
+        day: "Tuesday",
+        time: ["12 AM–1 PM"],
+      },
+      {
+        day: "Wednesday",
+        time: ["Closed"],
+      },
+      {
+        day: "Thursday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Friday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
     ],
   },
+  //10
   {
     id: "spring-hill",
     image: "/assets/location/ruskin_clinic.jpg",
@@ -182,11 +282,271 @@ export const locationsInfo = [
     availableSchedule: [
       { day: "Saturday", time: ["Closed"] },
       { day: "Sunday", time: ["Closed"] },
-      { day: "Monday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Tuesday", time: ["Closed"] },
-      { day: "Wednesday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Thursday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Friday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
+      {
+        day: "Monday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Tuesday",
+        time: ["Closed"],
+      },
+      {
+        day: "Wednesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Thursday",
+        time: ["Closed"],
+      },
+      {
+        day: "Friday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+    ],
+  },
+  //11
+  {
+    id: "st-petersburg",
+    image: "/assets/location/spring_hill_clinic.jpg",
+    title: "St. Petersburg",
+    address: "3157 4th Street N. St. Petersburg, FL 33704",
+    phone: "727-898-8689",
+    phone: "727-209-0164",
+    latitude: 28.47688,
+    longitude: -82.52546,
+    availableSchedule: [
+      { day: "Saturday", time: ["Closed"] },
+      { day: "Sunday", time: ["Closed"] },
+      {
+        day: "Monday",
+        time: ["Closed"],
+      },
+      {
+        day: "Tuesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Wednesday",
+        time: ["Closed"],
+      },
+      {
+        day: "Thursday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Friday",
+        time: ["Closed"],
+      },
+    ],
+  },
+  //12
+  {
+    id: "tampa-south)",
+    image: "/assets/location/st_pete_clinic.jpg",
+    title: "Tampa (South)",
+    address: "106 S. Armenia Ave. Tampa, FL 33609",
+    phone: "813-254-4377",
+    phone: "813-258-4381",
+    latitude: 27.770048,
+    longitude: -82.635908,
+    availableSchedule: [
+      { day: "Saturday", time: ["Closed"] },
+      { day: "Sunday", time: ["Closed"] },
+      {
+        day: "Monday",
+        time: ["2:30–7 PM"],
+      },
+      {
+        day: "Tuesday",
+        time: ["Closed"],
+      },
+      {
+        day: "Wednesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Thursday",
+        time: ["Closed"],
+      },
+      {
+        day: "Friday",
+        time: ["8:30 AM–1 PM"],
+      },
+    ],
+  },
+  //13
+  {
+    id: "tampa-town-country)",
+    image: "/assets/location/tampa_carrollwood_clinic.jpg",
+    title: "Tampa (Town & Country)",
+    address: "8313 W. Hillsborough Ave., Ste 330 Tampa, FL 33615",
+    phone: "813-243-4377",
+    fax: "813-243-1035",
+    latitude: 28.018,
+    longitude: -82.492,
+    availableSchedule: [
+      { day: "Saturday", time: ["Closed"] },
+      { day: "Sunday", time: ["Closed"] },
+      {
+        day: "Monday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Tuesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Wednesday",
+        time: ["Closed"],
+      },
+      {
+        day: "Thursday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Friday",
+        time: ["Closed"],
+      },
+    ],
+  },
+  //14
+  {
+    id: "tampa-waters",
+    image: "/assets/location/tampa_town_country_clinic.jpg",
+    title: "Tampa (Waters)",
+    address: "2516 W. Waters Ave. Tampa, FL 33614",
+    phone: "813-265-4377",
+    fax: "813-933-3304",
+    latitude: 27.999,
+    longitude: -82.58,
+    availableSchedule: [
+      { day: "Saturday", time: ["Closed"] },
+      { day: "Sunday", time: ["Closed"] },
+      {
+        day: "Monday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Tuesday",
+        time: ["Closed"],
+      },
+      {
+        day: "Wednesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Thursday",
+        time: ["Closed"],
+      },
+      {
+        day: "Friday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+    ],
+  },
+  //15
+  {
+    id: "temple-terrace",
+    image: "/assets/location/tampa_south_tampa_clinic.jpg",
+    title: "Temple Terrace",
+    address: "4809 E. Busch Blvd., Ste 107 Temple Terrace, FL 33617",
+    phone: "813-988-1030",
+    phone: "813-988-5377",
+    latitude: 27.943,
+    longitude: -82.483,
+    availableSchedule: [
+      { day: "Saturday", time: ["Closed"] },
+      { day: "Sunday", time: ["Closed"] },
+      {
+        day: "Monday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Tuesday",
+        time: ["Closed"],
+      },
+      {
+        day: "Wednesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Thursday",
+        time: ["Closed"],
+      },
+      {
+        day: "Friday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+    ],
+  },
+  //16
+  {
+    id: "winter-haven",
+    image: "/assets/location/temple_terrace_clinic.jpg",
+    title: "Winter Haven",
+    address: "475 E. Central Ave. Winter Haven, FL 33880",
+    phone: "863-298-4377",
+    fax: "863-294-4375",
+    latitude: 28.022243,
+    longitude: -81.732856,
+    availableSchedule: [
+      { day: "Saturday", time: ["Closed"] },
+      { day: "Sunday", time: ["Closed"] },
+      {
+        day: "Monday",
+        time: ["Closed"],
+      },
+      {
+        day: "Tuesday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Wednesday",
+        time: ["Closed"],
+      },
+      {
+        day: "Thursday",
+        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      },
+      {
+        day: "Friday",
+        time: ["Closed"],
+      },
+    ],
+  },
+  //17
+  {
+    id: "tampa-corporate",
+    image: "/assets/location/temple_terrace_clinic.jpg",
+    title: "Tampa Corporate",
+    address: "4505 Town N Country Blvd, Tampa, FL 33615",
+    phone: "800-618-4377",
+    fax: "813 514-2725",
+    latitude: 28.022243,
+    longitude: -81.732856,
+    availableSchedule: [
+      { day: "Saturday", time: ["Closed"] },
+      { day: "Sunday", time: ["Closed"] },
+      {
+        day: "Monday",
+        time: ["8:30 AM–7 PM"],
+      },
+      {
+        day: "Tuesday",
+        time: ["8:30 AM–7 PM"],
+      },
+      {
+        day: "Wednesday",
+        time: ["8:30 AM–7 PM"],
+      },
+      {
+        day: "Thursday",
+        time: ["8:30 AM–7 PM"],
+      },
+      {
+        day: "Friday",
+        time: ["8:30 AM–7 PM"],
+      },
     ],
   },
 ];
