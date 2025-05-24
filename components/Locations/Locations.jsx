@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { locationsData } from "@/config/data";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 import { GrLocation } from "react-icons/gr";
 import Link from "next/link";
 import { IoCallOutline } from "react-icons/io5";
 import { MdAccessTime } from "react-icons/md";
+import { locationsInfo } from "@/config/locationsInfo";
 
 const Locations = () => {
   return (
@@ -41,9 +41,9 @@ const Locations = () => {
 
           <ScrollMotionEffect effect="fade-up" duration="2000">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {locationsData.map((clinic) => (
+              {locationsInfo.map((clinic) => (
                 <div
-                  key={clinic.slug}
+                  key={clinic.id}
                   className="group bg-white p-4 lg:p-5 rounded-3xl shadow-medium overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow"
                 >
                   {/* Clinic Image */}
@@ -64,7 +64,7 @@ const Locations = () => {
                   {/* Clinic Info */}
                   <div className="">
                     <h2 className="text-xl lg:text-2xl xl:text-3xl font-bold mb-2 text-gray-800">
-                      {clinic.locationName}
+                      {clinic.title}
                     </h2>
 
                     <div className="mb-4">
@@ -89,7 +89,7 @@ const Locations = () => {
                         Opening Hours
                       </h3>
                       <ul className="space-y-3">
-                        {clinic.openingHours.map((hours, index) => (
+                        {clinic.availableSchedule.map((hours, index) => (
                           <li
                             key={index}
                             className="flex justify-between text-primary font-semibold"
