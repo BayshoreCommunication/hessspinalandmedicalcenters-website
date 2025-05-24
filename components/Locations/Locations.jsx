@@ -92,7 +92,7 @@ const Locations = () => {
                         {clinic.availableSchedule.map((hours, index) => (
                           <li
                             key={index}
-                            className="flex justify-between text-primary font-semibold"
+                            className="flex justify-between text-primary font-normal"
                           >
                             <span className=" mb-1 flex items-center gap-2 ">
                               <MdAccessTime className="shrink-0" />
