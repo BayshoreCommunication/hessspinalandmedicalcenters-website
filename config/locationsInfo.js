@@ -202,7 +202,7 @@ export const locationsInfo = [
   //8
   {
     id: "riverview",
-    image: "/assets/location/plant_city_clinic.jpg",
+    image: "/assets/location/riverview_clinic.jpg",
     title: "Riverview",
     address: "9376 Balm Riverview Rd. Riverview, FL 33569",
     phone: "813-671-9474",
@@ -237,7 +237,7 @@ export const locationsInfo = [
   //9
   {
     id: "ruskin",
-    image: "/assets/location/riverview_clinic.jpg",
+    image: "/assets/location/ruskin_clinic.jpg",
     title: "Ruskin",
     address: "205 U.S. Hwy. 41, Ste B Ruskin, FL 33570",
     phone: "813-645-4480",
@@ -272,7 +272,7 @@ export const locationsInfo = [
   //10
   {
     id: "spring-hill",
-    image: "/assets/location/ruskin_clinic.jpg",
+    image: "/assets/location/spring_hill_clinic.jpg",
     title: "Spring Hill",
     address: "8022 Spring Hill Dr. Spring Hill, FL 34606",
     phone: "352-340-5964",
@@ -307,7 +307,7 @@ export const locationsInfo = [
   //11
   {
     id: "st-petersburg",
-    image: "/assets/location/spring_hill_clinic.jpg",
+    image: "/assets/location/st_pete_clinic.jpg",
     title: "St. Petersburg",
     address: "3157 4th Street N. St. Petersburg, FL 33704",
     phone: "727-898-8689",
@@ -342,7 +342,7 @@ export const locationsInfo = [
   //12
   {
     id: "tampa-south)",
-    image: "/assets/location/st_pete_clinic.jpg",
+    image: "/assets/location/tampa_south_tampa_clinic.jpg",
     title: "Tampa (South)",
     address: "106 S. Armenia Ave. Tampa, FL 33609",
     phone: "813-254-4377",
@@ -447,7 +447,7 @@ export const locationsInfo = [
   //15
   {
     id: "temple-terrace",
-    image: "/assets/location/tampa_south_tampa_clinic.jpg",
+    image: "/assets/location/temple_terrace_clinic.jpg",
     title: "Temple Terrace",
     address: "4809 E. Busch Blvd., Ste 107 Temple Terrace, FL 33617",
     phone: "813-988-1030",
@@ -482,7 +482,7 @@ export const locationsInfo = [
   //16
   {
     id: "winter-haven",
-    image: "/assets/location/temple_terrace_clinic.jpg",
+    image: "/assets/location/winter_haven_clinic.jpg",
     title: "Winter Haven",
     address: "475 E. Central Ave. Winter Haven, FL 33880",
     phone: "863-298-4377",
@@ -517,7 +517,7 @@ export const locationsInfo = [
   //17
   {
     id: "tampa-corporate",
-    image: "/assets/location/temple_terrace_clinic.jpg",
+    image: "/assets/location/tampa_corporate.jpg",
     title: "Tampa Corporate",
     address: "4505 Town N Country Blvd, Tampa, FL 33615",
     phone: "800-618-4377",

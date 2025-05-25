@@ -8,6 +8,8 @@ import { MdAccessTime } from "react-icons/md";
 import { locationsInfo } from "@/config/locationsInfo";
 
 const Locations = () => {
+  const today = new Date().toLocaleDateString("en-US", { weekday: "long" });
+
   return (
     <div>
       <section className="py-12">
@@ -40,7 +42,7 @@ const Locations = () => {
           </ScrollMotionEffect>
 
           <ScrollMotionEffect effect="fade-up" duration="2000">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1  lg:grid-cols-3 gap-8">
               {locationsInfo.map((clinic) => (
                 <div
                   key={clinic.id}
@@ -89,20 +91,29 @@ const Locations = () => {
                         Opening Hours
                       </h3>
                       <ul className="space-y-3">
-                        {clinic.availableSchedule.map((hours, index) => (
-                          <li
-                            key={index}
-                            className="flex justify-between text-primary font-normal"
-                          >
-                            <span className=" mb-1 flex items-center gap-2 ">
-                              <MdAccessTime className="shrink-0" />
-                              {hours.day}
-                            </span>
-                            <span className=" mb-1 flex items-center gap-2 ">
-                              {hours.time}
-                            </span>
-                          </li>
-                        ))}
+                        {clinic.availableSchedule.map((hours, index) => {
+                          const isToday = hours.day === today;
+                          return (
+                            <li
+                              key={index}
+                              className={`flex justify-between gap-8 font-normal ${
+                                isToday
+                                  ? "text-primary font-semibold"
+                                  : "text-gray-600"
+                              }`}
+                            >
+                              <span className="mb-1 flex items-center gap-2">
+                                <MdAccessTime className="shrink-0" />
+                                {hours.day}
+                              </span>
+                              <span className="mb-1 flex items-center gap-2">
+                                {Array.isArray(hours.time)
+                                  ? hours.time.join(", ")
+                                  : hours.time}
+                              </span>
+                            </li>
+                          );
+                        })}
                       </ul>
                     </div>
                   </div>
