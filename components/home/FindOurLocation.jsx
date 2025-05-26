@@ -36,6 +36,8 @@ const FindOurLocation = () => {
     setSelectedDays((prev) =>
       prev.includes(day) ? prev.filter((d) => d !== day) : [...prev, day]
     );
+    setSelectedClinic(null);
+    setSearchText("");
   };
 
   const handleClinicSelect = (clinic) => {

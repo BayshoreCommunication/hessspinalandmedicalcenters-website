@@ -42,6 +42,8 @@ const Locations = () => {
     setSelectedDays((prev) =>
       prev.includes(day) ? prev.filter((d) => d !== day) : [...prev, day]
     );
+    setSelectedClinic(null);
+    setSearchText("");
   };
 
   const handleClinicSelect = (clinic) => {
@@ -216,82 +218,90 @@ const Locations = () => {
           <div className="z-10">
             <ScrollMotionEffect effect="fade-up" duration="2000">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                {filteredClinics.map((clinic) => (
-                  <div
-                    key={clinic.id}
-                    className="group bg-white p-4 lg:p-5 rounded-3xl shadow-medium  border border-gray-200 hover:shadow-lg transition-shadow"
-                  >
-                    {/* Clinic Image */}
-                    <div className="relative h-64 w-full rounded-xl overflow-hidden mb-4">
-                      <Image
-                        src={
-                          clinic.image
-                            ? clinic.image
-                            : "/assets/location/placeholder.png"
-                        }
-                        alt={clinic.locationName}
-                        layout="fill"
-                        objectFit="cover"
-                        className="w-full h-full group-hover:scale-105 transition-transform duration-300 ease-in-out"
-                      />
-                    </div>
-
-                    {/* Clinic Info */}
-                    <div className="">
-                      <h2 className="text-xl lg:text-2xl xl:text-3xl font-bold mb-2 text-gray-800">
-                        {clinic.title}
-                      </h2>
-
-                      <div className="mb-4">
-                        <Link
-                          href="#"
-                          className="text-gray-600 mb-1 flex items-center gap-2 hover:text-primary duration-300 font-medium"
-                        >
-                          <GrLocation className="shrink-0" />
-                          {clinic.address}
-                        </Link>
-                        <Link
-                          href="tel:"
-                          className="text-gray-600 mb-1 flex items-center gap-2 hover:text-primary duration-300 font-medium"
-                        >
-                          <IoCallOutline className="shrink-0" />
-                          {clinic.phone}
-                        </Link>
-                      </div>
-
-                      <div className="border-t border-gray-200 pt-4">
-                        <h3 className="text-xl font-semibold text-gray-700 mb-3 underline">
-                          Opening Hours
-                        </h3>
-                        <ul className="space-y-3">
-                          {clinic.availableSchedule.map((hours, index) => {
-                            const isToday = hours.day === today;
-                            return (
-                              <li
-                                key={index}
-                                className={`flex justify-between gap-8 font-normal ${
-                                  isToday
-                                    ? "text-primary font-semibold"
-                                    : "text-gray-600"
-                                }`}
-                              >
-                                <span className="mb-1 flex items-center gap-2">
-                                  <MdAccessTime className="shrink-0" />
-                                  {hours.day}
-                                </span>
-                                <span className="mb-1 flex items-center gap-2">
-                                  {Array.isArray(hours.time)
-                                    ? hours.time.join(", ")
-                                    : hours.time}
-                                </span>
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
-                    </div>
+                {filteredClinics.length === 0 ? (
+                  <div className="mt-10 text-center col-span-3">
+                    No clinics open on selected days
                   </div>
-                ))}
+                ) : (
+                  <div className="">
+                    {filteredClinics.map((clinic) => (
+                      <div
+                        key={clinic.id}
+                        className="group bg-white p-4 lg:p-5 rounded-3xl shadow-medium  border border-gray-200 hover:shadow-lg transition-shadow"
+                      >
+                        {/* Clinic Image */}
+                        <div className="relative h-64 w-full rounded-xl overflow-hidden mb-4">
+                          <Image
+                            src={
+                              clinic.image
+                                ? clinic.image
+                                : "/assets/location/placeholder.png"
+                            }
+                            alt={clinic.locationName}
+                            layout="fill"
+                            objectFit="cover"
+                            className="w-full h-full group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                          />
+                        </div>
+
+                        {/* Clinic Info */}
+                        <div className="">
+                          <h2 className="text-xl lg:text-2xl xl:text-3xl font-bold mb-2 text-gray-800">
+                            {clinic.title}
+                          </h2>
+
+                          <div className="mb-4">
+                            <Link
+                              href="#"
+                              className="text-gray-600 mb-1 flex items-center gap-2 hover:text-primary duration-300 font-medium"
+                            >
+                              <GrLocation className="shrink-0" />
+                              {clinic.address}
+                            </Link>
+                            <Link
+                              href="tel:"
+                              className="text-gray-600 mb-1 flex items-center gap-2 hover:text-primary duration-300 font-medium"
+                            >
+                              <IoCallOutline className="shrink-0" />
+                              {clinic.phone}
+                            </Link>
+                          </div>
+
+                          <div className="border-t border-gray-200 pt-4">
+                            <h3 className="text-xl font-semibold text-gray-700 mb-3 underline">
+                              Opening Hours
+                            </h3>
+                            <ul className="space-y-3">
+                              {clinic.availableSchedule.map((hours, index) => {
+                                const isToday = hours.day === today;
+                                return (
+                                  <li
+                                    key={index}
+                                    className={`flex justify-between gap-8 font-normal ${
+                                      isToday
+                                        ? "text-primary font-semibold"
+                                        : "text-gray-600"
+                                    }`}
+                                  >
+                                    <span className="mb-1 flex items-center gap-2">
+                                      <MdAccessTime className="shrink-0" />
+                                      {hours.day}
+                                    </span>
+                                    <span className="mb-1 flex items-center gap-2">
+                                      {Array.isArray(hours.time)
+                                        ? hours.time.join(", ")
+                                        : hours.time}
+                                    </span>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </ScrollMotionEffect>
           </div>
