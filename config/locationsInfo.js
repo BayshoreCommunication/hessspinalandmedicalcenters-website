@@ -10,8 +10,8 @@ export const locationsInfo = [
     latitude: 27.939566,
     longitude: -82.286491,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
@@ -33,16 +33,16 @@ export const locationsInfo = [
     latitude: 27.972572,
     longitude: -82.796745,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Tuesday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Tuesday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Wednesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
@@ -68,13 +68,13 @@ export const locationsInfo = [
     latitude: 28.039465,
     longitude: -81.949806,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      { day: "Tuesday", time: ["Closed"] },
+      // { day: "Tuesday", time: ["Closed"] },
       {
         day: "Wednesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
@@ -98,21 +98,21 @@ export const locationsInfo = [
     longitude: -82.461481,
     availableSchedule: [
       { day: "Saturday", time: ["8:30 AM–1 PM"] },
-      { day: "Sunday", time: ["Closed"] },
-      {
-        day: "Monday",
-        time: ["Closed"],
-      },
+      // { day: "Sunday", time: ["Closed"] },
+      // {
+      //   day: "Monday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Tuesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      { day: "Wednesday", time: ["Closed"] },
+      // { day: "Wednesday", time: ["Closed"] },
       {
         day: "Thursday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      { day: "Friday", time: ["Closed"] },
+      // { day: "Friday", time: ["Closed"] },
     ],
   },
   //5
@@ -127,16 +127,16 @@ export const locationsInfo = [
     longitude: -82.718797,
     availableSchedule: [
       { day: "Saturday", time: ["8:30 AM–1 PM"] },
-      { day: "Sunday", time: ["Closed"] },
-      {
-        day: "Monday",
-        time: ["Closed"],
-      },
+      // { day: "Sunday", time: ["Closed"] },
+      // {
+      //   day: "Monday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Tuesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      { day: "Wednesday", time: ["Closed"] },
+      // { day: "Wednesday", time: ["Closed"] },
       {
         day: "Thursday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
@@ -155,12 +155,12 @@ export const locationsInfo = [
     latitude: 27.844138,
     longitude: -82.728263,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       { day: "Monday", time: ["2:30 PM–7:00 PM"] },
-      { day: "Tuesday", time: ["Closed"] },
+      // { day: "Tuesday", time: ["Closed"] },
       { day: "Wednesday", time: ["8:30 AM–1:00 PM", "2:30 PM–7:00 PM"] },
-      { day: "Thursday", time: [] },
+      // { day: "Thursday", time: [] },
       { day: "Friday", time: ["8:30 AM–1:00 PM"] },
     ],
   },
@@ -175,28 +175,28 @@ export const locationsInfo = [
     latitude: 27.844138,
     longitude: -82.728263,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
-      {
-        day: "Monday",
-        time: ["Closed"],
-      },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
+      // {
+      //   day: "Monday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Tuesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Wednesday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Wednesday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Thursday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Friday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Friday",
+      //   time: ["Closed"],
+      // },
     ],
   },
   //8
@@ -211,7 +211,7 @@ export const locationsInfo = [
     longitude: -82.728263,
     availableSchedule: [
       { day: "Saturday", time: ["8:30 AM–1 PM"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
@@ -220,18 +220,18 @@ export const locationsInfo = [
         day: "Tuesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Wednesday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Wednesday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Thursday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Friday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Friday",
+      //   time: ["Closed"],
+      // },
     ],
   },
   //9
@@ -245,8 +245,8 @@ export const locationsInfo = [
     latitude: 27.86335,
     longitude: -82.32315,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
         time: ["2:30–7 PM", "8:30 PM–12 AM"],
@@ -255,10 +255,10 @@ export const locationsInfo = [
         day: "Tuesday",
         time: ["12 AM–1 PM"],
       },
-      {
-        day: "Wednesday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Wednesday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Thursday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
@@ -280,24 +280,24 @@ export const locationsInfo = [
     latitude: 27.708831,
     longitude: -82.433497,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Tuesday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Tuesday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Wednesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Thursday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Thursday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Friday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
@@ -315,28 +315,28 @@ export const locationsInfo = [
     latitude: 28.47688,
     longitude: -82.52546,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
-      {
-        day: "Monday",
-        time: ["Closed"],
-      },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
+      // {
+      //   day: "Monday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Tuesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Wednesday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Wednesday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Thursday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Friday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Friday",
+      //   time: ["Closed"],
+      // },
     ],
   },
   //12
@@ -350,24 +350,24 @@ export const locationsInfo = [
     latitude: 27.770048,
     longitude: -82.635908,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
         time: ["2:30–7 PM"],
       },
-      {
-        day: "Tuesday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Tuesday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Wednesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Thursday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Thursday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Friday",
         time: ["8:30 AM–1 PM"],
@@ -385,8 +385,8 @@ export const locationsInfo = [
     latitude: 28.018,
     longitude: -82.492,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
@@ -395,18 +395,18 @@ export const locationsInfo = [
         day: "Tuesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Wednesday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Wednesday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Thursday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Friday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Friday",
+      //   time: ["Closed"],
+      // },
     ],
   },
   //14
@@ -420,24 +420,24 @@ export const locationsInfo = [
     latitude: 27.999,
     longitude: -82.58,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Tuesday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Tuesday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Wednesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Thursday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Thursday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Friday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
@@ -455,24 +455,24 @@ export const locationsInfo = [
     latitude: 27.943,
     longitude: -82.483,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Tuesday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Tuesday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Wednesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Thursday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Thursday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Friday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
@@ -490,28 +490,28 @@ export const locationsInfo = [
     latitude: 28.022243,
     longitude: -81.732856,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
-      {
-        day: "Monday",
-        time: ["Closed"],
-      },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
+      // {
+      //   day: "Monday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Tuesday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Wednesday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Wednesday",
+      //   time: ["Closed"],
+      // },
       {
         day: "Thursday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      {
-        day: "Friday",
-        time: ["Closed"],
-      },
+      // {
+      //   day: "Friday",
+      //   time: ["Closed"],
+      // },
     ],
   },
   //17
@@ -525,8 +525,8 @@ export const locationsInfo = [
     latitude: 28.022243,
     longitude: -81.732856,
     availableSchedule: [
-      { day: "Saturday", time: ["Closed"] },
-      { day: "Sunday", time: ["Closed"] },
+      // { day: "Saturday", time: ["Closed"] },
+      // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
         time: ["8:30 AM–7 PM"],

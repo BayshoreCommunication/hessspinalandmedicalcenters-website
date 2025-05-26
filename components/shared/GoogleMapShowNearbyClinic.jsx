@@ -73,18 +73,32 @@ export default function GoogleMapShowNearbyClinic({
     return R * c;
   };
 
+  // Toggle clinic selection
   const handleClinicClick = (clinic) => {
-    setHighlightedClinic(clinic);
-    onClinicSelect?.(clinic);
+    if (highlightedClinic?.id === clinic.id) {
+      // Clicking the same clinic again deselects it
+      setHighlightedClinic(null);
+      onClinicSelect?.(null);
+      // Return to default view
+      setMapCenter(userLocation || DEFAULT_CENTER);
+      if (mapRef.current) {
+        mapRef.current.setZoom(10);
+      }
+    } else {
+      // Select new clinic
+      setHighlightedClinic(clinic);
+      onClinicSelect?.(clinic);
+      setMapCenter({ lat: clinic.latitude, lng: clinic.longitude });
 
-    if (mapRef.current) {
-      // Smoothly pan the map to the selected clinic
-      setTimeout(() => {
-        mapRef.current.panTo({
-          lat: clinic.latitude,
-          lng: clinic.longitude,
-        });
-      }, 100);
+      if (mapRef.current) {
+        setTimeout(() => {
+          mapRef.current.panTo({
+            lat: clinic.latitude,
+            lng: clinic.longitude,
+          });
+          mapRef.current.setZoom(14);
+        }, 100);
+      }
     }
   };
 
