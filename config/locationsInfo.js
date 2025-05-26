@@ -141,7 +141,7 @@ export const locationsInfo = [
         day: "Thursday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      { day: "Friday", time: ["Closed"] },
+      // { day: "Friday", time: ["Closed"] },
     ],
   },
   //6
