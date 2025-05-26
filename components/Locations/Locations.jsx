@@ -217,13 +217,13 @@ const Locations = () => {
 
           <div className="z-10">
             <ScrollMotionEffect effect="fade-up" duration="2000">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div className="">
                 {filteredClinics.length === 0 ? (
-                  <div className="mt-10 text-center col-span-3">
+                  <div className="mt-10 text-center">
                     No clinics open on selected days
                   </div>
                 ) : (
-                  <div className="">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {filteredClinics.map((clinic) => (
                       <div
                         key={clinic.id}
