@@ -118,7 +118,7 @@ const Locations = () => {
                   Find our location near you.
                 </h2>
 
-                {/* Day Selector */}
+                {/* Day Selector  */}
                 <div className="flex flex-wrap justify-center gap-4 mb-6">
                   {daysOfWeek.map((day) => (
                     <label
