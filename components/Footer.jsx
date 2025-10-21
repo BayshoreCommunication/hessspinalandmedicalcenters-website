@@ -55,40 +55,40 @@ const Footer = () => {
 
                 <div className="text-white flex justify-center md:justify-start gap-3 mt-4 md:mt-6 ">
                   <Link
-                    href="https://www.facebook.com/"
+                    href="https://www.facebook.com/HessSpinal"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
                     <FaFacebookF className="size-5" />
                   </Link>
-                  <Link
+                  {/* <Link
                     href="https://www.linkedin.com/company/"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
                     <FaLinkedinIn className="size-5" />
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     href="https://x.com/"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
                     <FaTwitter className="size-5" />
-                  </Link>
+                  </Link> */}
                   <Link
-                    href="https://www.instagram.com/"
+                    href="https://www.instagram.com/hessspinal/"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
                     <FaInstagram className="size-5" />
                   </Link>
-                  <Link
+                  {/* <Link
                     href="https://www.youtube.com/@"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary duration-300"
                   >
                     <FaYoutube className="size-5" />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
               <div className="w-full col-span-2">
