@@ -140,11 +140,11 @@ const Services = () => {
                   </div>
                 </div>
 
-                <Link href={`/services/${item?.slug}`}>
+                {/* <Link href={`/services/${item?.slug}`}>
                   <button className="mt-6 w-fit px-3 text-sm py-2 rounded-full border border-gray-800 text-gray-600 group-hover:text-white transition group-hover:border-white">
                     Learn More
                   </button>
-                </Link>
+                </Link> */}
               </div>
             ))}
           </div>

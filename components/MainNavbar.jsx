@@ -154,7 +154,7 @@ const MainNavbar = () => {
                 }}
               >
                 <Link
-                  href="/"
+                  href="tel:(800) 618-4377"
                   className={`
                             text-white font-normal
                             text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl

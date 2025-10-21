@@ -1,38 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
-
-const LatestBlogsData = [
-  {
-    featuredImage: "/assets/homepage/blog-1.jpg",
-    altText: "Doctor showing spine model to a patient",
-    title: "Understanding Spinal Injuries After Car Accidents",
-    slug: "understanding-spinal-injuries",
-    createdAt: "2025-04-10T09:00:00Z",
-    shortDescription:
-      "Learn how spinal injuries occur after accidents and what treatments are available to ensure a full recovery.",
-  },
-  {
-    featuredImage: "/assets/homepage/blog-2.jpg",
-    altText: "Therapist assisting a patient during recovery",
-    title: "Top 5 Recovery Tips After a Major Accident",
-    slug: "top-recovery-tips",
-    createdAt: "2025-04-15T11:30:00Z",
-    shortDescription:
-      "Follow these expert tips to speed up your healing process and regain strength after a serious injury.",
-  },
-  {
-    featuredImage: "/assets/homepage/blog-3.jpg",
-    altText: "Advanced spinal treatment technology",
-    title: "How Technology is Changing Spinal Care",
-    slug: "technology-in-spinal-care",
-    createdAt: "2025-04-20T15:45:00Z",
-    shortDescription:
-      "Discover how innovations in technology are revolutionizing the way spinal injuries are treated today.",
-  },
-];
+import parse from "html-react-parser";
+import GetAllPostData from "@/lib/GetAllPostData";
 
 const LatestBlogs = async () => {
+  const blogPostData = await GetAllPostData();
+
+  const postDate = (date) => {
+    const formattedDate = new Date(date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    return formattedDate;
+  };
+
+  // Filter published posts once and store the result, limit to 3 for homepage
+  const publishedPosts =
+    blogPostData?.data?.filter((pub) => pub.published === true).slice(0, 3) ||
+    [];
+
   return (
     <div className="bg-[#F1F1F1]">
       <div className="container p-6 md:p-16">
@@ -50,27 +38,43 @@ const LatestBlogs = async () => {
         </ScrollMotionEffect>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
-          {LatestBlogsData.map((item, index) => (
-            <div key={item.slug} className="rounded-lg overflow-hidden">
+          {publishedPosts.map((item, index) => (
+            <div
+              key={item.slug}
+              className="rounded-lg overflow-hidden bg-white shadow-lg h-full flex flex-col"
+            >
               <ScrollMotionEffect effect="fade-up" duration="1000">
                 <div className="w-full h-60 relative overflow-hidden">
                   <Image
-                    src={item.featuredImage}
-                    alt={item.altText}
-                    layout="fill"
-                    objectFit="cover"
+                    src={item?.featuredImage?.image?.url}
+                    alt={item?.featuredImage?.altText || "Blog post image"}
+                    fill
+                    style={{ objectFit: "cover" }}
                     className="hover:scale-105 transition-transform duration-500 rounded-2xl"
                   />
                 </div>
               </ScrollMotionEffect>
               <ScrollMotionEffect effect="fade-up" duration="2000">
-                <div className="p-4">
-                  <h2 className="text-lg font-bold text-black">{item.title}</h2>
-                  <p className="text-sm text-gray-600 mt-2">
-                    {item.shortDescription}
+                <div className="p-4 flex flex-col flex-grow">
+                  <div className="flex items-center justify-between mb-2">
+                    <p className="text-xs text-gray-500">
+                      {postDate(item?.createdAt)}
+                    </p>
+                    <p className="text-xs text-primary font-medium">
+                      {item?.category || "Blog Post"}
+                    </p>
+                  </div>
+                  <h2 className="text-lg font-bold text-black mb-2">
+                    {item.title}
+                  </h2>
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-3 flex-grow">
+                    {parse(
+                      item?.body?.replace(/<[^>]*>/g, "").substring(0, 120) +
+                        "..."
+                    )}
                   </p>
                   <Link
-                    href={`#`}
+                    href={`/blog/${item.slug}`}
                     className="inline-block mt-4 text-primary font-medium hover:underline duration-500"
                   >
                     Read More →
@@ -84,10 +88,10 @@ const LatestBlogs = async () => {
         <div className="mt-5 text-center hover:scale-105  transition duration-300">
           <ScrollMotionEffect effect="fade-up" duration="2000">
             <Link
-              href={"/"}
+              href={"/blog"}
               className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary duration-500 hover:scale-105  transition "
             >
-              View All Reviews
+              View All Blogs
             </Link>
           </ScrollMotionEffect>
         </div>

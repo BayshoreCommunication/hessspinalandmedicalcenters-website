@@ -60,7 +60,7 @@ const AboutSection = () => {
 
               <div className="py-4 flex justify-center md:justify-start">
                 <div className="group hover:scale-105  transition duration-300 text-center">
-                  <Link href="/">
+                  <Link href="/about">
                     <button className="relative overflow-hidden text-white font-normal text-md md:text-lg bg-primary px-8 md:px-20 py-3 rounded-full hover:bg-green-800  cursor-pointer">
                       <span className="relative z-10 transition-colors duration-300">
                         Discover More
