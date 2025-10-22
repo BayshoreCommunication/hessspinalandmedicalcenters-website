@@ -259,7 +259,7 @@ const Locations = () => {
                               {clinic.address}
                             </Link>
                             <Link
-                              href="tel:"
+                              href={`tel:${clinic.phone}`}
                               className="text-gray-600 mb-1 flex items-center gap-2 hover:text-primary duration-300 font-medium"
                             >
                               <IoCallOutline className="shrink-0" />
