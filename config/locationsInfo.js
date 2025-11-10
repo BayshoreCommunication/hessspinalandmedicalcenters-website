@@ -249,23 +249,23 @@ export const locationsInfo = [
       // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
-        time: ["2:30–7 PM", "8:30 PM–12 AM"],
-      },
-      {
-        day: "Tuesday",
-        time: ["12 AM–1 PM"],
+        time: ["8:30 AM–1 PM", "2:30 PM–7 PM"],
       },
       // {
-      //   day: "Wednesday",
-      //   time: ["Closed"],
+      //   day: "Tuesday",
+      //   time: ["12 AM–1 PM"],
       // },
       {
-        day: "Thursday",
-        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+        day: "Wednesday",
+        time: ["8:30 AM–1 PM", "2:30 PM–7 PM"],
       },
+      // {
+      //   day: "Thursday",
+      //   time: ["8:30 AM–1 PM", "2:30–7 PM"],
+      // },
       {
         day: "Friday",
-        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+        time: ["8:30 AM–1 PM", "2:30 PM–7 PM"],
       },
     ],
   },

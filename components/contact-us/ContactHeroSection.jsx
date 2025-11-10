@@ -40,7 +40,7 @@ const ContactHeroSection = () => {
                     <p className="text-xl font-semibold mb-1">Phone:</p>
                     <p>
                       <Link
-                        href="#"
+                        href="tel:+18006184377"
                         className="hover:text-primary duration-300"
                       >
                         (800) 618-4377 – Main
@@ -48,10 +48,10 @@ const ContactHeroSection = () => {
                     </p>
                     <p>
                       <Link
-                        href="#"
+                        href="fax:+18135142725"
                         className="hover:text-primary duration-300"
                       >
-                        (813) 514-2725 – Faxs
+                        (813) 514-2725 – Fax
                       </Link>
                     </p>
                   </div>
