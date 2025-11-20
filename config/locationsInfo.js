@@ -412,7 +412,7 @@ export const locationsInfo = [
   //14
   {
     id: "tampa-waters",
-    image: "/assets/location/tampa_town_country_clinic.jpg",
+    image: "/assets/location/tampa_town_country_clinic.png",
     title: "Tampa (Waters)",
     address: "2516 W. Waters Ave. Tampa, FL 33614",
     phone: "813-265-4377",
@@ -519,7 +519,7 @@ export const locationsInfo = [
     id: "tampa-corporate",
     image: "/assets/location/tampa_corporate.jpg",
     title: "Tampa Corporate",
-    address: "4505 Town N Country Blvd, Tampa, FL 33615",
+    address: "P.O. Box 20288 Tampa, Fl 33622",
     phone: "800-618-4377",
     fax: "813 514-2725",
     latitude: 28.022243,
