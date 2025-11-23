@@ -20,11 +20,6 @@ const faqItems = [
   {
     question: "Can I get same-day treatment?",
     answer:
-      "Yes. Hess provides same-day appointments and accepts walk-ins, so you can get medical attention immediately after an injury.",
-  },
-  {
-    question: "Can I get same-day treatment?",
-    answer:
       "Can I get same-day treatment? Yes. Hess provides same-day appointments and accepts walk-ins, so you can get medical attention immediately after an injury.Yes. Hess provides same-day appointments and accepts walk-ins, so you can get medical attention immediately after an injury.",
   },
   {
