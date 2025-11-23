@@ -3,24 +3,34 @@ import { useState } from "react";
 
 const faqItems = [
   {
-    question: "What services do you offer?",
+    question: "What types of services does Hess Spinal & Medical Centers provide?",
     answer:
-      "We offer a wide range of services including consultations, project planning, and complete implementation tailored to your needs.",
+      "Hess offers a full range of accident‑injury care, right at their centers: physical therapy (including hydrotherapy), trigger point injections, chiropractic manipulation, digital X‑rays and personalized injury rehabilitation plans.",
   },
   {
-    question: "How do I schedule a consultation?",
+    question: "Do you have multiple locations, and can you help me with transportation?",
     answer:
-      "You can schedule a consultation through our contact form or by calling our office during business hours.",
+      "Absolutely. There are 18 centers across West Central Florida. And if transportation is a barrier, we can even arrange rides to and from your appointments.",
   },
   {
-    question: "What industries do you specialize in?",
+    question: "What types of injuries do you treat?",
     answer:
-      "We specialize in working with healthcare, technology, and legal industries, but we are open to all sectors.",
+      "Hess specializes in accident-related injuries, including auto accident injuries, slip and fall, work-related injuries, neck and back pain, herniated discs, and soft tissue damage. Our team develops individualized treatment plans for fast and safe recovery.",
   },
   {
-    question: "What is your typical project timeline?",
+    question: "Can I get same-day treatment?",
     answer:
-      "Timelines vary depending on project scope, but most are completed within 4 to 8 weeks after kickoff.",
+      "Yes. Hess provides same-day appointments and accepts walk-ins, so you can get medical attention immediately after an injury.",
+  },
+  {
+    question: "Can I get same-day treatment?",
+    answer:
+      "Can I get same-day treatment? Yes. Hess provides same-day appointments and accepts walk-ins, so you can get medical attention immediately after an injury.Yes. Hess provides same-day appointments and accepts walk-ins, so you can get medical attention immediately after an injury.",
+  },
+  {
+    question: "What makes Hess different from other medical centers?",
+    answer:
+      "Hess combines medical expertise with personalized care. We focus on holistic recovery, offer advanced diagnostic tools, and provide coordinated care to handle both immediate and long-term treatment needs.",
   },
 ];
 
