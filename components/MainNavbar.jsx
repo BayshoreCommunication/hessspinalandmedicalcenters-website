@@ -154,7 +154,7 @@ const MainNavbar = () => {
                 }}
               >
                 <Link
-                  href="tel:(800) 618-4377"
+                  href="tel:+18006184377"
                   className={`
                             text-white font-normal
                             text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl
@@ -165,7 +165,7 @@ const MainNavbar = () => {
                             ${isAlarm ? "bg-orange-400 text-black" : "bg-primary hover:bg-green-700"}
                           `}
                 >
-                  Emergency Call
+                  (800) 618-4377
                 </Link>
               </motion.div>
             </div>

@@ -10,13 +10,7 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const OurTechnologies = () => {
   const technologies = [
-    {
-      id: 1,
-      image: digitalXRayMachine,
-      title: "Digital X-Ray Machines",
-      description:
-        "Assistance with auto insurance claims, covered under PIP benefits in Florida with no upfront costs.",
-    },
+    
     {
       id: 2,
       image: spinalDecompressionMachine,
@@ -35,6 +29,13 @@ const OurTechnologies = () => {
       id: 4,
       image: spinalMachine,
       title: "Spinal Decompression Machines",
+      description:
+        "Assistance with auto insurance claims, covered under PIP benefits in Florida with no upfront costs.",
+    },
+    {
+      id: 1,
+      image: digitalXRayMachine,
+      title: "Digital X-Ray Machines",
       description:
         "Assistance with auto insurance claims, covered under PIP benefits in Florida with no upfront costs.",
     },

@@ -1479,28 +1479,76 @@ export const areaspracticeData = [
 ];
 
 export const testimonialsData = [
+  // {
+  //   name: "Alex Carter",
+  //   review:
+  //     "Outstanding service from start to finish. They made everything easy and kept me updated every step of the way.",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Brooke Evans",
+  //   review:
+  //     "The team was quick, efficient, and truly cared about my case. I felt supported and confident throughout the entire process.",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Chase Morgan",
+  //   review:
+  //     "Excellent experience! They explained everything clearly and worked hard to achieve the best outcome.",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Dylan Foster",
+  //   review:
+  //     "Very smooth process with great communication. Their attention to detail and professionalism really stood out.",
+  //   rating: 5,
+  // },
   {
-    name: "Alex Carter",
+    name: "Andrew Davis",
     review:
-      "Outstanding service from start to finish. They made everything easy and kept me updated every step of the way.",
+      "I have been treated at 2 other facilities and none come close to the quality of service and care that I have received here. From the front desk staff, chiropractor, physical therapist, to the assistants, all are extremely knowledgeable and courteous. They have state of the art equipment as well. I would highly recommend this location to anyone looking to get treated! I couldn't be happier.",
     rating: 5,
   },
   {
-    name: "Brooke Evans",
+    name: "Jennifer Mafla",
     review:
-      "The team was quick, efficient, and truly cared about my case. I felt supported and confident throughout the entire process.",
+      "Highly recommend, when you walk in here everyone is absolutely lovely. Very professional, knowledgeable, and so kind and courteous.",
     rating: 5,
   },
   {
-    name: "Chase Morgan",
+    name: "Sebastian Wildfire",
     review:
-      "Excellent experience! They explained everything clearly and worked hard to achieve the best outcome.",
+      "This doctor is the most, the staff are totally respectful and aware of your needs, they want to aid and help!",
     rating: 5,
   },
   {
-    name: "Dylan Foster",
+    name: "Sebastian Wildfire",
     review:
-      "Very smooth process with great communication. Their attention to detail and professionalism really stood out.",
+      "This doctor is the most, the staff are totally respectful and aware of your needs, they want to aid and help!",
+    rating: 5,
+  },
+  {
+    name: "vjmiller33",
+    review:
+      "The staff and doctors at the facility are kind, patient and effective. Never had a problem. I've recommended this office to everyone. Thank you for your service!",
+    rating: 5,
+  },
+  {
+    name: "Marquee Mark",
+    review:
+      "The staff is awesome! Very professional and responsive to your needs.Glad I chose them.",
+    rating: 5,
+  },
+  {
+    name: "Nathaniel James",
+    review:
+      "The whole staff is very professional. Their number one concern is getting you to the best physical condition they can.",
+    rating: 5,
+  },
+  {
+    name: "Norma Ayala",
+    review:
+      "Excellent treatment and attention from the entire staff, the latest in therapeutic equipment and instruments, very hygienic facilities, and a very pleasant atmosphere. I recommend it! 👍",
     rating: 5,
   },
 ];

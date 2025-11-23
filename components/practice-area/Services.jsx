@@ -59,13 +59,14 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const treatments = [
   {
-    id: 1,
-    icon: "/assets/homepage/service-section/1.png",
-    title: "Chiropractic Manipulation",
-    slug: "chiropractic-manipulation",
+    id: 5,
+    icon: "/assets/homepage/service-section/5.png",
+    title: "Physical Therapy",
+    slug: "physical-therapy",
     description:
-      "We focus on auto accident care and treatment options that will help ease your pain and deal with life after an auto accident.",
+      "Hydrotherapy uses the combination of water, heat and massage to provide a comforting and relaxing experience, relieving pain.",
   },
+  
   {
     id: 2,
     icon: "/assets/homepage/service-section/2.png",
@@ -92,12 +93,12 @@ const treatments = [
       "Our exercise and stretching routines will build flexibility and strength, so you can fully restore your maximum range of motion and independence.",
   },
   {
-    id: 5,
-    icon: "/assets/homepage/service-section/5.png",
-    title: "Physical Therapy",
-    slug: "physical-therapy",
+    id: 1,
+    icon: "/assets/homepage/service-section/1.png",
+    title: "Chiropractic Manipulation",
+    slug: "chiropractic-manipulation",
     description:
-      "Hydrotherapy uses the combination of water, heat and massage to provide a comforting and relaxing experience, relieving pain.",
+      "We focus on auto accident care and treatment options that will help ease your pain and deal with life after an auto accident.",
   },
   {
     id: 6,

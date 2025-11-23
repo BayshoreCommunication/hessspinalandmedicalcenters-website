@@ -5,11 +5,12 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 const treatments = [
   {
     id: 1,
-    icon: "/assets/homepage/service-section/1.png",
-    title: "Chiropractic Manipulation",
+    icon: "/assets/homepage/service-section/5.png",
+    title: "Physical Therapy",
     description:
-      "We focus on auto accident care and treatment options that will help ease your pain and deal with life after an auto accident.",
+      "Hydrotherapy uses the combination of water, heat and massage to provide a comforting and relaxing experience, relieving pain.",
   },
+  
   {
     id: 2,
     icon: "/assets/homepage/service-section/2.png",
@@ -34,10 +35,10 @@ const treatments = [
   },
   {
     id: 5,
-    icon: "/assets/homepage/service-section/5.png",
-    title: "Physical Therapy",
+    icon: "/assets/homepage/service-section/1.png",
+    title: "Chiropractic Manipulation",
     description:
-      "Hydrotherapy uses the combination of water, heat and massage to provide a comforting and relaxing experience, relieving pain.",
+      "We focus on auto accident care and treatment options that will help ease your pain and deal with life after an auto accident.",
   },
   {
     id: 6,
