@@ -156,8 +156,8 @@ const HeroSection = () => {
             variants={variants}
             className="mt-4 md:mt-8 flex justify-center md:justify-start z-50"
           >
-            {/* <div className="group hover:scale-105  transition duration-300">
-              <Link href="/">
+            <div className="group hover:scale-105  transition duration-300">
+              <Link href="/contact">
                 <button className="relative overflow-hidden text-white font-normal text-lg bg-primary px-8 md:px-16 py-4 rounded-full cursor-pointer border-2 border-white">
                   <span className="relative z-10 transition-colors duration-300">
                     Request Appointment
@@ -165,7 +165,7 @@ const HeroSection = () => {
                   <span className="absolute inset-0 bg-secondary z-0 transform scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
                 </button>
               </Link>
-            </div> */}
+            </div>
           </motion.div>
 
           <motion.div
