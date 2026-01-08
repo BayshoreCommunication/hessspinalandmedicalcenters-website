@@ -225,7 +225,7 @@ const Locations = () => {
                 {clinic.mailingAddress?.trim() && (
                   <Link
                     href="#"
-                    className="flex gap-2 mb-1 text-gray-600 hover:text-primary"
+                    className="flex gap-2 mb-1 text-gray-600 hover:text-primary items-center"
                   >
                     <GrLocation  className="shrink-0"/>
                     {clinic.mailingAddress}
