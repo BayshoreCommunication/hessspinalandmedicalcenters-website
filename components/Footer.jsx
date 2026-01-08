@@ -121,15 +121,33 @@ const Footer = () => {
                       <IoLocationSharp className="size-6 text-secondary" />
 
                       <h3 className="font-semibold text-white text-[20px]">
-                        Location
+                        Physical Address: 
                       </h3>
                     </div>
+                    
                     <Link
                       href=""
                       className=" hover:underline duration-300 "
                       target="_blank"
                     >
-                      4505 Town N Country Blvd, Tampa, FL 33615
+                        5550 W Executive Dr, Tampa, FL 33609 
+                    </Link>
+                  </li>
+                  <li className="mb-4">
+                    <div className="flex items-center gap-x-1">
+                      <IoLocationSharp className="size-6 text-secondary" />
+
+                      <h3 className="font-semibold text-white text-[20px]">
+                        Mailing Address:  
+                      </h3>
+                    </div>
+                    
+                    <Link
+                      href=""
+                      className=" hover:underline duration-300 "
+                      target="_blank"
+                    >
+                        P.O. Box 20288, Tampa, Fl 33622
                     </Link>
                   </li>
                   <li className="mb-4">
@@ -137,21 +155,21 @@ const Footer = () => {
                       <RiPhoneFill className="size-6 text-secondary" />
 
                       <h3 className="font-semibold text-white text-[20px]">
-                        Contact
+                        Phone
                       </h3>
                     </div>
                     <div className="flex flex-wrap gap-x-3 gap-y-1">
                       <Link
                         href="tel:(800) 618-4377"
-                        className="hover:underline duration-300 text-base"
+                        className="hover:underline duration-300 text-[20px]"
                       >
-                        {`(800) 618-4377`}
+                        (800) 618-4377
                       </Link>
                       {/* <Link
-                        href="tel:+18635996735"
+                        href="tel:(813) 514-2725 "
                         className="hover:underline duration-300"
                       >
-                        (863) 599-6735
+                        (813) 514-2725 — Fax
                       </Link> */}
                     </div>
                   </li>
@@ -167,7 +185,7 @@ const Footer = () => {
                     <div className="flex flex-col gap-px">
                       <Link
                         href="mailto: info@hessspinalcenters.com"
-                        className="hover:underline duration-300 text-base"
+                        className="hover:underline duration-300 text-[20px]"
                       >
                         info@hessspinalcenters.com
                       </Link>

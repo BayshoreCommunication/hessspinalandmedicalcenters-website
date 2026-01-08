@@ -23,13 +23,27 @@ const ContactHeroSection = () => {
                 <div className="flex gap-2">
                   <IoLocationOutline className="text-xl mt-1" />
                   <div>
-                    <p className="text-xl font-semibold mb-1">Address:</p>
+                    <p className="text-xl font-semibold mb-1">Physical Address:</p>
                     <p>
                       <Link
                         href="#"
                         className="hover:text-primary duration-300"
                       >
-                        4505 Town N Country Blvd Tampa, FL 33615
+                        5550 W Executive Dr, Tampa, FL 33609
+                      </Link>
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <IoLocationOutline className="text-xl mt-1" />
+                  <div>
+                    <p className="text-xl font-semibold mb-1">Mailing Address:</p>
+                    <p>
+                      <Link
+                        href="#"
+                        className="hover:text-primary duration-300"
+                      >
+                        P.O. Box 20288, Tampa, Fl 33622
                       </Link>
                     </p>
                   </div>
