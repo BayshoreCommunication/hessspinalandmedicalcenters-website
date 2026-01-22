@@ -24,12 +24,18 @@ h1 {
 
 h2 {
   font-size: 25px;
+  text-align: left !important;
+}
+
+span, strong {
+  text-align: left !important;
 }
 
 p {
   font-size: 17px;
   padding-top: 6px;
   padding-bottom: 6px;
+
 }
 
 ul {
@@ -56,7 +62,7 @@ export async function generateMetadata({ params }) {
   const blogPostData = await GetAllPostData();
 
   const blogDetails = blogPostData?.data?.find(
-    (blogs) => blogs.slug === params.slug
+    (blogs) => blogs.slug === params.slug,
   );
 
   if (!blogDetails) {
@@ -88,7 +94,7 @@ const page = async ({ params }) => {
   const blogPostData = await GetAllPostData();
 
   const blogDetails = blogPostData?.data?.filter(
-    (blogs) => blogs.slug === params.slug
+    (blogs) => blogs.slug === params.slug,
   );
 
   const postDate = (date) => {
@@ -146,7 +152,9 @@ const page = async ({ params }) => {
                   className="w-full h-auto bg-center bg-cover"
                 />
 
-                <div className="mt-2 text-md">{parse(blogs?.body)}</div>
+                <div className="mt-2 text-md !text-start">
+                  {parse(blogs?.body)}
+                </div>
               </div>
             ))}
 
