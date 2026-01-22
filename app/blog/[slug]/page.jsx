@@ -27,7 +27,7 @@ h2 {
   text-align: left !important;
 }
 
-span, strong {
+p, p span strong, strong {
   text-align: left !important;
 }
 
@@ -35,6 +35,7 @@ p {
   font-size: 17px;
   padding-top: 6px;
   padding-bottom: 6px;
+  text-align: left !important;
 
 }
 
