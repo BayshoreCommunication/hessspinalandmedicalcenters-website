@@ -390,41 +390,41 @@ export const locationsInfo = [
     ],
   },
   //13
-  {
-    id: "tampa-town-country)",
-    image: "/assets/location/tampa_carrollwood_clinic.jpg",
-    title: "Tampa (Town & Country)",
-    address: "8313 W. Hillsborough Ave., Ste 330 Tampa, FL 33615",
-    mailingAddress: "",
-    phone: "813-243-4377",
-    fax: "813-243-1035",
-    latitude: 28.018,
-    longitude: -82.492,
-    availableSchedule: [
-      // { day: "Saturday", time: ["Closed"] },
-      // { day: "Sunday", time: ["Closed"] },
-      {
-        day: "Monday",
-        time: ["8:30 AM–1 PM", "2:30–7 PM"],
-      },
-      {
-        day: "Tuesday",
-        time: ["8:30 AM–1 PM", "2:30–7 PM"],
-      },
-      // {
-      //   day: "Wednesday",
-      //   time: ["Closed"],
-      // },
-      {
-        day: "Thursday",
-        time: ["8:30 AM–1 PM", "2:30–7 PM"],
-      },
-      // {
-      //   day: "Friday",
-      //   time: ["Closed"],
-      // },
-    ],
-  },
+  // {
+  //   id: "tampa-town-country)",
+  //   image: "/assets/location/tampa_carrollwood_clinic.jpg",
+  //   title: "Tampa (Town & Country)",
+  //   address: "8313 W. Hillsborough Ave., Ste 330 Tampa, FL 33615",
+  //   mailingAddress: "",
+  //   phone: "813-243-4377",
+  //   fax: "813-243-1035",
+  //   latitude: 28.018,
+  //   longitude: -82.492,
+  //   availableSchedule: [
+  //     // { day: "Saturday", time: ["Closed"] },
+  //     // { day: "Sunday", time: ["Closed"] },
+  //     {
+  //       day: "Monday",
+  //       time: ["8:30 AM–1 PM", "2:30–7 PM"],
+  //     },
+  //     {
+  //       day: "Tuesday",
+  //       time: ["8:30 AM–1 PM", "2:30–7 PM"],
+  //     },
+  //     // {
+  //     //   day: "Wednesday",
+  //     //   time: ["Closed"],
+  //     // },
+  //     {
+  //       day: "Thursday",
+  //       time: ["8:30 AM–1 PM", "2:30–7 PM"],
+  //     },
+  //     // {
+  //     //   day: "Friday",
+  //     //   time: ["Closed"],
+  //     // },
+  //   ],
+  // },
   //14
   {
     id: "tampa-waters",
@@ -497,7 +497,7 @@ export const locationsInfo = [
       },
     ],
   },
- 
+
   //17
   {
     id: "tampa-corporate",
@@ -535,4 +535,3 @@ export const locationsInfo = [
     ],
   },
 ];
-
