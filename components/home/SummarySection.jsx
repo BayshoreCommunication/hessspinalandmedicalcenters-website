@@ -14,7 +14,7 @@ const summaryList = [
   },
   {
     icon: <MdOutlineMedicalServices className="size-10" />,
-    title: 16,
+    title: 13,
     desc: "Medical Center",
     bgImg: "/assets/homepage/summary-bg-2.png",
   },

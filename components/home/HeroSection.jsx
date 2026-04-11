@@ -49,7 +49,7 @@ const HeroSection = () => {
         "service_mo62afg",
         "template_l0n9gpu",
         templateParams,
-        "98zEJK8kTVuegaDdJ"
+        "98zEJK8kTVuegaDdJ",
       )
       .then(() => {
         setLoading(false);
@@ -180,7 +180,7 @@ const HeroSection = () => {
                 Same Day Appointments
               </li>
               <li className="px-3 py-3 bg-white shadow-small rounded flex justify-center items-center text-center">
-                16 Convenient Locations
+                13 Convenient Locations
               </li>
               <li className="px-3 py-3 bg-white shadow-small rounded flex justify-center items-center text-center">
                 Hablamos Su Idioma

@@ -353,42 +353,42 @@ export const locationsInfo = [
     ],
   },
   //12
-  {
-    id: "tampa-south)",
-    image: "/assets/location/tampa_south_tampa_clinic.jpg",
-    title: "Tampa (South)",
-    address: "106 S. Armenia Ave. Tampa, FL 33609",
-    mailingAddress: "",
-    phone: "813-254-4377",
-    mailingAddress: "",
-    phone: "813-258-4381",
-    latitude: 27.770048,
-    longitude: -82.635908,
-    availableSchedule: [
-      // { day: "Saturday", time: ["Closed"] },
-      // { day: "Sunday", time: ["Closed"] },
-      {
-        day: "Monday",
-        time: ["2:30–7 PM"],
-      },
-      // {
-      //   day: "Tuesday",
-      //   time: ["Closed"],
-      // },
-      {
-        day: "Wednesday",
-        time: ["8:30 AM–1 PM", "2:30–7 PM"],
-      },
-      // {
-      //   day: "Thursday",
-      //   time: ["Closed"],
-      // },
-      {
-        day: "Friday",
-        time: ["8:30 AM–1 PM"],
-      },
-    ],
-  },
+  // {
+  //   id: "tampa-south)",
+  //   image: "/assets/location/tampa_south_tampa_clinic.jpg",
+  //   title: "Tampa (South)",
+  //   address: "106 S. Armenia Ave. Tampa, FL 33609",
+  //   mailingAddress: "",
+  //   phone: "813-254-4377",
+  //   mailingAddress: "",
+  //   phone: "813-258-4381",
+  //   latitude: 27.770048,
+  //   longitude: -82.635908,
+  //   availableSchedule: [
+  //     // { day: "Saturday", time: ["Closed"] },
+  //     // { day: "Sunday", time: ["Closed"] },
+  //     {
+  //       day: "Monday",
+  //       time: ["2:30–7 PM"],
+  //     },
+  //     // {
+  //     //   day: "Tuesday",
+  //     //   time: ["Closed"],
+  //     // },
+  //     {
+  //       day: "Wednesday",
+  //       time: ["8:30 AM–1 PM", "2:30–7 PM"],
+  //     },
+  //     // {
+  //     //   day: "Thursday",
+  //     //   time: ["Closed"],
+  //     // },
+  //     {
+  //       day: "Friday",
+  //       time: ["8:30 AM–1 PM"],
+  //     },
+  //   ],
+  // },
   //13
   // {
   //   id: "tampa-town-country)",
@@ -514,23 +514,23 @@ export const locationsInfo = [
       // { day: "Sunday", time: ["Closed"] },
       {
         day: "Monday",
-        time: ["8:30 AM–7 PM"],
+        time: ["8:30 AM–6:30 PM"],
       },
       {
         day: "Tuesday",
-        time: ["8:30 AM–7 PM"],
+        time: ["8:30 AM–6:30 PM"],
       },
       {
         day: "Wednesday",
-        time: ["8:30 AM–7 PM"],
+        time: ["8:30 AM–6:30 PM"],
       },
       {
         day: "Thursday",
-        time: ["8:30 AM–7 PM"],
+        time: ["8:30 AM–6:30 PM"],
       },
       {
         day: "Friday",
-        time: ["8:30 AM–7 PM"],
+        time: ["8:30 AM–6 PM"],
       },
     ],
   },
