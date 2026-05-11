@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
-import parse from "html-react-parser";
 import GetAllPostData from "@/lib/GetAllPostData";
+import { getBlogDescription, getBlogImage } from "@/lib/blogHelpers";
 
 const LatestBlogs = async () => {
   const blogPostData = await GetAllPostData();
@@ -16,7 +16,6 @@ const LatestBlogs = async () => {
     return formattedDate;
   };
 
-  // Filter published posts once and store the result, limit to 3 for homepage
   const publishedPosts =
     blogPostData?.data?.filter((pub) => pub.published === true).slice(0, 3) ||
     [];
@@ -25,71 +24,72 @@ const LatestBlogs = async () => {
     <div className="bg-[#F1F1F1]">
       <div className="container p-6 md:p-16">
         <ScrollMotionEffect effect="fade-right" duration="2000">
-          <h1 className="font-bold text-3xl  md:text-4xl lg:text-5xl text-black text-center">
+          <h1 className="text-center text-3xl font-bold text-black md:text-4xl lg:text-5xl">
             Our Latest Blogs
           </h1>
         </ScrollMotionEffect>
         <ScrollMotionEffect effect="fade-left" duration="2000">
-          <div className="2xl:w-[60%] mx-auto mt-4">
-            <p className="text-md md:text-lg text-[#55545A] text-center">
+          <div className="mx-auto mt-4 2xl:w-[60%]">
+            <p className="text-center text-md text-[#55545A] md:text-lg">
               {`The physicians and staff at Hess Spinal and Medical Centers understand that being injured in an auto accident can be extremely stressful for you and your family.`}
             </p>
           </div>
         </ScrollMotionEffect>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
-          {publishedPosts.map((item, index) => (
-            <div
-              key={item.slug}
-              className="rounded-lg overflow-hidden bg-white shadow-lg h-full flex flex-col"
-            >
-              <ScrollMotionEffect effect="fade-up" duration="1000">
-                <div className="w-full h-60 relative overflow-hidden">
-                  <Image
-                    src={item?.featuredImage?.image?.url}
-                    alt={item?.featuredImage?.altText || "Blog post image"}
-                    fill
-                    style={{ objectFit: "cover" }}
-                    className="hover:scale-105 transition-transform duration-500 rounded-2xl"
-                  />
-                </div>
-              </ScrollMotionEffect>
-              <ScrollMotionEffect effect="fade-up" duration="2000">
-                <div className="p-4 flex flex-col flex-grow">
-                  <div className="flex items-center justify-between mb-2">
-                    <p className="text-xs text-gray-500">
-                      {postDate(item?.createdAt)}
-                    </p>
-                    <p className="text-xs text-primary font-medium">
-                      {item?.category || "Blog Post"}
-                    </p>
+        <div className="my-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {publishedPosts.map((item, index) => {
+            const image = getBlogImage(item);
+            const description = getBlogDescription(item, 145);
+
+            return (
+              <div
+                key={item.slug || index}
+                className="flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-lg"
+              >
+                <ScrollMotionEffect effect="fade-up" duration="1000">
+                  <div className="relative h-60 w-full overflow-hidden">
+                    <Image
+                      src={image.url}
+                      alt={image.altText}
+                      fill
+                      className="object-cover transition-transform duration-500 hover:scale-105"
+                    />
                   </div>
-                  <h2 className="text-lg font-bold text-black mb-2">
-                    {item.title}
-                  </h2>
-                  <p className="text-sm text-gray-600 mt-2 line-clamp-3 flex-grow">
-                    {parse(
-                      item?.body?.replace(/<[^>]*>/g, "").substring(0, 120) +
-                        "..."
-                    )}
-                  </p>
-                  <Link
-                    href={`/blog/${item.slug}`}
-                    className="inline-block mt-4 text-primary font-medium hover:underline duration-500"
-                  >
-                    Read More →
-                  </Link>
-                </div>
-              </ScrollMotionEffect>
-            </div>
-          ))}
+                </ScrollMotionEffect>
+                <ScrollMotionEffect effect="fade-up" duration="2000">
+                  <div className="flex flex-grow flex-col p-4">
+                    <div className="mb-2 flex items-center justify-between gap-3">
+                      <p className="text-xs text-gray-500">
+                        {postDate(item?.createdAt)}
+                      </p>
+                      <p className="text-xs font-medium text-primary">
+                        {item?.category || "Blog Post"}
+                      </p>
+                    </div>
+                    <h2 className="mb-2 line-clamp-2 text-lg font-bold text-black">
+                      {item.title}
+                    </h2>
+                    <p className="mt-2 line-clamp-3 flex-grow text-sm leading-6 text-gray-600">
+                      {description}
+                    </p>
+                    <Link
+                      href={`/blog/${item.slug}`}
+                      className="mt-4 inline-block font-medium text-primary duration-500 hover:underline"
+                    >
+                      Read More
+                    </Link>
+                  </div>
+                </ScrollMotionEffect>
+              </div>
+            );
+          })}
         </div>
 
-        <div className="mt-5 text-center hover:scale-105  transition duration-300">
+        <div className="mt-5 text-center transition duration-300 hover:scale-105">
           <ScrollMotionEffect effect="fade-up" duration="2000">
             <Link
               href={"/blog"}
-              className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary duration-500 hover:scale-105  transition "
+              className="rounded-full border-2 border-secondary bg-none px-4 py-2 text-lg font-normal text-secondary transition duration-500 hover:scale-105 hover:bg-secondary hover:text-white"
             >
               View All Blogs
             </Link>

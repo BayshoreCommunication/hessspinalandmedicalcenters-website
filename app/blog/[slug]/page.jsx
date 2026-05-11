@@ -1,70 +1,38 @@
 import Image from "next/image";
-import GetAllPostData from "@/lib/GetAllPostData";
-import parse from "html-react-parser";
-import SectionLayout from "@/components/shared/SectionLayout";
-import CardMotion from "@/components/motion/CardMotion";
-import Head from "next/head";
 import Link from "next/link";
-import PageHeroSection from "@/components/shared/PageHeroSection";
+import { notFound } from "next/navigation";
+import parse from "html-react-parser";
+import GetAllPostData from "@/lib/GetAllPostData";
+import {
+  getBlogDescription,
+  getBlogImage,
+  getBlogOpenGraphImage,
+} from "@/lib/blogHelpers";
 
-const css = `
- h1, h2, p, br, nav {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: normal;
-}
-
-h1, h2 {
-  font-style: blog;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 25px;
-  text-align: left !important;
-}
-
-p, p span strong, strong {
-  text-align: left !important;
-}
-
-p {
-  font-size: 17px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  text-align: left !important;
-
-}
-
-ul {
-  list-style-type: disc;
-}
-
-`;
-
-function extractTextFromHtml(htmlString) {
-  // Use regex to strip HTML tags and extract plain text
-  const plainText = htmlString.replace(/<\/?[^>]+(>|$)/g, "");
-  return plainText;
-}
-
-function truncateText(text, wordLimit) {
-  const words = text.split(/\s+/);
-  if (words.length > wordLimit) {
-    return words.slice(0, wordLimit).join(" ") + "...";
+function postDate(date) {
+  if (!date) {
+    return "";
   }
-  return text;
+
+  return new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+
+async function getBlogDetails(slug) {
+  const blogPostData = await GetAllPostData();
+  const blogDetails = blogPostData?.data?.find((blogs) => blogs.slug === slug);
+
+  return {
+    blogPostData,
+    blogDetails,
+  };
 }
 
 export async function generateMetadata({ params }) {
-  const blogPostData = await GetAllPostData();
-
-  const blogDetails = blogPostData?.data?.find(
-    (blogs) => blogs.slug === params.slug,
-  );
+  const { blogDetails } = await getBlogDetails(params.slug);
 
   if (!blogDetails) {
     return {
@@ -73,124 +41,129 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const rawDescription = blogDetails?.body || "";
-  const plainTextDescription = extractTextFromHtml(rawDescription);
-  const shortDescription = truncateText(plainTextDescription, 120);
+  const description = getBlogDescription(blogDetails, 220);
 
   return {
-    title: blogDetails?.title,
-    description: shortDescription,
+    title: blogDetails?.seoTitle || blogDetails?.title,
+    description,
     openGraph: {
       title: blogDetails?.title,
-      description: shortDescription,
-      images: blogDetails?.featuredImage?.image?.url,
-      url: `https://hessspinalandmedicalcenters-website.vercel.app/blog/${blogDetails?.slug}`,
+      description,
+      images: getBlogOpenGraphImage(blogDetails),
+      url: `/blog/${blogDetails?.slug}`,
       type: "article",
-      site_name: "melamedlawpllc.com",
+      siteName: "Hess Spinal & Medical Centers",
     },
   };
 }
 
-const page = async ({ params }) => {
-  const blogPostData = await GetAllPostData();
-
-  const blogDetails = blogPostData?.data?.filter(
-    (blogs) => blogs.slug === params.slug,
-  );
-
-  const postDate = (date) => {
-    const formattedDate = new Date(date).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-    return formattedDate;
-  };
+function RecentCasesSidebar({ posts = [], currentSlug }) {
+  const recentPosts = posts
+    .filter((post) => post?.published === true && post?.slug !== currentSlug)
+    .slice(0, 8);
 
   return (
-    <>
-      <style>{css}</style>
-      <PageHeroSection
-        image={"/assets/shared/aboutpage.jpg"}
-        title={blogDetails[0]?.title}
-        link={blogDetails[0]?.title}
-      />
-      <SectionLayout bg="bg-white">
-        <CardMotion
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 1.1,
-            },
-          }}
-          initial={{
-            opacity: 0,
-            y: 100,
-          }}
-        >
-          <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3">
-            {blogDetails?.map((blogs, index) => (
-              <div className="col-span-2">
-                <div className="flex items-center justify-between">
-                  <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
-                    {blogs?.category || "Blog Post"}
-                  </p>
-                  <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
-                    {postDate(blogs?.createdAt)}
-                  </p>
-                </div>
-                <h2
-                  className={`mb-0 md:mb-4 text-2xl md:text-4xl font-bold tracking-normal text-left text-[#1B2639]`}
-                >
-                  {blogs?.title}
-                </h2>
+    <aside className="h-fit rounded-md border border-[#dce7ef] bg-white p-5 shadow-sm lg:sticky lg:top-28">
+      <h2 className="border-b border-[#dce7ef] pb-4 text-2xl font-bold text-[#1a3a5c]">
+        Recent Cases
+      </h2>
+
+      {recentPosts.length === 0 ? (
+        <p className="mt-5 text-sm leading-6 text-slate-600">
+          No recent cases available.
+        </p>
+      ) : (
+        <div className="mt-5 space-y-4">
+          {recentPosts.map((post) => {
+            const image = getBlogImage(post);
+
+            return (
+              <Link
+                href={`/blog/${post.slug}`}
+                key={post.slug}
+                className="group grid grid-cols-[96px_1fr] gap-3 rounded-md border border-[#eef3f7] bg-white p-3 transition hover:border-[#2b7bb9] hover:shadow-sm"
+              >
                 <Image
-                  width={1000}
-                  height={300}
-                  src={blogs?.featuredImage?.image?.url}
-                  alt={blogs?.featuredImage?.altText}
-                  className="w-full h-auto bg-center bg-cover"
+                  width={160}
+                  height={120}
+                  src={image.url}
+                  alt={image.altText}
+                  className="h-20 w-24 rounded object-cover"
                 />
-
-                <div className="mt-2 text-md !text-start">
-                  {parse(blogs?.body)}
+                <div className="min-w-0">
+                  <p className="line-clamp-2 text-sm font-bold leading-5 text-[#1a3a5c] group-hover:text-primary">
+                    {post.title}
+                  </p>
+                  <p className="mt-2 text-xs text-slate-500">
+                    {postDate(post.createdAt)}
+                  </p>
                 </div>
-              </div>
-            ))}
+              </Link>
+            );
+          })}
+        </div>
+      )}
+    </aside>
+  );
+}
 
-            <div className="col-span-2 sm:col-span-1 h-[100%] md:h-[1000px] overflow-y-scroll overflow-x-hidden  p-3 rounded-lg">
-              <h2 className="font-medium text-4xl text-black border-b-2 border-gray-500 pb-4 mb-6">
-                Recent Cases
-              </h2>
-              {blogPostData?.data
-                ?.filter((pub, no) => pub.published === true)
-                ?.map((blogs, index) => (
-                  <Link
-                    className="flex items-start gap-2 ps-3 py-3 drop-shadow-lg bg-white my-3"
-                    key={index}
-                    href={`/blog/${blogs?.slug}`}
-                  >
-                    <Image
-                      width={180}
-                      height={180}
-                      src={blogs?.featuredImage?.image?.url}
-                      alt={blogs?.featuredImage?.altText}
-                      className="w-[100px] h-auto bg-center bg-cover"
-                    />
-                    <div>
-                      <div className="text-md font-bold text-black text-left line-clamp-2">
-                        {blogs?.title}
-                      </div>
-                    </div>
-                  </Link>
-                ))}
+const BlogDetailsPage = async ({ params }) => {
+  const { blogPostData, blogDetails } = await getBlogDetails(params.slug);
+
+  if (!blogDetails) {
+    notFound();
+  }
+
+  const image = getBlogImage(blogDetails);
+  const StaticContent = blogDetails?.StaticContent;
+
+  return (
+    <main className="bg-[#f7fbfd] pt-20 md:pt-28">
+      <section className="container py-10 md:py-16">
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_340px]">
+          <article className="min-w-0">
+            <header className="rounded-md border border-[#dce7ef] bg-white p-5 shadow-sm md:p-8">
+              <h1 className="text-3xl font-bold leading-tight text-[#1a3a5c] md:text-5xl">
+                {blogDetails.title}
+              </h1>
+
+              <div className="relative mt-7 aspect-[16/9] w-full overflow-hidden rounded-md bg-slate-100">
+                <Image
+                  src={image.url}
+                  alt={image.altText}
+                  fill
+                  priority
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="mt-5 flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-600">
+                <span className="rounded-full bg-[#ebf5fb] px-4 py-2 text-[#1a3a5c]">
+                  {blogDetails?.category || "Blog Post"}
+                </span>
+                <span>{postDate(blogDetails?.updatedAt || blogDetails?.createdAt)}</span>
+              </div>
+            </header>
+
+            <div className="mt-8">
+              {StaticContent ? (
+                <StaticContent />
+              ) : (
+                <div className="rounded-md border border-[#dce7ef] bg-white p-5 text-[17px] leading-8 text-[#223143] shadow-sm md:p-8 [&_a]:text-primary [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h1]:text-[#1a3a5c] [&_h2]:mb-4 [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#1a3a5c] [&_li]:mb-2 [&_p]:mb-4 [&_ul]:ml-6 [&_ul]:list-disc">
+                  {parse(blogDetails?.body || "")}
+                </div>
+              )}
             </div>
-          </div>
-        </CardMotion>
-      </SectionLayout>
-    </>
+          </article>
+
+          <RecentCasesSidebar
+            posts={blogPostData?.data || []}
+            currentSlug={blogDetails.slug}
+          />
+        </div>
+      </section>
+    </main>
   );
 };
 
-export default page;
+export default BlogDetailsPage;
