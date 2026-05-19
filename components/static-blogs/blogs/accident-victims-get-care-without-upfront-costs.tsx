@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const BLOG_IMAGE = {
-  url: "/assets/static-blogs/accident-victims-get-care-without-upfront-costs.png",
+  url: "/assets/static-blogs/accident-injury-care-clinic-no-upfront-cost-treatment.webp",
   altText:
     "A physical therapist evaluating a patient after an accident-related back injury",
 };
