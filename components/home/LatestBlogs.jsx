@@ -2,7 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 import GetAllPostData from "@/lib/GetAllPostData";
-import { getBlogDescription, getBlogImage } from "@/lib/blogHelpers";
+import {
+  getBlogDescription,
+  getBlogImage,
+  sortBlogsByLatest,
+} from "@/lib/blogHelpers";
 
 const LatestBlogs = async () => {
   const blogPostData = await GetAllPostData();
@@ -16,9 +20,9 @@ const LatestBlogs = async () => {
     return formattedDate;
   };
 
-  const publishedPosts =
-    blogPostData?.data?.filter((pub) => pub.published === true).slice(0, 3) ||
-    [];
+  const publishedPosts = sortBlogsByLatest(
+    blogPostData?.data?.filter((pub) => pub.published === true) || [],
+  ).slice(0, 3);
 
   return (
     <div className="bg-[#F1F1F1]">

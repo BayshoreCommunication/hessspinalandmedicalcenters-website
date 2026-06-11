@@ -4,7 +4,11 @@ import SectionLayout from "../shared/SectionLayout";
 import Link from "next/link";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 import GetAllPostData from "@/lib/GetAllPostData";
-import { getBlogDescription, getBlogImage } from "@/lib/blogHelpers";
+import {
+  getBlogDescription,
+  getBlogImage,
+  sortBlogsByLatest,
+} from "@/lib/blogHelpers";
 
 const BlogMainSection = async ({ blogPostData: initialBlogPostData } = {}) => {
   const blogPostData = initialBlogPostData || (await GetAllPostData());
@@ -19,8 +23,9 @@ const BlogMainSection = async ({ blogPostData: initialBlogPostData } = {}) => {
   };
 
   // Filter published posts once and store the result
-  const publishedPosts =
-    blogPostData?.data?.filter((pub) => pub.published === true) || [];
+  const publishedPosts = sortBlogsByLatest(
+    blogPostData?.data?.filter((pub) => pub.published === true) || [],
+  );
 
   return (
     <section className="bg-white">

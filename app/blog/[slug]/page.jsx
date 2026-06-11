@@ -7,6 +7,7 @@ import {
   getBlogDescription,
   getBlogImage,
   getBlogOpenGraphImage,
+  sortBlogsByLatest,
 } from "@/lib/blogHelpers";
 
 function postDate(date) {
@@ -42,15 +43,25 @@ export async function generateMetadata({ params }) {
   }
 
   const description = getBlogDescription(blogDetails, 220);
+  const image = getBlogImage(blogDetails);
+  const canonicalUrl = blogDetails?.canonicalUrl || `/blog/${blogDetails?.slug}`;
 
   return {
     title: blogDetails?.seoTitle || blogDetails?.title,
     description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: blogDetails?.title,
       description,
-      images: getBlogOpenGraphImage(blogDetails),
-      url: `/blog/${blogDetails?.slug}`,
+      images: [
+        {
+          url: getBlogOpenGraphImage(blogDetails),
+          alt: image.altText,
+        },
+      ],
+      url: canonicalUrl,
       type: "article",
       siteName: "Hess Spinal & Medical Centers",
     },
@@ -58,9 +69,9 @@ export async function generateMetadata({ params }) {
 }
 
 function RecentCasesSidebar({ posts = [], currentSlug }) {
-  const recentPosts = posts
-    .filter((post) => post?.published === true && post?.slug !== currentSlug)
-    .slice(0, 8);
+  const recentPosts = sortBlogsByLatest(
+    posts.filter((post) => post?.published === true && post?.slug !== currentSlug),
+  ).slice(0, 8);
 
   return (
     <aside className="h-fit rounded-md border border-[#dce7ef] bg-white p-5 shadow-sm lg:sticky lg:top-28">
@@ -116,6 +127,9 @@ const BlogDetailsPage = async ({ params }) => {
 
   const image = getBlogImage(blogDetails);
   const StaticContent = blogDetails?.StaticContent;
+  const imageDescriptionId = image.description
+    ? `${blogDetails.slug}-image-description`
+    : undefined;
 
   return (
     <main className="bg-[#f7fbfd] pt-20 md:pt-28">
@@ -127,15 +141,29 @@ const BlogDetailsPage = async ({ params }) => {
                 {blogDetails.title}
               </h1>
 
-              <div className="relative mt-7 aspect-[16/9] w-full overflow-hidden rounded-md bg-slate-100">
-                <Image
-                  src={image.url}
-                  alt={image.altText}
-                  fill
-                  priority
-                  className="object-cover"
-                />
-              </div>
+              <figure className="mt-7">
+                <div className="relative aspect-[16/9] w-full overflow-hidden rounded-md bg-slate-100">
+                  <Image
+                    src={image.url}
+                    alt={image.altText}
+                    title={image.title}
+                    aria-describedby={imageDescriptionId}
+                    fill
+                    priority
+                    className="object-cover"
+                  />
+                </div>
+                {image.caption ? (
+                  <figcaption className="mt-3 text-sm leading-6 text-slate-600">
+                    {image.caption}
+                  </figcaption>
+                ) : null}
+                {image.description ? (
+                  <p id={imageDescriptionId} className="sr-only">
+                    {image.description}
+                  </p>
+                ) : null}
+              </figure>
 
               <div className="mt-5 flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-600">
                 <span className="rounded-full bg-[#ebf5fb] px-4 py-2 text-[#1a3a5c]">
