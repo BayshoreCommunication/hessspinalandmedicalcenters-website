@@ -7,7 +7,7 @@ export const metadata = {
   title: ``,
   description: ``,
   alternates: {
-    canonical: "/",
+    canonical: "/cookie-policy",
     languages: {
       "en-US": "/en-USA",
     },

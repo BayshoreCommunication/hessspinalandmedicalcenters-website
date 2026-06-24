@@ -10,7 +10,7 @@ const open_sans = Open_Sans({
 
 export const metadata = {
   metadataBase: new URL(
-    "https://hessspinalandmedicalcenters-website.vercel.app"
+    "https://www.hessspinalandmedicalcenters.com"
   ),
 };
 

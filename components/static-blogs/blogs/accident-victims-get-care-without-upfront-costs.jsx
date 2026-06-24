@@ -149,9 +149,9 @@ export default function AccidentVictimsGetCareWithoutUpfrontCosts() {
         </div>
 
         <div className="bg-[#ebf5fb] p-6 md:p-8">
-          <h3 className="text-lg font-bold uppercase tracking-[0.15em] text-[#1a3a5c]">
+          <h2 className="text-lg font-bold uppercase tracking-[0.15em] text-[#1a3a5c]">
             Quick Takeaways
-          </h3>
+          </h2>
           <ul className="mt-5 grid gap-3 text-[15px] leading-7 text-[#24364a] md:grid-cols-2">
             {quickTakeaways.map((item) => (
               <li key={item} className="flex gap-3">

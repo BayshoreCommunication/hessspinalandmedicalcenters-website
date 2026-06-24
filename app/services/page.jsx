@@ -10,7 +10,7 @@ export const metadata = {
   title: ``,
   description: ``,
   alternates: {
-    canonical: "/",
+    canonical: "/services",
     languages: {
       "en-US": "/en-USA",
     },

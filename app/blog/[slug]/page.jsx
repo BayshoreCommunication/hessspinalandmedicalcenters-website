@@ -42,7 +42,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const description = getBlogDescription(blogDetails, 220);
+  const description = blogDetails?.seoDescription || getBlogDescription(blogDetails, 220);
   const image = getBlogImage(blogDetails);
   const canonicalUrl = blogDetails?.canonicalUrl || `/blog/${blogDetails?.slug}`;
 
