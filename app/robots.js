@@ -3,6 +3,7 @@ export default function robots() {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: ["/api/", "/private/"],
     },
     sitemap: "https://www.hessspinalandmedicalcenters.com/sitemap.xml",
   };
