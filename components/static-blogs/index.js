@@ -4,6 +4,9 @@ import AccidentVictimsGetCareWithoutUpfrontCosts, {
 import CommonMistakesPeopleMakeWhenTreatingAccidentInjuries, {
   commonMistakesPeopleMakeWhenTreatingAccidentInjuriesPost,
 } from "./blogs/common-mistakes-people-make-when-treating-accident-injuries";
+import WhatFactorsAffectRecoveryTimeAfterAnInjury, {
+  whatFactorsAffectRecoveryTimeAfterAnInjuryPost,
+} from "./blogs/What Factors Affect Recovery Time After an Injury";
 
 export const staticBlogPosts = [
   {
@@ -13,6 +16,10 @@ export const staticBlogPosts = [
   {
     ...commonMistakesPeopleMakeWhenTreatingAccidentInjuriesPost,
     StaticContent: CommonMistakesPeopleMakeWhenTreatingAccidentInjuries,
+  },
+  {
+    ...whatFactorsAffectRecoveryTimeAfterAnInjuryPost,
+    StaticContent: WhatFactorsAffectRecoveryTimeAfterAnInjury,
   },
 ];
 
