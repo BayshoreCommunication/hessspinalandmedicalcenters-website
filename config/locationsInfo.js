@@ -2,7 +2,7 @@ export const locationsInfo = [
   //1
   {
     id: "brandon_clinic",
-    image: "/assets/location/brandon_clinic.jpg",
+    image: "/assets/location/brandon.jpeg",
     title: "Brandon",
     address: "1216 Oakfield Dr, Brandon, FL 33511",
     mailingAddress: "",
