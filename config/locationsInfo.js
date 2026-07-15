@@ -10,6 +10,7 @@ export const locationsInfo = [
     fax: "813-654-2216",
     latitude: 27.939566,
     longitude: -82.286491,
+    ahcaLicense: "AHCA License: 15324",
     availableSchedule: [
       // { day: "Saturday", time: ["Closed"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -17,9 +18,9 @@ export const locationsInfo = [
         day: "Monday",
         time: ["8:30 AM–1 PM", "2:30–7 PM"],
       },
-      { day: "Tuesday", time: ["8:30 AM–1 PM"] },
+      { day: "Tuesday", time: ["Closed "] },
       { day: "Wednesday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
-      { day: "Thursday", time: ["2:30–7 PM"] },
+      { day: "Thursday", time: ["Closed"] },
       { day: "Friday", time: ["8:30 AM–1 PM", "2:30–7 PM"] },
     ],
   },
@@ -34,6 +35,7 @@ export const locationsInfo = [
     fax: "727-447-7136",
     latitude: 27.972572,
     longitude: -82.796745,
+    ahcaLicense: "AHCA License: 15330",
     availableSchedule: [
       // { day: "Saturday", time: ["Closed"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -51,7 +53,7 @@ export const locationsInfo = [
       },
       {
         day: "Thursday",
-        time: ["8:30 AM–1 PM", "2:30–7 PM"],
+        time: ["Closed"],
       },
       {
         day: "Friday",
@@ -70,6 +72,7 @@ export const locationsInfo = [
     fax: "863-680-1558",
     latitude: 28.039465,
     longitude: -81.949806,
+    ahcaLicense: "AHCA License: 15318",
     availableSchedule: [
       // { day: "Saturday", time: ["Closed"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -100,6 +103,7 @@ export const locationsInfo = [
     fax: "813-948-6325",
     latitude: 28.151119,
     longitude: -82.461481,
+    ahcaLicense: "AHCA License: 15332",
     availableSchedule: [
       { day: "Saturday", time: ["8:30 AM–1 PM"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -130,6 +134,7 @@ export const locationsInfo = [
     fax: "727-848-9145",
     latitude: 28.239472,
     longitude: -82.718797,
+    ahcaLicense: "AHCA License: 15331",
     availableSchedule: [
       { day: "Saturday", time: ["8:30 AM–1 PM"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -160,6 +165,7 @@ export const locationsInfo = [
     fax: "727-544-0419",
     latitude: 27.844138,
     longitude: -82.728263,
+    ahcaLicense: "AHCA License: 15328",
     availableSchedule: [
       // { day: "Saturday", time: ["Closed"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -181,6 +187,7 @@ export const locationsInfo = [
     fax: "813-659-4380",
     latitude: 27.844138,
     longitude: -82.728263,
+    ahcaLicense: "AHCA License: 15317",
     availableSchedule: [
       // { day: "Saturday", time: ["Closed"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -217,6 +224,7 @@ export const locationsInfo = [
     fax: "813-672-4394",
     latitude: 27.844138,
     longitude: -82.728263,
+    ahcaLicense: "AHCA License: 15315",
     availableSchedule: [
       { day: "Saturday", time: ["8:30 AM–1 PM"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -254,6 +262,7 @@ export const locationsInfo = [
     phone: "813-645-4479",
     latitude: 27.86335,
     longitude: -82.32315,
+    ahcaLicense: "AHCA License: 15316",
     availableSchedule: [
       // { day: "Saturday", time: ["Closed"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -290,6 +299,7 @@ export const locationsInfo = [
     fax: "352-610-4461",
     latitude: 27.708831,
     longitude: -82.433497,
+    ahcaLicense: "AHCA License: 15333",
     availableSchedule: [
       // { day: "Saturday", time: ["Closed"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -327,6 +337,7 @@ export const locationsInfo = [
     phone: "727-209-0164",
     latitude: 28.47688,
     longitude: -82.52546,
+    ahcaLicense: "AHCA License: 15327",
     availableSchedule: [
       // { day: "Saturday", time: ["Closed"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -436,6 +447,7 @@ export const locationsInfo = [
     fax: "813-933-3304",
     latitude: 27.999,
     longitude: -82.58,
+    ahcaLicense: "AHCA License: 15325",
     availableSchedule: [
       // { day: "Saturday", time: ["Closed"] },
       // { day: "Sunday", time: ["Closed"] },
@@ -472,6 +484,7 @@ export const locationsInfo = [
     phone: "813-988-5377",
     latitude: 27.943,
     longitude: -82.483,
+    ahcaLicense: "AHCA License: 15326",
     availableSchedule: [
       // { day: "Saturday", time: ["Closed"] },
       // { day: "Sunday", time: ["Closed"] },

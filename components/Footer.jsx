@@ -130,7 +130,7 @@ const Footer = () => {
                       className=" hover:underline duration-300 "
                       target="_blank"
                     >
-                        5550 W Executive Dr, Tampa, FL 33609 
+                        5550 W Executive Dr Ste: 400, Tampa, FL 33609 
                     </Link>
                   </li>
                   <li className="mb-4">

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { GrLocation } from "react-icons/gr";
-import { IoCallOutline } from "react-icons/io5";
+import { IoCallOutline, IoShieldCheckmarkOutline } from "react-icons/io5";
 import { MdAccessTime } from "react-icons/md";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
@@ -190,11 +190,11 @@ const Locations = () => {
 
         {/* CLINICS */}
         <ScrollMotionEffect effect="fade-up" duration="2000">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-10">
             {filteredClinics.map((clinic) => (
               <div
                 key={clinic.id}
-                className="bg-white p-5 rounded-3xl border shadow hover:shadow-lg"
+                className="bg-white p-5 rounded-3xl border shadow hover:shadow-lg flex flex-col h-full min-h-[600px]"
               >
                 <div className="relative h-64 rounded-xl overflow-hidden mb-4">
                   <Image
@@ -242,7 +242,7 @@ const Locations = () => {
                 </Link>
 
                 {/* HOURS */}
-                <div className="border-t pt-4">
+                <div className="border-t pt-4 mb-4">
                   <h3 className="font-semibold underline mb-3">
                     Opening Hours
                   </h3>
@@ -272,6 +272,19 @@ const Locations = () => {
                     })}
                   </ul>
                 </div>
+
+                {/* AHCA LICENSE */}
+                {clinic.ahcaLicense?.trim() && (
+                  <div className="border-t pt-4 mt-auto">
+                    <div className="flex items-center gap-2 text-black font-semibold">
+                      <IoShieldCheckmarkOutline className="shrink-0 size-5" />
+                      {clinic.ahcaLicense}
+                    </div>
+                    <p className="text-sm text-gray-500 ml-7 mt-1">
+                      Licensed Health Care Clinic
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
