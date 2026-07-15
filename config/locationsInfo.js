@@ -516,7 +516,7 @@ export const locationsInfo = [
     id: "tampa-corporate",
     image: "/assets/location/tampa_corporate.jpg",
     title: "Tampa Corporate",
-    address: "Physical Address:  5550 W Executive Dr, Tampa, FL 33609",
+    address: "Physical Address:  5550 W Executive Dr Ste: 400, Tampa, FL 33609",
     mailingAddress: "P.O. Box 20288, Tampa, FL 33622",
     phone: "800-618-4377",
     fax: "813 514-2725",
