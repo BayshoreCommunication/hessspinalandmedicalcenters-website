@@ -7,6 +7,9 @@ import CommonMistakesPeopleMakeWhenTreatingAccidentInjuries, {
 import WhatFactorsAffectRecoveryTimeAfterAnInjury, {
   whatFactorsAffectRecoveryTimeAfterAnInjuryPost,
 } from "./blogs/What Factors Affect Recovery Time After an Injury";
+import WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident, {
+  whyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccidentPost,
+} from "./blogs/why-pain-can-move-to-different-parts-of-the-body-after-a-car-accident";
 
 export const staticBlogPosts = [
   {
@@ -20,6 +23,10 @@ export const staticBlogPosts = [
   {
     ...whatFactorsAffectRecoveryTimeAfterAnInjuryPost,
     StaticContent: WhatFactorsAffectRecoveryTimeAfterAnInjury,
+  },
+  {
+    ...whyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccidentPost,
+    StaticContent: WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident,
   },
 ];
 

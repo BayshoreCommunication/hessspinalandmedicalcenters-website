@@ -169,7 +169,13 @@ const BlogDetailsPage = async ({ params }) => {
                 <span className="rounded-full bg-[#ebf5fb] px-4 py-2 text-[#1a3a5c]">
                   {blogDetails?.category || "Blog Post"}
                 </span>
-                <span>{postDate(blogDetails?.updatedAt || blogDetails?.createdAt)}</span>
+                {blogDetails?.createdAt && (
+                  <span>Published: {postDate(blogDetails.createdAt)}</span>
+                )}
+                {blogDetails?.updatedAt &&
+                  blogDetails?.updatedAt !== blogDetails?.createdAt && (
+                    <span>Updated: {postDate(blogDetails.updatedAt)}</span>
+                  )}
               </div>
             </header>
 
