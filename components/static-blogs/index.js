@@ -10,6 +10,9 @@ import WhatFactorsAffectRecoveryTimeAfterAnInjury, {
 import WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident, {
   whyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccidentPost,
 } from "./blogs/why-pain-can-move-to-different-parts-of-the-body-after-a-car-accident";
+import SoftTissueInjuriesDiagnosisTreatmentCarCrash, {
+  softTissueInjuriesDiagnosisTreatmentCarCrashPost,
+} from "./blogs/soft-tissue-injuries-diagnosis-treatment-car-crash";
 
 export const staticBlogPosts = [
   {
@@ -27,6 +30,10 @@ export const staticBlogPosts = [
   {
     ...whyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccidentPost,
     StaticContent: WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident,
+  },
+  {
+    ...softTissueInjuriesDiagnosisTreatmentCarCrashPost,
+    StaticContent: SoftTissueInjuriesDiagnosisTreatmentCarCrash,
   },
 ];
 
