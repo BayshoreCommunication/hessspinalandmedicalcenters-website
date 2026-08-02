@@ -13,6 +13,9 @@ import WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident, {
 import SoftTissueInjuriesDiagnosisTreatmentCarCrash, {
   softTissueInjuriesDiagnosisTreatmentCarCrashPost,
 } from "./blogs/soft-tissue-injuries-diagnosis-treatment-car-crash";
+import HydrotherapyMassageBackPainMuscleRecovery, {
+  hydrotherapyMassageBackPainMuscleRecoveryPost,
+} from "./blogs/hydrotherapy-massage-back-pain-muscle-recovery";
 
 export const staticBlogPosts = [
   {
@@ -34,6 +37,10 @@ export const staticBlogPosts = [
   {
     ...softTissueInjuriesDiagnosisTreatmentCarCrashPost,
     StaticContent: SoftTissueInjuriesDiagnosisTreatmentCarCrash,
+  },
+  {
+    ...hydrotherapyMassageBackPainMuscleRecoveryPost,
+    StaticContent: HydrotherapyMassageBackPainMuscleRecovery,
   },
 ];
 
