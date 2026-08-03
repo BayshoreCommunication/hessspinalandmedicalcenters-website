@@ -58,12 +58,12 @@ const BlogMainSection = async ({ blogPostData: initialBlogPostData } = {}) => {
                   >
                     <Link href={`/blog/${blogs?.slug}`}>
                       <div className="h-full overflow-hidden rounded-md bg-white text-left shadow-medium">
-                        <div className="relative h-64 w-full overflow-hidden">
+                        <div className="relative h-64 w-full overflow-hidden bg-slate-50">
                           <Image
                             fill
                             src={image.url}
                             alt={image.altText}
-                            className="object-cover transition duration-500 hover:scale-105"
+                            className="object-contain p-2 transition duration-500 hover:scale-105"
                           />
                         </div>
                         <div className="px-4 pb-8 pt-4">

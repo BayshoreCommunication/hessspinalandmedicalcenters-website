@@ -99,7 +99,7 @@ function RecentCasesSidebar({ posts = [], currentSlug }) {
                   height={120}
                   src={image.url}
                   alt={image.altText}
-                  className="h-20 w-24 rounded object-cover"
+                  className="h-20 w-24 rounded border border-[#eef3f7] bg-slate-50 object-contain p-0.5"
                 />
                 <div className="min-w-0">
                   <p className="line-clamp-2 text-sm font-bold leading-5 text-[#1a3a5c] group-hover:text-primary">
@@ -142,15 +142,16 @@ const BlogDetailsPage = async ({ params }) => {
               </h1>
 
               <figure className="mt-7">
-                <div className="relative aspect-[16/9] w-full overflow-hidden rounded-md bg-slate-100">
+                <div className="overflow-hidden rounded-md bg-slate-100">
                   <Image
                     src={image.url}
                     alt={image.altText}
                     title={image.title}
                     aria-describedby={imageDescriptionId}
-                    fill
+                    width={1000}
+                    height={510}
                     priority
-                    className="object-cover"
+                    className="h-auto w-full rounded-md object-contain"
                   />
                 </div>
                 {image.caption ? (

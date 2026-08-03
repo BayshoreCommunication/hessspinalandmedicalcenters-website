@@ -51,12 +51,12 @@ const LatestBlogs = async () => {
                 className="flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-lg"
               >
                 <ScrollMotionEffect effect="fade-up" duration="1000">
-                  <div className="relative h-60 w-full overflow-hidden">
+                  <div className="relative h-60 w-full overflow-hidden bg-slate-50">
                     <Image
                       src={image.url}
                       alt={image.altText}
                       fill
-                      className="object-cover transition-transform duration-500 hover:scale-105"
+                      className="object-contain p-2 transition-transform duration-500 hover:scale-105"
                     />
                   </div>
                 </ScrollMotionEffect>
