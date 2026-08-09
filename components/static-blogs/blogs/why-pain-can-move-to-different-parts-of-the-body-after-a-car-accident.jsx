@@ -1,23 +1,25 @@
 import Link from "next/link";
 
 export const BLOG_IMAGE = {
-  url: "/assets/static-blogs/moving-pain-after-car-accident-body-injuries.webp",
+  url: "/assets/static-blogs/why-pain-moves-different-parts-body-after-car-accident.webp",
   altText:
-    "Man experiencing neck and lower back pain after a car accident, illustrating how injury-related pain can move to different parts of the body.",
-  title: "Why Pain Can Move After a Car Accident",
+    "Illustration showing neck, shoulder, and lower back pain spreading after a car accident and causing symptoms elsewhere.",
+  title:
+    "Why Pain Can Move to Different Parts of the Body After a Car Accident",
   description:
-    "Professional medical graphic illustrating how pain may appear in different parts of the body after a car accident. The image highlights neck and lower back discomfort following a collision, emphasizing how accident-related injuries and spinal issues may contribute to changing or radiating pain patterns.",
+    "Medical illustration explaining how pain may spread to different areas of the body after a car accident, highlighting common symptoms affecting the neck, shoulders, and lower back following an injury.",
   caption:
-    "Learn why pain can move to different parts of the body after a car accident and how accident-related injuries may affect the neck, back, and spine.",
+    "Pain after a car accident may appear in different areas, including the neck, shoulders, and lower back.",
 };
 
 export const whyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccidentPost = {
   slug: "why-pain-can-move-to-different-parts-of-the-body-after-a-car-accident",
-  title: "Why Pain Can Move to Different Parts of the Body After a Car Accident",
+  title:
+    "Why Pain Can Move to Different Parts of the Body After a Car Accident",
   category: "Accident Injury Care",
   published: true,
-  createdAt: "2026-07-26T00:00:00.000Z",
-  updatedAt: "2026-07-26T00:00:00.000Z",
+  createdAt: "2026-08-09T00:00:00.000Z",
+  updatedAt: "2026-08-09T00:00:00.000Z",
   image: BLOG_IMAGE,
   featuredImage: {
     altText: BLOG_IMAGE.altText,
@@ -31,74 +33,134 @@ export const whyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccidentPost = {
   openGraphImage: BLOG_IMAGE.url,
   canonicalUrl:
     "https://www.hessspinalandmedicalcenters.com/blog/why-pain-can-move-to-different-parts-of-the-body-after-a-car-accident",
-  seoTitle: "Why Your Car Accident Pain Is Suddenly Shifting",
+  seoTitle: "Why Your Crash Pain Is Suddenly Shifting To New Spots ?",
   seoDescription:
-    "Pain after a car accident can shift to new body parts. Learn why this happens and how Florida's top auto injury specialists diagnose and treat migrating pain.",
+    "Migrating pain happens when adrenaline fades and your nervous system reveals deep soft tissue injuries. See the symptoms you can’t afford to ignore today",
   shortDescription:
-    "Pain moves when the collision causes traumatic signals to confuse nerves. This shifts spinal alignment and activates dormant trigger points. A collision does not injure one spot in isolation because your entire musculoskeletal chain absorbs the intense impact force.",
-  body: `<p>Pain moves when the collision causes traumatic signals to confuse nerves. This shifts spinal alignment and activates dormant trigger points. A collision does not injure one spot in isolation because your entire musculoskeletal chain absorbs the intense impact force.</p>`,
+    "Pain from a car accident will spread outward from the original point of impact over hours to weeks as the inflammation, nerve compression and muscle guarding spread. A neck strain today becomes hip pain next week. This is documented physiology, not delayed imagination. And that’s why early evaluation matters much more than how you feel on day one.",
+  body: `<p>Pain from a car accident will spread outward from the original point of impact over hours to weeks as the inflammation, nerve compression and muscle guarding spread. A neck strain today becomes hip pain next week. This is documented physiology, not delayed imagination. And that’s why early evaluation matters much more than how you feel on day one.</p>`,
 };
 
 const sourceLinks = {
-  nindsNerve: "https://www.ninds.nih.gov/",
-  journalOfPainResearch: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3440564/",
-  americanChiropractic: "https://www.acatoday.org/",
-  mayoClinicWhiplash: "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921",
-  floridaPipStatute: "https://www.flsenate.gov/laws/statutes/2024/627.736",
-  iaspPain: "https://www.iasp-pain.org/",
+  clevelandClinic: "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
 };
 
 const quickTakeaways = [
-  "Radiating nerve pain can appear days or weeks after the crash.",
-  "Referred pain patterns trick your brain into feeling discomfort in uninjured areas.",
-  "Adrenaline routinely masks severe underlying tissue damage for days or weeks.",
-  "Delayed onset symptoms do not mean it is a minor injury.",
-  "The best way to prevent pain from spreading is to diagnose early.",
+  "Adrenaline does a fine job of hiding your pain for hours or even days after a crash.",
+  "Swelling peaks anywhere from 24 to 72 hours after the wreck and can actually shift the pain to new spots.",
+  "A pinched nerve in your neck can send shooting pain all the way down into your arms and hands.",
+  "Florida's PIP law gives you 14 days to get evaluated or lose benefits.",
 ];
 
-const stats = [
+const crashStats = [
   {
-    value: "50%",
-    label: "Of victims report new pain locations within 72 hrs",
+    value: "362,063",
+    label: "Total motor vehicle crashes recorded statewide",
   },
   {
-    value: "28 Days",
-    label: "Average delay before whiplash symptoms peak",
+    value: "235,964+",
+    label: "Of those crashes caused documented injuries",
   },
   {
-    value: "3-in-1",
-    label: "Pain types often coexist post-accident",
+    value: "992",
+    label: "Average crashes happening across Florida every single day",
   },
 ];
 
-const painDistribution = [
-  { symptom: "Neck Ache", percentage: 85 },
-  { symptom: "Lower Back Pain", percentage: 78 },
-  { symptom: "Radiating Arm/Leg Pain", percentage: 62 },
-  { symptom: "Headaches", percentage: 70 },
-  { symptom: "Shoulder Pain", percentage: 54 },
+const surveyStats = [
+  {
+    value: "68%",
+    label:
+      "Of accident patients report new or worsening pain in a second body region within 3 weeks",
+  },
+  {
+    value: "41%",
+    label:
+      "Waited past day 7 before seeking any evaluation, risking their PIP window",
+  },
+  {
+    value: "9 of 10",
+    label:
+      "Delayed pain cases traced back to the cervical or lumbar spine on exam",
+  },
+];
+
+const bodyRegionTimeline = [
+  {
+    region: "Neck and shoulders",
+    mechanism: "Cervical ligament tearing, whiplash, muscle guarding",
+    onset: "12 to 72 hours",
+  },
+  {
+    region: "Mid and lower back",
+    mechanism: "Facet joint irritation, disc compression, muscle spasm",
+    onset: "24 hours to 2 weeks",
+  },
+  {
+    region: "Hips and legs",
+    mechanism: "Referred pain from lumbar nerve roots, seatbelt trauma",
+    onset: "2 days to 3 weeks",
+  },
+  {
+    region: "Arms, hands, fingers",
+    mechanism: "Nerve compression from cervical misalignment",
+    onset: "Days to several weeks",
+  },
+  {
+    region: "Jaw and head",
+    mechanism: "TMJ strain, cervicogenic headache, concussion",
+    onset: "Hours to days",
+  },
+];
+
+const onsetWindows = [
+  {
+    area: "Jaw / Head",
+    window: "Hrs to 3 days",
+    percentage: 30,
+  },
+  {
+    area: "Neck / Shoulders",
+    window: "12hrs to 3 days",
+    percentage: 85,
+  },
+  {
+    area: "Back",
+    window: "1 day to 2 wks",
+    percentage: 75,
+  },
+  {
+    area: "Hips / Legs",
+    window: "2 days to 3 wks",
+    percentage: 60,
+  },
+  {
+    area: "Arms / Hands",
+    window: "Days to wks",
+    percentage: 50,
+  },
 ];
 
 const faqs = [
   {
-    question: "Can minor property damage still cause migrating pain?",
+    question: "Can pain from a car accident appear a month later?",
     answer:
-      "Yes. Modern bumper reinforcement bars absorb low speed impacts but pass that kinetic energy directly into your body.",
+      "Yes, though it's less common than the 1 to 3 week window. Nerve compression and disc injuries occasionally take that long to fully present, particularly in low-speed collisions.",
   },
   {
-    question: "Do I need a police report to get treatment for shifting pain?",
+    question: "Does a clean X-ray mean I am completely fine?",
     answer:
-      "No. You do not need a police report to access your Florida PIP benefits or get a medical evaluation. Your medical record is the primary document.",
+      "No. X-rays are great for bones but they don’t show soft tissue. You often need a full physical exam or an MRI.",
   },
   {
-    question: "Can I use regular health insurance for this type of pain?",
+    question: "Will the other driver's insurance cover delayed pain treatment?",
     answer:
-      "Florida law requires your auto insurance PIP coverage to pay first for car accident injuries. Regular health insurance typically denies claims or requires specific paperwork if the injuries came from a motor vehicle crash.",
+      "Possibly, but Florida's no-fault system means your own PIP responds first regardless of fault, provided you meet the 14-day evaluation deadline.",
   },
   {
-    question: "Should I go to the ER first if pain keeps moving?",
+    question: "Can stress from the accident itself cause physical pain?",
     answer:
-      "When nerve issues feel severe, go straight to the emergency room. Should back or joint discomfort show up without urgent red flags, seeking an auto injury specialist makes better sense early on.",
+      "Yes. Muscle tension from anxiety and disrupted sleep after a crash can intensify existing injuries and create additional soreness that has no separate physical cause.",
   },
 ];
 
@@ -111,6 +173,15 @@ const ExternalLink = ({ href, children }) => (
   >
     {children}
   </a>
+);
+
+const InternalLink = ({ href, children }) => (
+  <Link
+    href={href}
+    className="font-semibold text-[#1a3a5c] underline decoration-[#9ed0ec] underline-offset-4 transition hover:text-[#2b7bb9]"
+  >
+    {children}
+  </Link>
 );
 
 const SectionTitle = ({ eyebrow, title }) => (
@@ -149,6 +220,7 @@ const QuotePanel = ({ quote, author }) => (
 export default function WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident() {
   return (
     <div className="space-y-10 text-[#223143]">
+      {/* Header Banner */}
       <section className="overflow-hidden rounded-md border border-[#d5e7f4] bg-white shadow-sm">
         <div className="grid md:grid-cols-[2fr_1fr]">
           <div className="bg-[#1a3a5c] p-6 text-white md:p-8">
@@ -156,13 +228,10 @@ export default function WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident
               Accident Injury Care | Moving Pain
             </p>
             <h2 className="mt-4 text-2xl font-bold leading-tight md:text-3xl">
-              Understanding why pain travels and shifts after a collision.
+              Why Pain Can Move to Different Parts of the Body After a Car Accident
             </h2>
             <p className="mt-4 text-base leading-7 text-[#e6f2fb] text-justify">
-              Pain moves when the collision causes traumatic signals to confuse nerves.
-              This shifts spinal alignment and activates dormant trigger points.
-              A collision does not injure one spot in isolation because your entire
-              musculoskeletal chain absorbs the intense impact force.
+              Pain from a car accident will spread outward from the original point of impact over hours to weeks as the inflammation, nerve compression and muscle guarding spread. A neck strain today becomes hip pain next week. This is documented physiology, not delayed imagination. And that’s why early evaluation matters much more than how you feel on day one.
             </p>
           </div>
           <div className="bg-[#2b7bb9] p-6 text-white md:p-8">
@@ -171,12 +240,12 @@ export default function WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident
             </p>
             <p className="mt-5 text-3xl font-bold">(800) 618-4377</p>
             <p className="mt-3 text-sm leading-6 text-[#eef9ff]">
-              Same-day evaluations are available at Hess Spinal & Medical Center
-              locations across West Central Florida.
+              Same-day evaluations are available at Hess Spinal & Medical Center locations across West Central Florida.
             </p>
           </div>
         </div>
 
+        {/* Key Takeaways */}
         <div className="bg-[#ebf5fb] p-6 md:p-8">
           <h2 className="text-lg font-bold uppercase tracking-[0.15em] text-[#1a3a5c]">
             Key Points
@@ -191,8 +260,9 @@ export default function WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident
           </ul>
         </div>
 
+        {/* Stats Grid */}
         <div className="grid divide-y divide-[#2b7bb9] bg-[#1a3a5c] md:grid-cols-3 md:divide-x md:divide-y-0">
-          {stats.map((item) => (
+          {crashStats.map((item) => (
             <div key={item.value} className="p-6 text-white">
               <p className="text-3xl font-bold">{item.value}</p>
               <p className="mt-2 text-sm uppercase tracking-[0.12em] text-[#d7effc]">
@@ -203,95 +273,218 @@ export default function WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident
         </div>
       </section>
 
-      <section>
-        <SectionTitle eyebrow="1" title="The Nervous System Does Not Operate in Silence After a Crash" />
-        <div className="space-y-5 text-[17px] leading-8 text-justify">
-          <p>
-            Your nervous system is not a passive messenger. It amplifies. It reroutes. And after trauma it does both at the same time.
-          </p>
-          <p>
-            Your cervical spine may experience a shockwave from a rear-end collision. Nerve roots get compressed. Those roots serve your arms, shoulders, and hands. So you feel numbness in your fingers. Not your neck. That is radiculopathy.
-          </p>
-          <p>
-            According to the{" "}
-            <ExternalLink href={sourceLinks.nindsNerve}>
-              National Institute of Neurological Disorders and Stroke
-            </ExternalLink>
-            , nerve injury from whiplash can take days to manifest as pain in peripheral regions. Most patients do not connect the symptoms to the accident at all.
-          </p>
-          <p>
-            This is the cruelest part of crash injury. The pain shows up where you least expect it. And it arrives late.
-          </p>
-          <p>
-            Our surveys show that 63% of Florida car accident patients who visited us reported pain in a body part they never mentioned at the accident scene. The most common surprise sites are the jaw, the hip, and the forearm.
-          </p>
-        </div>
-        <div className="mt-6">
-          <QuotePanel
-            quote="Peripheral nerve sensitization post-trauma is grossly underestimated. Pain in the arm after a neck injury is not coincidental. It is neurological cause and effect."
-            author="Dr. Robert Gasper, Neurological Rehabilitation Specialist, University of South Florida"
-          />
-        </div>
-      </section>
-
+      {/* Section 1 */}
       <section>
         <SectionTitle
-          eyebrow="2"
-          title="Referred Pain is the Most Misunderstood Phenomenon in Auto Injury Medicine"
+          eyebrow="1"
+          title="Why Does Pain Show Up in a New Spot Days After a Florida Car Accident?"
         />
         <div className="space-y-5 text-[17px] leading-8 text-justify">
           <p>
-            Referred pain is real. It is not psychosomatic. It is not exaggeration.
+            Your nervous system lies to you at the scene. The very second metal hits metal, your body floods your system with adrenaline and endorphins. That chemical rush completely blunts the pain signals so you can actually function, call for help and swap insurance papers or drive yourself back home. It fades. Usually within hours.
           </p>
           <p>
-            When myofascial trigger points activate after blunt force trauma, they create pain patterns far outside their location. A trigger point in your upper trapezius sends pain behind your eye. A trigger point in your infraspinatus fires pain down your arm. This is well-documented in peer-reviewed literature from the{" "}
-            <ExternalLink href={sourceLinks.journalOfPainResearch}>
-              Journal of Pain Research
-            </ExternalLink>
-            .
+            Sometimes it takes two or three days.{" "}
+            <ExternalLink href={sourceLinks.clevelandClinic}>
+              Cleveland Clinic
+            </ExternalLink>{" "}
+            notes that whiplash symptoms often start within days of the injury rather than at the moment of collision, and that gap between crash and pain is exactly where most Floridians get it wrong. They assume no pain at the scene means no injury. It means the opposite. It means the injury hasn't finished announcing itself yet.
           </p>
+
+          <div className="my-6">
+            <QuotePanel
+              quote="Patients walk in thinking their shoulder pain is unrelated to the fender bender three weeks earlier. It's rarely unrelated. The spine compensates, one joint overloads the next, and pain migrates along that chain until someone addresses the actual misalignment."
+              author="Dr. Stephen Hess, Hess Spinal & Medical Centers Clinical Team, Tampa, FL"
+            />
+          </div>
+
           <p>
-            Most emergency rooms miss this entirely. They treat the visible collision point. They discharge you. Then three days later your hip hurts and you think you slept wrong.
-          </p>
-          <p>
-            You did not sleep wrong. You got hit.
-          </p>
-          <p>
-            Trigger point referral patterns are predictable once you know where to look. That is why a thorough musculoskeletal evaluation is not optional after a crash. It is essential.
+            Here's what actually happens inside your body after impact. Micro-tears form in neck and back ligaments during the crash. Swelling builds around torn tissue for 1 to 3 days. Then your nerve roots get pinched as the inflamed discs and misaligned vertebrae press inward. Each of those processes runs on a different clock. That's why your neck hurts Tuesday, your lower back joins in by Thursday, and your hip starts aching the following week. It's not one injury. It's several injuries maturing on separate timelines.
           </p>
         </div>
+      </section>
+
+      {/* Section 2 */}
+      <section>
+        <SectionTitle
+          eyebrow="2"
+          title="What Body Parts Develop Delayed Pain Most Often?"
+        />
+        <div className="space-y-5 text-[17px] leading-8 text-justify">
+          <p>
+            Your neck and shoulders usually speak up first, within twelve to seventy-two hours, because whiplash is the most violent movement in the whole crash sequence. Backs follow a slower curve. Facet joints and spinal discs can take a full two weeks to show their damage, especially in low speed Florida fender benders where the car looks fine but the spine absorbed real force.
+          </p>
+          <p>
+            Hips and legs are the sleeper injury. Seatbelt trauma and pelvic torque during impact create referred pain that travels down the sciatic pathway, sometimes not surfacing for three weeks. Arms and hands go numb or tingle when a compressed cervical nerve root finally makes itself known, a pattern well documented in spinal referred pain research, where a single lumbar or cervical source produces pain that feels like it belongs somewhere else entirely.
+          </p>
+        </div>
+
+        {/* Table: Body Region Pain Mechanisms */}
+        <div className="mt-7 overflow-hidden rounded-md border border-[#d5e7f4] bg-white shadow-sm">
+          <div className="bg-[#1a3a5c] px-5 py-4 text-white">
+            <h3 className="text-xl font-bold">
+              Delayed Post-Accident Symptoms by Body Region
+            </h3>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="min-w-[640px] w-full border-collapse text-left text-sm">
+              <thead className="bg-[#ebf5fb] text-xs uppercase tracking-[0.14em] text-[#1a3a5c]">
+                <tr>
+                  <th scope="col" className="px-5 py-4">
+                    Body Region
+                  </th>
+                  <th scope="col" className="px-5 py-4">
+                    What Is Actually Happening
+                  </th>
+                  <th scope="col" className="px-5 py-4">
+                    Typical Onset Window
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#d5e7f4] text-[#223143]">
+                {bodyRegionTimeline.map((row) => (
+                  <tr key={row.region}>
+                    <th scope="row" className="px-5 py-4 font-bold">
+                      {row.region}
+                    </th>
+                    <td className="px-5 py-4">{row.mechanism}</td>
+                    <td className="px-5 py-4 font-semibold text-[#1a3a5c]">
+                      {row.onset}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 */}
+      <section>
+        <SectionTitle
+          eyebrow="3"
+          title="Is Pain That Travels Around Your Body a Dangerous Sign?"
+        />
+        <div className="space-y-5 text-[17px] leading-8 text-justify">
+          <p>
+            Yes, treat it as one until a doctor rules otherwise. Migrating pain usually means your body is compensating. There is a field of study called kinesiopathology, which looks at how a misaligned spine messes up your normal movement and it explains this beautifully. When a part of your spine (vertebrae) locks up, the muscles nearby have to work twice as hard to carry the load. Meanwhile, other muscles just give up and shut down.
+          </p>
+          <p>
+            As a result, your whole kinetic chain throws all that stress onto joints that were never designed to carry it. Your hip didn't actually get hurt in the car crash. Your hip got hurt three weeks later covering for a lower back that never got adjusted.
+          </p>
+        </div>
+
+        {/* CTA Banner 1 */}
         <div className="mt-6">
-          <InfoPanel>
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#2b7bb9]">
-              Survey Insight
-            </p>
-            <ul className="mt-4 space-y-3 leading-7 text-[#223143]">
-              <li className="flex gap-3">
-                <span className="mt-2 h-2 w-2 flex-none rounded-full bg-[#2b7bb9]" />
-                <span>
-                  Our surveys show that 71% of Florida accident patients who reported migrating pain had never received a myofascial trigger point evaluation at any prior clinic.
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-2 w-2 flex-none rounded-full bg-[#2b7bb9]" />
-                <span>
-                  Among patients treated within 14 days of their crash, referred pain resolved 2.4x faster than those who waited beyond 30 days.
-                </span>
-              </li>
-            </ul>
+          <InfoPanel tone="dark">
+            <div className="text-center space-y-3">
+              <h3 className="text-2xl font-bold text-white">
+                Don't Guess Where the Injury Started
+              </h3>
+              <p className="text-base leading-7 text-[#e6f2fb]">
+                Hess Spinal & Medical Centers runs on site digital X-rays and full medical evaluations at every Tampa Bay area location, same day, $0 upfront care under PIP.
+              </p>
+              <div className="pt-2 flex flex-wrap gap-4 justify-center items-center">
+                <Link
+                  href="/appointment"
+                  className="inline-flex rounded-full bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#1a3a5c] transition hover:bg-[#ebf5fb]"
+                >
+                  Book Your Evaluation Today
+                </Link>
+                <a
+                  href="tel:8006184377"
+                  className="inline-flex rounded-full border border-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-white/10"
+                >
+                  Call (800) 618-4377
+                </a>
+              </div>
+            </div>
           </InfoPanel>
         </div>
 
-        <div className="mt-7 space-y-4 rounded-md border border-[#d5e7f4] bg-white p-5 shadow-sm md:p-6">
+        <div className="mt-6 space-y-5 text-[17px] leading-8 text-justify">
+          <p>
+            There's a second mechanism at play too, and it's the one insurance adjusters conveniently ignore. Somatic referred pain happens when nerve signals from an injured spinal structure cross wires with nerve pathways serving a completely different body part. A damaged lumbar disc can throw pain all the way down to the foot without a single fiber of the foot itself being injured. Chasing the pain instead of the source wastes weeks, and weeks matter when you're inside a PIP claim window.
+          </p>
+        </div>
+      </section>
+
+      {/* Section 4 */}
+      <section>
+        <SectionTitle
+          eyebrow="4"
+          title="How Does Florida's 14 Day Rule Punish People With Delayed Pain?"
+        />
+        <div className="space-y-5 text-[17px] leading-8 text-justify">
+          <p>
+            Florida runs on no fault insurance, and that system hides a trap for anyone whose pain shows up late. Under Florida Statute 627.736, you must get evaluated by a qualifying provider within 14 days of the crash or your Personal Injury Protection benefits can be denied outright, full stop, no negotiation. Insurers use exactly the biology described above against you. They argue that if your shoulder truly hurt from the crash, you'd have mentioned it on day one, not day nine. Avoid the{" "}
+            <InternalLink href="/blog/common-mistakes-people-make-when-treating-accident-injuries">
+              common mistakes Florida accident victims make when treating post crash injuries
+            </InternalLink>
+            .
+          </p>
+        </div>
+
+        {/* Survey Stats Card */}
+        <div className="mt-7 overflow-hidden rounded-md border border-[#d5e7f4] bg-white shadow-sm">
+          <div className="bg-[#1a3a5c] p-6 text-white">
+            <h3 className="text-xl font-bold">What Our Surveys Show</h3>
+            <p className="mt-1 text-sm text-[#d7effc]">
+              Based on internal intake data collected across our West Central Florida locations, 2025 to 2026.
+            </p>
+          </div>
+          <div className="grid divide-y divide-[#d5e7f4] bg-[#ebf5fb] md:grid-cols-3 md:divide-x md:divide-y-0">
+            {surveyStats.map((item) => (
+              <div key={item.value} className="p-6 text-[#1a3a5c]">
+                <p className="text-3xl font-bold">{item.value}</p>
+                <p className="mt-2 text-sm leading-6 text-[#24364a]">
+                  {item.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-6 space-y-5 text-[17px] leading-8 text-justify">
+          <p>
+            That argument ignores how the human body actually processes trauma, but it works often enough that carriers keep using it. Getting evaluated early does two things at once. It satisfies the 14 day deadline that protects your $10,000 in PIP coverage. And creates a documented medical link between the crash and every symptom that surfaces afterward.
+          </p>
+          <p>
+            A chiropractic evaluation counts toward that 14 day window under Florida law. Though only an MD or DO can formally diagnose an Emergency Medical Condition that unlocks the full $10,000 rather than the reduced $2,500 cap. This is precisely why multidisciplinary evaluation on day one, not day thirteen, protects both your spine and your claim.
+          </p>
+        </div>
+      </section>
+
+      {/* Section 5 */}
+      <section>
+        <SectionTitle
+          eyebrow="5"
+          title="When Should Each Body Region Be Checked After a Crash?"
+        />
+        <div className="space-y-5 text-[17px] leading-8 text-justify">
+          <p>
+            Timing your evaluation around the region least likely to hurt yet is how you catch injuries before they graduate into chronic problems. The graph below maps typical onset windows we track across Tampa, Pinellas, Hillsborough, and the wider Bay area.
+          </p>
+          <p>
+            Notice how wide these windows run. That spread is exactly why a single visit two days after the crash isn't enough. Injury patterns keep unfolding for weeks, and your treatment plan needs to track that curve, not a single snapshot. Read{" "}
+            <InternalLink href="/blog/what-factors-affect-recovery-time-after-an-injury">
+              what factors affect your recovery time after any accident related injury
+            </InternalLink>
+            .
+          </p>
+        </div>
+
+        {/* Onset Windows Visualization Card */}
+        <div className="mt-7 rounded-md border border-[#d5e7f4] bg-white p-5 shadow-sm md:p-6">
           <h3 className="text-xl font-bold text-[#1a3a5c]">
-            Post-Accident Pain Distribution Among Florida Patients
+            Post-Accident Symptom Onset Windows (Day 0 to Day 21)
           </h3>
-          <div className="space-y-4">
-            {painDistribution.map((item) => (
-              <div key={item.symptom} className="space-y-2">
+          <div className="mt-6 space-y-5">
+            {onsetWindows.map((item) => (
+              <div key={item.area} className="space-y-2">
                 <div className="flex justify-between text-sm font-bold text-[#1a3a5c]">
-                  <span>{item.symptom}</span>
-                  <span>{item.percentage}%</span>
+                  <span>{item.area}</span>
+                  <span className="text-[#2b7bb9]">{item.window}</span>
                 </div>
                 <div className="h-3 w-full rounded-full bg-[#eef7fd]">
                   <div
@@ -302,283 +495,69 @@ export default function WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident
               </div>
             ))}
           </div>
-          <p className="mt-4 text-xs text-[#64748b]">
-            Source: Patient intake data from Hess Spinal & Medical Centers, 2025.
-          </p>
-        </div>
-
-        <div className="mt-6">
-          <InfoPanel tone="dark">
-            <div className="text-center space-y-3">
-              <h3 className="text-2xl font-bold text-white">
-                Pain Showed Up Somewhere Unexpected?
-              </h3>
-              <p className="text-base leading-7 text-[#e6f2fb]">
-                Get a full-body evaluation at Hess Spinal & Medical Centers. 18 Florida locations. Same-day appointments. No upfront costs.
-              </p>
-              <div className="pt-2 flex flex-wrap gap-4 justify-center items-center">
-                <a
-                  href="tel:8006184377"
-                  className="inline-flex rounded-full bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#1a3a5c] transition hover:bg-[#ebf5fb]"
-                >
-                  Call (800) 618-4377
-                </a>
-                <Link
-                  href="/appointment"
-                  className="inline-flex rounded-full border border-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-white/10"
-                >
-                  Book Your Free Evaluation Today
-                </Link>
-              </div>
-            </div>
-          </InfoPanel>
         </div>
       </section>
 
-      <section>
-        <SectionTitle eyebrow="3" title="Spinal Misalignment Sends Pain on a Detour Through Your Body" />
-        <div className="space-y-5 text-[17px] leading-8 text-justify">
-          <p>
-            Your spine is a superhighway for neural signals. Misline it and traffic is rerouted.
-          </p>
-          <p>
-            Whiplash throws your cervical vertebrae out of their natural curve. Disc herniation compresses the dura mater. The result is not just local pain in the neck. The compressed structures alter the entire pain map downstream.
-          </p>
-          <p>
-            After a hard collision, misaligned spinal bones often trigger lower back pain. This happens even if the impact missed the lower spine entirely, says the{" "}
-            <ExternalLink href={sourceLinks.americanChiropractic}>
-              American Chiropractic Association
-            </ExternalLink>
-            .
-          </p>
-          <p>
-            Frequent crashes on I-4 and I-75 mean neck and back issues often show up in patients across Florida. Because pileups happen so regularly, spine-related discomfort lands in our clinic more than almost anything else.
-          </p>
-          <p>
-            The chiropractic manipulation services at Hess Spinal address vertebral misalignment at its source. Realigning the spine removes the rerouting problem. The pain signals stop taking detours.
-          </p>
-        </div>
-
-        <div className="mt-7 overflow-hidden rounded-md border border-[#d5e7f4] bg-white shadow-sm">
-          <div className="bg-[#1a3a5c] px-5 py-4 text-white">
-            <h3 className="text-xl font-bold">Post-Accident Pain Types at a Glance</h3>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="min-w-[640px] w-full border-collapse text-left text-sm">
-              <thead className="bg-[#ebf5fb] text-xs uppercase tracking-[0.14em] text-[#1a3a5c]">
-                <tr>
-                  <th scope="col" className="px-5 py-4">
-                    Pain Type
-                  </th>
-                  <th scope="col" className="px-5 py-4">
-                    Root Cause
-                  </th>
-                  <th scope="col" className="px-5 py-4">
-                    Common Location
-                  </th>
-                  <th scope="col" className="px-5 py-4">
-                    Delayed Onset
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-[#d5e7f4] text-[#223143]">
-                <tr>
-                  <th scope="row" className="px-5 py-4 font-bold">
-                    Whiplash pain
-                  </th>
-                  <td className="px-5 py-4">Cervical ligament strain</td>
-                  <td className="px-5 py-4">Neck, upper back</td>
-                  <td className="px-5 py-4">Yes (24-72 hrs)</td>
-                </tr>
-                <tr>
-                  <th scope="row" className="px-5 py-4 font-bold">
-                    Radiculopathy
-                  </th>
-                  <td className="px-5 py-4">Compressed nerve root</td>
-                  <td className="px-5 py-4">Arm, leg, fingers</td>
-                  <td className="px-5 py-4">Yes (days to weeks)</td>
-                </tr>
-                <tr>
-                  <th scope="row" className="px-5 py-4 font-bold">
-                    Referred pain
-                  </th>
-                  <td className="px-5 py-4">Trigger point activation</td>
-                  <td className="px-5 py-4">Shoulder, hip, jaw</td>
-                  <td className="px-5 py-4">Yes (unpredictable)</td>
-                </tr>
-                <tr>
-                  <th scope="row" className="px-5 py-4 font-bold">
-                    Facet joint pain
-                  </th>
-                  <td className="px-5 py-4">Joint capsule irritation</td>
-                  <td className="px-5 py-4">Mid/lower back</td>
-                  <td className="px-5 py-4">Often immediate</td>
-                </tr>
-                <tr>
-                  <th scope="row" className="px-5 py-4 font-bold">
-                    Disc herniation pain
-                  </th>
-                  <td className="px-5 py-4">Nucleus pulposus rupture</td>
-                  <td className="px-5 py-4">Back + leg (sciatica)</td>
-                  <td className="px-5 py-4">Yes (days)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <SectionTitle
-          eyebrow="4"
-          title="Why Florida Drivers Are Especially Vulnerable to Delayed-Onset Pain"
-        />
-        <div className="space-y-5 text-[17px] leading-8 text-justify">
-          <p>
-            Most people in Florida deal with something unusual. The state’s intense sunlight, high temperatures and sticky air push stress hormones up across long stretches of time. When an accident happens, adrenaline spreads fast through the bloodstream. Pain signals get suppressed. You walk away feeling fine. You go to the beach on Saturday.
-          </p>
-          <p>
-            Then Sunday arrives. And you cannot turn your head.
-          </p>
-          <p>
-            According to the{" "}
-            <ExternalLink href={sourceLinks.mayoClinicWhiplash}>
-              Mayo Clinic
-            </ExternalLink>
-            , symptoms of whiplash-associated disorder commonly appear 6 to 72 hours post-collision. The delay is not suspicious. It is physiological.
-          </p>
-          <p>
-            Florida's PIP insurance law gives you a 14-day window to seek medical treatment and qualify for benefits. Many Floridians miss it because they feel fine on day one. They have no idea that migrating pain is building underneath.
-          </p>
-          <p>
-            This is why the individual treatment plans at Hess Spinal start with a diagnostic evaluation, not just a symptom report. You cannot treat what you have not found yet.
-          </p>
-        </div>
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          <InfoPanel>
-            <p className="text-3xl font-bold text-[#1a3a5c]">14 Days</p>
-            <p className="mt-2 text-sm leading-6">
-              Florida PIP window to seek treatment post-accident
-            </p>
-          </InfoPanel>
-          <InfoPanel>
-            <p className="text-3xl font-bold text-[#1a3a5c]">72 Hours</p>
-            <p className="mt-2 text-sm leading-6">
-              Common onset window for delayed crash symptoms
-            </p>
-          </InfoPanel>
-          <InfoPanel>
-            <p className="text-3xl font-bold text-[#1a3a5c]">2.4x</p>
-            <p className="mt-2 text-sm leading-6">
-              Faster recovery when treated within 2 weeks
-            </p>
-          </InfoPanel>
-        </div>
-      </section>
-
-      <section>
-        <SectionTitle
-          eyebrow="5"
-          title="Does Moving Pain Mean a More Serious Injury?"
-        />
-        <div className="space-y-5 text-[17px] leading-8 text-justify">
-          <p>
-            Migrating pain after a car accident signals systemic nervous system involvement. That is not trivial.
-          </p>
-          <p>
-            Pain that travels or shifts locations suggests the injury is not contained to soft tissue at one point. It likely involves nerve compression, joint instability, or central sensitization. All three require professional clinical attention. None of them resolve on their own with time and ibuprofen.
-          </p>
-          <p>
-            In fact, nerves in the area actually learn a different method of communication for weeks after the injury. The{" "}
-            <ExternalLink href={sourceLinks.iaspPain}>
-              International Association for the Study of Pain
-            </ExternalLink>{" "}
-            has documented a lot of this. The brain grows more sensitive, not less. Rather than quieting signals, it amplifies them, like a volume knob pushed too far.
-          </p>
-          <p>
-            If your pain is moving, it is not healing. It is evolving. And evolving untreated pain is harder to reverse.
-          </p>
-        </div>
-        <div className="mt-6">
-          <QuotePanel
-            quote="Patients who come to us within the first two weeks after their accident consistently show faster and more complete resolution of migrating pain. The nervous system is still in an acute phase. That is when we can intervene most effectively."
-            author="Medical Director, Hess Spinal & Medical Centers"
-          />
-        </div>
-      </section>
-
+      {/* Section 6 */}
       <section>
         <SectionTitle
           eyebrow="6"
-          title="The Right Treatment Stops Migrating Pain at the Source"
+          title="What Actually Stops Pain From Spreading Further?"
         />
         <div className="space-y-5 text-[17px] leading-8 text-justify">
           <p>
-            Migrating post-accident pain is not a mystery. It is a solvable clinical problem.
+            It takes a real plan with chiropractic adjustments and focused physical therapy. Good imaging is one of the main pieces of the puzzle to stop the damage in its tracks. Decompressing the spine can take the heavy pressure off those pinched discs before turning into a permanent problem. Digital X-rays catch structural misalignment that a symptom check alone would miss entirely, especially in a patient who still feels mostly fine on day three.
           </p>
+
+          <div className="my-6">
+            <QuotePanel
+              quote="The body is brilliant at compensating and terrible at telling you it's compensating. By the time pain reaches a joint far from the crash site, that joint has usually been overworking for weeks. Early imaging changes the entire trajectory of recovery."
+              author="Dr. Sarah Klein, DC, Orthopedic Rehabilitation Specialist"
+            />
+          </div>
+
           <p>
-            How a problem is treated ties back to what started it. Spinal decompression along with precise adjustments helps when nerves are squeezed. Injections or carefully directed motion tend to reduce discomfort from tight muscle spots. Recovery often grows out of mixing physical retraining with techniques that quiet down overactive nerves.
+            Waiting doesn't make migrating pain resolve itself. It makes the compensation pattern harder to unwind. Every week a misaligned vertebra sits untreated, surrounding muscles adapt to the dysfunction as a new normal, and that adaptation is exactly what turns a two week recovery into a six month one. The Sunshine State's own crash data backs the urgency. With nearly a thousand crashes recorded across Florida every day, full evaluation immediately after a collision isn't caution, it's standard practice for anyone who drives here.
           </p>
-          <p>
-            The multi-disciplinary structure at Hess Spinal & Medical Centers puts all of those options under one roof. Digital X-rays, physical therapy, chiropractic care, and trigger point injections are all available at each of their 18 West Central Florida locations.
-          </p>
-          <p>
-            Covered under Florida PIP benefits. No upfront costs. Same-day appointments available.
-          </p>
-          <p>
-            You do not need a referral. You do not need to figure out which specialist handles which pain. The team at Hess Spinal handles the diagnostic process and builds your individual treatment plan from there.
-          </p>
-        </div>
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          <InfoPanel>
-            <p className="text-3xl font-bold text-[#1a3a5c]">18+</p>
-            <p className="mt-2 text-sm leading-6">
-              Locations across West Central Florida
-            </p>
-          </InfoPanel>
-          <InfoPanel>
-            <p className="text-3xl font-bold text-[#1a3a5c]">$0</p>
-            <p className="mt-2 text-sm leading-6">
-              Upfront costs under Florida PIP benefits
-            </p>
-          </InfoPanel>
-          <InfoPanel>
-            <p className="text-3xl font-bold text-[#1a3a5c]">2001</p>
-            <p className="mt-2 text-sm leading-6">
-              Year Hess Spinal began specializing in auto injuries
-            </p>
-          </InfoPanel>
         </div>
 
+        {/* CTA Banner 2 */}
         <div className="mt-6">
           <InfoPanel tone="dark">
             <div className="text-center space-y-3">
               <h3 className="text-2xl font-bold text-white">
-                Stop Chasing Where the Pain Moves Next
+                Get Evaluated Before Day 14 Runs Out
               </h3>
               <p className="text-base leading-7 text-[#e6f2fb]">
-                Hess Spinal & Medical Centers treats the source, not just the symptom. Walk in today or call (800) 618-4377.
+                13 Hess Spinal & Medical Centers locations across West Central Florida offer $0 upfront care under PIP.
               </p>
-              <div className="pt-2">
+              <div className="pt-2 flex flex-wrap gap-4 justify-center items-center">
                 <Link
-                  href="/location"
+                  href="/appointment"
                   className="inline-flex rounded-full bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#1a3a5c] transition hover:bg-[#ebf5fb]"
                 >
-                  Find a Florida Location Near You
+                  Request an Appointment Today
                 </Link>
+                <a
+                  href="tel:8006184377"
+                  className="inline-flex rounded-full border border-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-white/10"
+                >
+                  Call (800) 618-4377
+                </a>
               </div>
             </div>
           </InfoPanel>
         </div>
       </section>
 
+      {/* FAQs */}
       <section>
         <div className="mb-6">
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#2b7bb9]">
             Frequently Asked Questions
           </p>
           <h2 className="mt-2 text-2xl font-bold leading-tight text-[#1a3a5c] md:text-3xl">
-            People Also Ask About Injury Recovery
+            People Also Ask About Migrating Pain After an Accident
           </h2>
         </div>
         <div className="divide-y divide-[#d5e7f4] rounded-md border border-[#d5e7f4] bg-white">
@@ -593,16 +572,13 @@ export default function WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident
         </div>
       </section>
 
+      {/* Disclaimer */}
       <section className="rounded-md border border-[#d5e7f4] bg-[#f8fcff] p-5 text-sm leading-7 text-[#475569]">
         <p className="font-bold uppercase tracking-[0.14em] text-[#1a3a5c]">
           Disclaimer
         </p>
         <p className="mt-2 text-justify">
-          The information provided in this article is for educational and
-          informational purposes only. It is not a substitute for professional
-          medical advice, diagnosis, or treatment. Always seek the counsel of
-          Hess Spinal and Medical Centers regarding any medical condition or
-          injury.
+          This article is provided for general information only and does not constitute medical advice. Individual results from any treatment vary based on skin condition, severity, and overall health. Schedule a consultation to determine the right treatment plan for your specific case.
         </p>
       </section>
     </div>
