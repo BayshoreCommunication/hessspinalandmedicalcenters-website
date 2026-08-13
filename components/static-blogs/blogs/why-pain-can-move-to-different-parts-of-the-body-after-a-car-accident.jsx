@@ -498,9 +498,9 @@ export default function WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident
           <div className="mt-6">
             <InfoPanel tone="dark">
               <div className="text-center space-y-3">
-                <h3 className="text-2xl font-bold text-white">
+                <h2 className="text-2xl font-bold text-white">
                   Don't Guess Where the Injury Started
-                </h3>
+                </h2>
                 <p className="text-base leading-7 text-[#e6f2fb]">
                   Hess Spinal & Medical Centers runs on site digital X-rays and full medical evaluations at every Tampa Bay area location, same day, $0 upfront care under PIP.
                 </p>
@@ -645,9 +645,9 @@ export default function WhyPainCanMoveToDifferentPartsOfTheBodyAfterACarAccident
           <div className="mt-6">
             <InfoPanel tone="dark">
               <div className="text-center space-y-3">
-                <h3 className="text-2xl font-bold text-white">
+                <h2 className="text-2xl font-bold text-white">
                   Get Evaluated Before Day 14 Runs Out
-                </h3>
+                </h2>
                 <p className="text-base leading-7 text-[#e6f2fb]">
                   13 Hess Spinal & Medical Centers locations across West Central Florida offer $0 upfront care under PIP.
                 </p>
