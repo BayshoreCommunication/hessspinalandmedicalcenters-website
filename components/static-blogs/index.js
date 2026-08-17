@@ -16,6 +16,9 @@ import SoftTissueInjuriesDiagnosisTreatmentCarCrash, {
 import HydrotherapyMassageBackPainMuscleRecovery, {
   hydrotherapyMassageBackPainMuscleRecoveryPost,
 } from "./blogs/hydrotherapy-massage-back-pain-muscle-recovery";
+import CanChiropracticCareImproveAthleticPerformance, {
+  canChiropracticCareImproveAthleticPerformancePost,
+} from "./blogs/can-chiropractic-care-improve-athletic-performance";
 
 export const staticBlogPosts = [
   {
@@ -41,6 +44,10 @@ export const staticBlogPosts = [
   {
     ...hydrotherapyMassageBackPainMuscleRecoveryPost,
     StaticContent: HydrotherapyMassageBackPainMuscleRecovery,
+  },
+  {
+    ...canChiropracticCareImproveAthleticPerformancePost,
+    StaticContent: CanChiropracticCareImproveAthleticPerformance,
   },
 ];
 
