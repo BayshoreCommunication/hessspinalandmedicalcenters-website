@@ -200,7 +200,7 @@ export default function CanChiropracticCareImproveAthleticPerformance() {
                   {
                     "@type": "ListItem",
                     "position": 2,
-                    "name": "Blog",
+                    "name": "Blogs",
                     "item": "https://www.hessspinalandmedicalcenters.com/blog"
                   },
                   {
@@ -228,18 +228,21 @@ export default function CanChiropracticCareImproveAthleticPerformance() {
                 },
                 "about": {
                   "@type": "Thing",
-                  "name": "Chiropractic Care and Athletic Performance",
-                  "description": "An overview of how chiropractic adjustments, spinal alignment, proprioception, and recovery protocols enhance athletic performance and prevent sports injuries."
+                  "name": "Chiropractic Care for Athletic Performance",
+                  "description": "An overview of how chiropractic care may support athletic performance through improved mobility, spinal and joint function, recovery, balance, and injury prevention."
                 },
                 "keywords": [
+                  "can chiropractic care improve athletic performance",
                   "chiropractic care for athletes",
-                  "athletic performance chiropractic",
-                  "sports injury prevention",
-                  "spinal alignment reaction time",
-                  "sports recovery Florida",
-                  "chiropractor Tampa Bay",
-                  "range of motion improvement",
-                  "sports medicine chiropractic"
+                  "chiropractic athletic performance",
+                  "sports chiropractic care",
+                  "chiropractic care for sports performance",
+                  "chiropractic treatment for athletes",
+                  "chiropractic care recovery",
+                  "chiropractic care injury prevention",
+                  "athlete chiropractic treatment",
+                  "sports injury chiropractic",
+                  "Tampa chiropractor for athletes"
                 ],
                 "author": {
                   "@type": "Organization",
