@@ -19,6 +19,9 @@ import HydrotherapyMassageBackPainMuscleRecovery, {
 import CanChiropracticCareImproveAthleticPerformance, {
   canChiropracticCareImproveAthleticPerformancePost,
 } from "./blogs/can-chiropractic-care-improve-athletic-performance";
+import HowCanStressIncreasePhysicalPain, {
+  howCanStressIncreasePhysicalPainPost,
+} from "./blogs/how-can-stress-increase-physical-pain";
 
 export const staticBlogPosts = [
   {
@@ -48,6 +51,10 @@ export const staticBlogPosts = [
   {
     ...canChiropracticCareImproveAthleticPerformancePost,
     StaticContent: CanChiropracticCareImproveAthleticPerformance,
+  },
+  {
+    ...howCanStressIncreasePhysicalPainPost,
+    StaticContent: HowCanStressIncreasePhysicalPain,
   },
 ];
 
