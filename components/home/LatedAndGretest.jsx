@@ -345,7 +345,7 @@ const LatedAndGretest = () => {
                       - Case Type -
                     </option>
                     {addAreaspracticeData?.map((el, index) => (
-                      <option className="text-base" value={el?.title}>
+                      <option key={index} className="text-base" value={el?.title}>
                         {el?.title}
                       </option>
                     ))}

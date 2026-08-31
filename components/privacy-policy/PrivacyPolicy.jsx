@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
           </div>
           <div className="flex flex-col gap-4">
             <p className="text-lg text-stone-950 text-center md:text-left">
-              At Hess Spinal & Medical Centers ("we," "our," and "the Center"), your privacy is
+              At Hess Spinal & Medical Centers (&quot;we,&quot; &quot;our,&quot; and &quot;the Center&quot;), your privacy is
               important to us. This Privacy Policy explains how we collect, use,
               disclose, and safeguard your personal information when you visit
               our website, use our medical & spinal care services, or engage with us in any way.
@@ -285,7 +285,7 @@ const PrivacyPolicy = () => {
               your personal information.
             </p>
             <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
-              Our Policies for Children's Privacy
+              Our Policies for Children&apos;s Privacy
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
               Our services and website are not intended for individuals under
@@ -314,7 +314,7 @@ const PrivacyPolicy = () => {
               We may revise this Privacy Policy occasionally to align with
               updates to our practices or to meet legal obligations. When we
               make updates, we will post the revised policy on our website and
-              update the "Effective Date" at the top of the page. We recommend
+              update the &quot;Effective Date&quot; at the top of the page. We recommend
               checking this Privacy Policy regularly to stay updated on how we
               protect your personal information.
             </p>

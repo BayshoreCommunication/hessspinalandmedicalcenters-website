@@ -28,7 +28,7 @@ const CookiePolicy = () => {
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
               This policy is designed to comply with the applicable privacy
-              laws, including the European Union's General Data Protection
+              laws, including the European Union&apos;s General Data Protection
               Regulation (GDPR) and other relevant regulations.
             </p>
             <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
