@@ -18,7 +18,7 @@ const TermsOfService = () => {
               AGREEMENT TO OUR LEGAL TERMS
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
-              By using the services of Melamed Law, PLLC, including our website
+              By using the services of Hess Spinal & Medical Centers, including our website
               and related resources, you agree to these Legal Terms. If you do
               not agree with these terms, please discontinue use of the Services
               immediately. We reserve the right to update or modify these Legal
@@ -30,9 +30,8 @@ const TermsOfService = () => {
               {`1) OUR SERVICES`}
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
-              The Services provided by Melamed Law, PLLC are intended to assist
-              clients with property damage and insurance claims, including but
-              not limited to:
+              The Services provided by Hess Spinal & Medical Centers are intended to assist
+              clients with chiropractic care, physical therapy, car accident injury evaluation, and related healthcare services.
             </p>
             <ol className="pl-14 list-disc">
               <li className="pb-4">
@@ -55,7 +54,7 @@ const TermsOfService = () => {
             <ol className="pl-14 list-disc">
               <li className="pb-4">
                 <span className="font-semibold">Our Rights: </span>
-                Melamed Law, PLLC owns or licenses all intellectual property
+                Hess Spinal & Medical Centers owns or licenses all intellectual property
                 related to the Services, including website design, text, images,
                 software, databases, and trademarks. These rights are protected
                 under applicable copyright and trademark laws.
@@ -72,7 +71,7 @@ const TermsOfService = () => {
                 By submitting feedback or content through our website or
                 Services, you grant us the right to use, modify, and distribute
                 such content. Any intellectual property rights in these
-                submissions will be assigned to Melamed Law, PLLC.
+                submissions will be assigned to Hess Spinal & Medical Centers.
               </li>
             </ol>
             <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
@@ -111,7 +110,7 @@ const TermsOfService = () => {
             <p className="text-lg text-stone-950 text-center md:text-left">
               Certain features of our Services may require user registration.
               You are responsible for maintaining the security of your account
-              credentials. Melamed Law, PLLC reserves the right to remove,
+              credentials. Hess Spinal & Medical Centers reserves the right to remove,
               reclaim, or modify usernames deemed inappropriate or misleading.
             </p>
             <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
@@ -150,7 +149,7 @@ const TermsOfService = () => {
             <p className="text-lg text-stone-950 text-center md:text-left">
               Any content you submit must be truthful, lawful, and free of
               third-party rights violations. By submitting content, you grant
-              Melamed Law, PLLC the rights to use, modify, and distribute your
+              Hess Spinal & Medical Centers the rights to use, modify, and distribute your
               contributions as part of the Services.
             </p>
             <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
@@ -175,7 +174,7 @@ const TermsOfService = () => {
               {`9) COPYRIGHT INFRINGEMENT`}
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
-              Melamed Law, PLLC respects intellectual property rights. If you
+              Hess Spinal & Medical Centers respects intellectual property rights. If you
               believe your copyrighted material has been used without
               authorization, please contact us with the relevant details for
               review and resolution.
@@ -185,7 +184,7 @@ const TermsOfService = () => {
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
               We reserve the right to modify, suspend, or discontinue the
-              Services at any time without prior notice. Melamed Law, PLLC is
+              Services at any time without prior notice. Hess Spinal & Medical Centers is
               not responsible for any interruptions or changes that may occur
               during such modifications.
             </p>
@@ -207,27 +206,24 @@ const TermsOfService = () => {
               at:
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left font-semibold">
-              Melamed Law PLLC
+              Hess Spinal & Medical Centers
             </p>
             <p className="font-semibold text-base text-stone-950 text-center md:text-left">
               Location{" "}
               <span className="font-normal text-blue-500 underline block">
-                <Link href="https://maps.app.goo.gl/gPaF4mQkx4wGQjaK8">
-                  3040 NE 190th St APT 303, Aventura, FL 33180, United States
-                </Link>
+                5550 W Executive Dr Ste: 400, Tampa, FL 33609, United States
               </span>{" "}
             </p>
             <p className="text-base font-semibold text-stone-950 text-center md:text-left">
               Contact{" "}
               <span
                 className="text-blue-500 font-normal underline block"
-                tel="tel:+9545290695"
               >
                 <Link
-                  href="tel:954-529-0695"
+                  href="tel:800-618-4377"
                   className="hover:underline duration-300 text-base"
                 >
-                  {`954-529-0695`}
+                  (800) 618-4377
                 </Link>
               </span>{" "}
             </p>
@@ -235,18 +231,17 @@ const TermsOfService = () => {
               Email{" "}
               <span
                 className="text-blue-500 underline block font-normal"
-                mailto="mailto:info@melamedlawpllc.com"
               >
                 <Link
-                  href="mailto: info@melamedlawpllc.com"
+                  href="mailto:info@hessspinalcenters.com"
                   className="hover:underline duration-300 text-base"
                 >
-                  info@melamedlawpllc.com
+                  info@hessspinalcenters.com
                 </Link>
               </span>{" "}
             </p>
             <p className="text-base text-stone-950 font-semibold text-center md:text-left">
-              {`© 2025 Melamed Law, PLLC. All Rights Reserved.`}
+              {`© 2025 Hess Spinal & Medical Centers. All Rights Reserved.`}
             </p>
           </div>
         </div>

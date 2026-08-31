@@ -10,7 +10,7 @@ const CookiePolicy = () => {
           <h2
             className={`text-stone-950 !font-semibold text-3xl md:text-5xl mt-10 lg:mt-20 mb-10  text-center  uppercase`}
           >
-            Cookie Policy for Melamed Law PLLC
+            Cookie Policy for Hess Spinal & Medical Centers
           </h2>
 
           <div className="flex flex-col gap-4">
@@ -18,7 +18,7 @@ const CookiePolicy = () => {
               Effective Date: 26 January, 2025
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
-              Melamed Law PLLC (“we,” “our,” or “us”) is dedicated to
+              Hess Spinal & Medical Centers (“we,” “our,” or “us”) is dedicated to
               safeguarding your privacy while you navigate our website. This
               Cookie Policy is intended to provide you with a comprehensive
               understanding of how we use cookies, the types of cookies
@@ -255,27 +255,24 @@ const CookiePolicy = () => {
               following contact details:
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left font-semibold">
-              Melamed Law PLLC
+              Hess Spinal & Medical Centers
             </p>
             <p className="font-semibold text-base text-stone-950 text-center md:text-left">
               Location{" "}
               <span className="font-normal text-blue-500 underline block">
-                <Link href="https://maps.app.goo.gl/gPaF4mQkx4wGQjaK8">
-                  3040 NE 190th St APT 303, Aventura, FL 33180, United States
-                </Link>
+                5550 W Executive Dr Ste: 400, Tampa, FL 33609, United States
               </span>{" "}
             </p>
             <p className="text-base font-semibold text-stone-950 text-center md:text-left">
               Contact{" "}
               <span
                 className="text-blue-500 font-normal underline block"
-                tel="tel:+9545290695"
               >
                 <Link
-                  href="tel:954-529-0695"
+                  href="tel:800-618-4377"
                   className="hover:underline duration-300 text-base"
                 >
-                  {`954-529-0695`}
+                  (800) 618-4377
                 </Link>
               </span>{" "}
             </p>
@@ -283,13 +280,12 @@ const CookiePolicy = () => {
               Email{" "}
               <span
                 className="text-blue-500 underline block font-normal"
-                mailto="mailto:info@melamedlawpllc.com"
               >
                 <Link
-                  href="mailto: info@melamedlawpllc.com"
+                  href="mailto:info@hessspinalcenters.com"
                   className="hover:underline duration-300 text-base"
                 >
-                  info@melamedlawpllc.com
+                  info@hessspinalcenters.com
                 </Link>
               </span>{" "}
             </p>

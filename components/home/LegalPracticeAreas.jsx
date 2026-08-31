@@ -11,7 +11,7 @@ const LegalPracticeAreas = () => {
         <div className="max-w-[700px] mx-auto">
           <ScrollMotionEffect effect="fade-right" duration="2000">
             <h1 className="font-black text-3xl  md:text-4xl lg:text-5xl text-white text-center">
-              Welcome to Melamed Law
+              Welcome to Hess Spinal & Medical Centers
             </h1>
           </ScrollMotionEffect>
           <ScrollMotionEffect effect="fade-left" duration="2000">

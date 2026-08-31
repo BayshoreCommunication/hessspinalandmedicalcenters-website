@@ -189,7 +189,7 @@ const LatedAndGretest = () => {
                 className="w-[500px] h-auto"
               />
               <p className="text-md text-white mt-5">
-                {`If your insurance claim has been denied, underpaid, delayed, or you just have questions about how to start the process, give us a call at Melamed Law today.`}
+                {`If you have questions about how to start your care or treatment process, give us a call at Hess Spinal & Medical Centers today.`}
               </p>
               <div className="mt-4 mb-3">
                 <h2 className="text-white font-medium text-2xl md:text-3xl text-center md:text-left">
@@ -198,7 +198,7 @@ const LatedAndGretest = () => {
                 <div className="flex items-center gap-x-2 mt-4 ">
                   <BsTelephoneForwardFill className="text-secondary size-4" />
                   <h6 className="text-white font-normal text-sm md:text-lg">
-                    954-529-0695
+                    (800) 618-4377
                   </h6>
                 </div>
                 <div className="flex items-start gap-x-2 mt-2 mb-4 ">
@@ -206,47 +206,25 @@ const LatedAndGretest = () => {
 
                   <div className="">
                     <p className="text-white font-normal text-sm md:text-lg">
-                      3040 NE 190th St APT 303, Aventura, FL
-                      33180, United States
+                      5550 W Executive Dr Ste: 400, Tampa, FL 33609
                     </p>
                   </div>
                 </div>
               </div>
               <div className="text-white flex justify-center md:justify-start gap-2 mt-8 mb-8">
                 <Link
-                  href="https://www.facebook.com/MelamedLawPLLC"
+                  href="https://www.facebook.com/HessSpinal"
                   target="_blank"
                   className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
                 >
                   <FaFacebookF className="size-5" />
                 </Link>
                 <Link
-                  href="https://www.linkedin.com/company/melamedlawpllc"
-                  target="_blank"
-                  className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
-                >
-                  <FaLinkedinIn className="size-5" />
-                </Link>
-                <Link
-                  href="https://x.com/Melamedlawpllc"
-                  target="_blank"
-                  className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
-                >
-                  <FaTwitter className="size-5" />
-                </Link>
-                <Link
-                  href="https://www.instagram.com/melamedlaw_pllc"
+                  href="https://www.instagram.com/hessspinal/"
                   target="_blank"
                   className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
                 >
                   <FaInstagram className="size-5" />
-                </Link>
-                <Link
-                  href="https://www.youtube.com/@melamedlawpllc"
-                  target="_blank"
-                  className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary duration-300"
-                >
-                  <FaYoutube className="size-5" />
                 </Link>
               </div>
             </div>

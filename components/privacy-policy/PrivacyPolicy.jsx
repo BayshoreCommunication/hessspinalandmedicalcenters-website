@@ -51,10 +51,10 @@ const PrivacyPolicy = () => {
           </div>
           <div className="flex flex-col gap-4">
             <p className="text-lg text-stone-950 text-center md:text-left">
-              At Melamed Law PLLC ("we," "our," and "the Firm"), your privacy is
+              At Hess Spinal & Medical Centers ("we," "our," and "the Center"), your privacy is
               important to us. This Privacy Policy explains how we collect, use,
               disclose, and safeguard your personal information when you visit
-              our website, use our legal services, or engage with us in any way.
+              our website, use our medical & spinal care services, or engage with us in any way.
               We are committed to protecting your privacy and ensuring that your
               personal information is handled with care, by the applicable
               privacy laws.
@@ -293,7 +293,7 @@ const PrivacyPolicy = () => {
               information from children. If we find out that we’ve accidentally
               gathered info from someone under 13, we’ll delete it right away.
               If you think we might have info about a child under 13, please let
-              us know by emailing us at info@melamedlawpllc.com; we’ll take care
+              us know by emailing us at info@hessspinalcenters.com; we’ll take care
               of it!
             </p>
             <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
@@ -328,27 +328,24 @@ const PrivacyPolicy = () => {
               following contact details:
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left font-semibold">
-              Melamed Law PLLC
+              Hess Spinal & Medical Centers
             </p>
             <p className="font-semibold text-base text-stone-950 text-center md:text-left">
               Location{" "}
               <span className="font-normal text-blue-500 underline block">
-                <Link href="https://maps.app.goo.gl/gPaF4mQkx4wGQjaK8">
-                  3040 NE 190th St APT 303, Aventura, FL 33180, United States
-                </Link>
+                5550 W Executive Dr Ste: 400, Tampa, FL 33609, United States
               </span>{" "}
             </p>
             <p className="text-base font-semibold text-stone-950 text-center md:text-left">
               Contact{" "}
               <span
                 className="text-blue-500 font-normal underline block"
-                tel="tel:+9545290695"
               >
                 <Link
-                  href="tel:954-529-0695"
+                  href="tel:800-618-4377"
                   className="hover:underline duration-300 text-base"
                 >
-                  {`954-529-0695`}
+                  (800) 618-4377
                 </Link>
               </span>{" "}
             </p>
@@ -356,18 +353,17 @@ const PrivacyPolicy = () => {
               Email{" "}
               <span
                 className="text-blue-500 underline block font-normal"
-                mailto="mailto:info@melamedlawpllc.com"
               >
                 <Link
-                  href="mailto: info@melamedlawpllc.com"
+                  href="mailto:info@hessspinalcenters.com"
                   className="hover:underline duration-300 text-base"
                 >
-                  info@melamedlawpllc.com
+                  info@hessspinalcenters.com
                 </Link>
               </span>{" "}
             </p>
             <p className="text-base text-stone-950 text-center md:text-left">
-              © 2025 Melamed Law, PLLC. All Rights Reserved.{" "}
+              © 2025 Hess Spinal & Medical Centers. All Rights Reserved.{" "}
             </p>
             <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               Consent

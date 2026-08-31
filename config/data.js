@@ -4,9 +4,9 @@ export const servicesData = [
     url: "/assets/areaspractice/hurricane-damage.jpg",
     slug: "hurricane-damage",
     icon: "/assets/servicepage/icon/hurricane-damage.png",
-    sortTitle: `Florida’s hurricane damage lawyer | Best hurricane claim attorney florida | Experieneced Florida hurricane claims insurance attorney | Expert Hurricane Damage Claim law firm in Florida | Melamed Law`,
+    sortTitle: `Florida’s hurricane damage lawyer | Best hurricane claim attorney florida | Experieneced Florida hurricane claims insurance attorney | Expert Hurricane Damage Claim law firm in Florida | Hess Spinal & Medical Centers`,
 
-    shortDescription: `Looking for Florida’s hurricane damage lawyer? Our Best hurricane claim attorney in Florida offers experienced legal representation for hurricane-related claims. As an Experienced Florida hurricane claims insurance attorney, we provide expert guidance to help you get the compensation you deserve. Contact our Expert Hurricane Damage Claim law firm in Florida today.  Melamed Law`,
+    shortDescription: `Looking for Florida’s hurricane damage lawyer? Our Best hurricane claim attorney in Florida offers experienced legal representation for hurricane-related claims. As an Experienced Florida hurricane claims insurance attorney, we provide expert guidance to help you get the compensation you deserve. Contact our Expert Hurricane Damage Claim law firm in Florida today.  Hess Spinal & Medical Centers`,
     description: ` <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -78,7 +78,7 @@ export const servicesData = [
 
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                      How Melamed Law Stands By Your Rights
+                      How Hess Spinal & Medical Centers Stands By Your Rights
                     </h2>
                     <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
                       <li>
@@ -106,9 +106,9 @@ export const servicesData = [
     url: "/assets/areaspractice/windstorm-damage.jpg",
     slug: "windstorm-damage",
     icon: "/assets/servicepage/icon/windstrom-damage.png",
-    sortTitle: `Florida’s windstorm damage lawyer | Expert insurance claims​ for windstorm damages near me | Best windstorm damage insurance attorney florida |  Experienced windstorm damage claim attoreny florida |  Melamed Law`,
+    sortTitle: `Florida’s windstorm damage lawyer | Expert insurance claims​ for windstorm damages near me | Best windstorm damage insurance attorney florida |  Experienced windstorm damage claim attoreny florida |  Hess Spinal & Medical Centers`,
 
-    shortDescription: `Searching for Florida’s windstorm damage lawyer? Our Expert insurance claims for windstorm damages near you are handled by the Best windstorm damage insurance attorney in Florida. With an Experienced windstorm damage claim attorney in Florida, we offer dedicated legal support to ensure you receive fair compensation. Contact us for a consultation today.  Melamed Law`,
+    shortDescription: `Searching for Florida’s windstorm damage lawyer? Our Expert insurance claims for windstorm damages near you are handled by the Best windstorm damage insurance attorney in Florida. With an Experienced windstorm damage claim attorney in Florida, we offer dedicated legal support to ensure you receive fair compensation. Contact us for a consultation today.  Hess Spinal & Medical Centers`,
     description: ` <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -180,7 +180,7 @@ export const servicesData = [
 
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                      How Melamed Law Stands By Your Rights
+                      How Hess Spinal & Medical Centers Stands By Your Rights
                     </h2>
                     <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
                       <li>
@@ -210,8 +210,8 @@ export const servicesData = [
     url: "/assets/areaspractice/roof-damage.jpg",
     slug: "roof-damage",
     icon: "/assets/servicepage/icon/roof-damage.png",
-    sortTitle: `Roof damage claims | Expert roofing claim lawyer in Florida | Best Roof Damage Attorneys florida | Best insurance claim lawyer for roof damage |  Melamed Law`,
-    shortDescription: `Need help with roof damage claims? Our Expert roofing claim lawyer in Florida is here to assist you. As one of the Best Roof Damage Attorneys in Florida, we specialize in handling insurance claims for roof damage. Trust the Best insurance claim lawyer for roof damage to fight for your rightful compensation. Contact  Melamed Law, today for expert legal assistance.`,
+    sortTitle: `Roof damage claims | Expert roofing claim lawyer in Florida | Best Roof Damage Attorneys florida | Best insurance claim lawyer for roof damage |  Hess Spinal & Medical Centers`,
+    shortDescription: `Need help with roof damage claims? Our Expert roofing claim lawyer in Florida is here to assist you. As one of the Best Roof Damage Attorneys in Florida, we specialize in handling insurance claims for roof damage. Trust the Best insurance claim lawyer for roof damage to fight for your rightful compensation. Contact  Hess Spinal & Medical Centers, today for expert legal assistance.`,
     description: `   <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -329,8 +329,8 @@ export const servicesData = [
     url: "/assets/areaspractice/strom-damage.jpg",
     slug: "storm-damage",
     icon: "/assets/servicepage/icon/storm-damage.png",
-    sortTitle: `Storm damage attorney for homeowners and business owners in Florida | Top Storm Damage Insurance Claims Lawyer Florida | experienced storm damage insurance attorney florida | best storm damage lawyer service florida | Melamed Law PLLC`,
-    shortDescription: `Looking for a Storm damage attorney for homeowners and business owners in Florida? Melamed Law PLLC offers top-notch legal services as a Top Storm Damage Insurance Claims Lawyer in Florida. Our Experienced storm damage insurance attorney in Florida is dedicated to securing your rightful compensation. Trust the Best storm damage lawyer service in Florida for expert representation. Contact us today!`,
+    sortTitle: `Storm damage attorney for homeowners and business owners in Florida | Top Storm Damage Insurance Claims Lawyer Florida | experienced storm damage insurance attorney florida | best storm damage lawyer service florida | Hess Spinal & Medical Centers`,
+    shortDescription: `Looking for a Storm damage attorney for homeowners and business owners in Florida? Hess Spinal & Medical Centers offers top-notch legal services as a Top Storm Damage Insurance Claims Lawyer in Florida. Our Experienced storm damage insurance attorney in Florida is dedicated to securing your rightful compensation. Trust the Best storm damage lawyer service in Florida for expert representation. Contact us today!`,
     description: `  <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -411,7 +411,7 @@ export const servicesData = [
                   
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                      How Melamed Law Stands by Your Rights
+                      How Hess Spinal & Medical Centers Stands by Your Rights
                     </h2>
                     <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
                       <li>
@@ -439,8 +439,8 @@ export const servicesData = [
     url: "/assets/areaspractice/water-damage.jpg",
     slug: "water-damage",
     icon: "/assets/servicepage/icon/water-damage.png",
-    sortTitle: `Water damage coverage | Top florida water damage insurance attorneys | Best Law firm for water damage claim florida | Best water damage lawyer service florida |   Melamed Law`,
-    shortDescription: `Need help with water damage coverage? Melamed Law offers expert legal services as one of the Top Florida water damage insurance attorneys. As the Best Law firm for water damage claims in Florida, we provide dedicated support to ensure you receive fair compensation. Trust the Best water damage lawyer service in Florida for professional legal assistance. Contact Melamed Law today!`,
+    sortTitle: `Water damage coverage | Top florida water damage insurance attorneys | Best Law firm for water damage claim florida | Best water damage lawyer service florida |   Hess Spinal & Medical Centers`,
+    shortDescription: `Need help with water damage coverage? Hess Spinal & Medical Centers offers expert legal services as one of the Top Florida water damage insurance attorneys. As the Best Law firm for water damage claims in Florida, we provide dedicated support to ensure you receive fair compensation. Trust the Best water damage lawyer service in Florida for professional legal assistance. Contact Hess Spinal & Medical Centers today!`,
     description: ` <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -527,7 +527,7 @@ export const servicesData = [
                   
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                      How Melamed Law Stands by Your Rights
+                      How Hess Spinal & Medical Centers Stands by Your Rights
                     </h2>
                     <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
                       <li>
@@ -556,8 +556,8 @@ export const servicesData = [
     url: "/assets/areaspractice/fire-damage.jpg",
     slug: "fire-damage",
     icon: "/assets/servicepage/icon/fire-damage.png",
-    sortTitle: `Fire damage experienced attorneys | Melamed Law | Best insurance attorney for fire damage florida | top law firm for fire damage claim florida | best fire damage lawyer service florida |`,
-    shortDescription: `Looking for Fire damage experienced attorneys? Melamed Law is your trusted choice for the Best insurance attorney for fire damage in Florida. As the Top law firm for fire damage claims in Florida, we specialize in securing fair compensation for your losses. Trust the Best fire damage lawyer service in Florida. Contact Melamed Law today for expert legal assistance.`,
+    sortTitle: `Fire damage experienced attorneys | Hess Spinal & Medical Centers | Best insurance attorney for fire damage florida | top law firm for fire damage claim florida | best fire damage lawyer service florida |`,
+    shortDescription: `Looking for Fire damage experienced attorneys? Hess Spinal & Medical Centers is your trusted choice for the Best insurance attorney for fire damage in Florida. As the Top law firm for fire damage claims in Florida, we specialize in securing fair compensation for your losses. Trust the Best fire damage lawyer service in Florida. Contact Hess Spinal & Medical Centers today for expert legal assistance.`,
     description: `  <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -645,7 +645,7 @@ export const servicesData = [
                   
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                      How Melamed Law Stands by Your Rights
+                      How Hess Spinal & Medical Centers Stands by Your Rights
                     </h2>
                     <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
                       <li>
@@ -678,8 +678,8 @@ export const servicesData = [
     url: "/assets/areaspractice/mold-damage.jpg",
     slug: "mold-damage",
     icon: "/assets/servicepage/icon/mold-damage.png",
-    sortTitle: `Legal Help After Mold Damage florida  |  Melamed Law | experienced mold damage insurance attorney florida| Expert Mold lawyers Florida | Florida's Mold Experts lawyer`,
-    shortDescription: `Need Legal Help After Mold Damage in Florida? Melamed Law offers experienced mold damage insurance attorneys in Florida. As Expert Mold lawyers in Florida, we specialize in mold-related claims to ensure you receive fair compensation. Trust Florida's Mold Experts lawyer to handle your case with care and expertise. Contact Melamed Law today for professional legal support.`,
+    sortTitle: `Legal Help After Mold Damage florida  |  Hess Spinal & Medical Centers | experienced mold damage insurance attorney florida| Expert Mold lawyers Florida | Florida's Mold Experts lawyer`,
+    shortDescription: `Need Legal Help After Mold Damage in Florida? Hess Spinal & Medical Centers offers experienced mold damage insurance attorneys in Florida. As Expert Mold lawyers in Florida, we specialize in mold-related claims to ensure you receive fair compensation. Trust Florida's Mold Experts lawyer to handle your case with care and expertise. Contact Hess Spinal & Medical Centers today for professional legal support.`,
 
     description: ` <div>
                 <div className="md:flex md:space-x-6">
@@ -765,7 +765,7 @@ export const servicesData = [
                   
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                      How Melamed Law Stands by Your Rights
+                      How Hess Spinal & Medical Centers Stands by Your Rights
                     </h2>
                     <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
                       <li>
@@ -794,8 +794,8 @@ export const servicesData = [
     url: "/assets/areaspractice/hail-damage.jpg",
     slug: "hail-damage",
     icon: "/assets/servicepage/icon/hail-damage.png",
-    sortTitle: `Legal Help After Hail Damage |  Melamed Law | Top rated Hail damage attorney florida | Experienced hail damage lawyers florida | Best Hail Insurance attoreny florida | `,
-    shortDescription: `Seeking Legal Help After Hail Damage? Melamed Law offers expert representation from a Top rated hail damage attorney in Florida. Our Experienced hail damage lawyers in Florida are committed to securing your rightful compensation. Trust the Best Hail Insurance attorney in Florida to handle your case with precision. Contact Melamed Law today for professional legal assistance.`,
+    sortTitle: `Legal Help After Hail Damage |  Hess Spinal & Medical Centers | Top rated Hail damage attorney florida | Experienced hail damage lawyers florida | Best Hail Insurance attoreny florida | `,
+    shortDescription: `Seeking Legal Help After Hail Damage? Hess Spinal & Medical Centers offers expert representation from a Top rated hail damage attorney in Florida. Our Experienced hail damage lawyers in Florida are committed to securing your rightful compensation. Trust the Best Hail Insurance attorney in Florida to handle your case with precision. Contact Hess Spinal & Medical Centers today for professional legal assistance.`,
 
     description: `<div>
                 <div className="md:flex md:space-x-6">
@@ -884,7 +884,7 @@ export const servicesData = [
                   
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                      How Melamed Law Stands by Your Rights
+                      How Hess Spinal & Medical Centers Stands by Your Rights
                     </h2>
                     <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
                       <li>
@@ -916,9 +916,9 @@ export const servicesData = [
     url: "/assets/areaspractice/plumbing-damage.jpg",
     slug: "plumbing-damage",
     icon: "/assets/servicepage/icon/plumbing-damage.png",
-    sortTitle: `Florida, plumbing damage | homeowners and property owners |  Melamed Law |  Expert Plumbing Damage Claim Lawyer florida | Best Insurance Attorney for plumbing damage florida | `,
+    sortTitle: `Florida, plumbing damage | homeowners and property owners |  Hess Spinal & Medical Centers |  Expert Plumbing Damage Claim Lawyer florida | Best Insurance Attorney for plumbing damage florida | `,
 
-    shortDescription: `Dealing with plumbing damage in Florida? Melamed Law offers expert legal services for homeowners and property owners. As an Expert Plumbing Damage Claim Lawyer in Florida, we specialize in securing compensation for plumbing-related damages. Trust the Best Insurance Attorney for plumbing damage in Florida to handle your claim. Contact Melamed Law today for expert legal representation.`,
+    shortDescription: `Dealing with plumbing damage in Florida? Hess Spinal & Medical Centers offers expert legal services for homeowners and property owners. As an Expert Plumbing Damage Claim Lawyer in Florida, we specialize in securing compensation for plumbing-related damages. Trust the Best Insurance Attorney for plumbing damage in Florida to handle your claim. Contact Hess Spinal & Medical Centers today for expert legal representation.`,
     description: `  <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -997,7 +997,7 @@ export const servicesData = [
                   
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                      How Melamed Law Stands By Your Rights
+                      How Hess Spinal & Medical Centers Stands By Your Rights
                     </h2>
                     <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
                       <li>
@@ -1029,8 +1029,8 @@ export const servicesData = [
     url: "/assets/areaspractice/smoke-damage.jpg",
     slug: "smoke-damage",
     icon: "/assets/servicepage/icon/smoke-damage.png",
-    sortTitle: `Smoke damage in Florida |   Melamed Law | Top Florida Smoke and Fire Damage Attorneys | Trusted smoke damage insurance attorney florida | Best Law firm for somke damagae claim |`,
-    shortDescription: `Experiencing smoke damage in Florida? Melamed Law is home to the Top Florida Smoke and Fire Damage Attorneys. Our Trusted smoke damage insurance attorney in Florida specializes in securing fair compensation for your losses. As the Best Law firm for smoke damage claims, we provide expert legal representation. Contact Melamed Law today for professional support.`,
+    sortTitle: `Smoke damage in Florida |   Hess Spinal & Medical Centers | Top Florida Smoke and Fire Damage Attorneys | Trusted smoke damage insurance attorney florida | Best Law firm for somke damagae claim |`,
+    shortDescription: `Experiencing smoke damage in Florida? Hess Spinal & Medical Centers is home to the Top Florida Smoke and Fire Damage Attorneys. Our Trusted smoke damage insurance attorney in Florida specializes in securing fair compensation for your losses. As the Best Law firm for smoke damage claims, we provide expert legal representation. Contact Hess Spinal & Medical Centers today for professional support.`,
 
     description: `  <div>
                 <div className="md:flex md:space-x-6">
@@ -1107,7 +1107,7 @@ export const servicesData = [
                   
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                      How Melamed Law Stands By Your Rights
+                      How Hess Spinal & Medical Centers Stands By Your Rights
                     </h2>
                     <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
                       <li>
@@ -1136,8 +1136,8 @@ export const servicesData = [
     url: "/assets/areaspractice/bad-faith-claims.jpg",
     slug: "bad-faith-claims",
     icon: "/assets/servicepage/icon/bad-faith-claims.png",
-    sortTitle: `Bad faith insurance claim attorney |  Melamed Law |  Expert bad faith insurance claim lawyers florida | Best florida lawyer service for bad faith | Top bad faith attorney florida | `,
-    shortDescription: `Need a bad faith insurance claim attorney? Melamed Law offers expert legal services with experienced bad faith insurance claim lawyers in Florida. As the Best Florida lawyer service for bad faith claims, we specialize in holding insurers accountable. Trust our Top bad faith attorney in Florida to fight for your rights. Contact Melamed Law today for professional legal assistance.`,
+    sortTitle: `Bad faith insurance claim attorney |  Hess Spinal & Medical Centers |  Expert bad faith insurance claim lawyers florida | Best florida lawyer service for bad faith | Top bad faith attorney florida | `,
+    shortDescription: `Need a bad faith insurance claim attorney? Hess Spinal & Medical Centers offers expert legal services with experienced bad faith insurance claim lawyers in Florida. As the Best Florida lawyer service for bad faith claims, we specialize in holding insurers accountable. Trust our Top bad faith attorney in Florida to fight for your rights. Contact Hess Spinal & Medical Centers today for professional legal assistance.`,
 
     description: `  <div>
                 <div className="md:flex md:space-x-6">
@@ -1217,7 +1217,7 @@ export const servicesData = [
                   
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                      How Melamed Law Stands By Your Rights
+                      How Hess Spinal & Medical Centers Stands By Your Rights
                     </h2>
                     <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
                       <li>
@@ -1246,9 +1246,9 @@ export const servicesData = [
     url: "/assets/areaspractice/vandalism-and-theft.jpg",
     slug: "vandalism-and-theft",
     icon: "/assets/servicepage/icon/vandalism-and-theft.png",
-    sortTitle: `Damages from vandalism lawyer in florida |  Melamed Law | Top Florida Vandalism Claims Attorney | Best Insurance attorney for Vandalism claim florida | Expert lawyer service for Vandalism and theft Florida | `,
+    sortTitle: `Damages from vandalism lawyer in florida |  Hess Spinal & Medical Centers | Top Florida Vandalism Claims Attorney | Best Insurance attorney for Vandalism claim florida | Expert lawyer service for Vandalism and theft Florida | `,
 
-    shortDescription: `Looking for a Damages from vandalism lawyer in Florida? Melamed Law offers expert legal services as the Top Florida Vandalism Claims Attorney. As the Best Insurance attorney for vandalism claims in Florida, we specialize in securing compensation for vandalism and theft. Trust our Expert lawyer service for Vandalism and theft in Florida. Contact Melamed Law today for dedicated legal support.`,
+    shortDescription: `Looking for a Damages from vandalism lawyer in Florida? Hess Spinal & Medical Centers offers expert legal services as the Top Florida Vandalism Claims Attorney. As the Best Insurance attorney for vandalism claims in Florida, we specialize in securing compensation for vandalism and theft. Trust our Expert lawyer service for Vandalism and theft in Florida. Contact Hess Spinal & Medical Centers today for dedicated legal support.`,
     description: `      <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -1333,7 +1333,7 @@ export const servicesData = [
                   
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                      How Melamed Law Stands By Your Rights
+                      How Hess Spinal & Medical Centers Stands By Your Rights
                     </h2>
                     <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
                       <li>
