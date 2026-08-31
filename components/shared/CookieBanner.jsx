@@ -10,10 +10,7 @@ const CookieBanner = () => {
 
   useEffect(() => {
     setMounted(true);
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 400);
-    return () => clearTimeout(timer);
+    setIsVisible(true);
   }, []);
 
   const handleAccept = () => {
@@ -39,26 +36,26 @@ const CookieBanner = () => {
   return (
     <AnimatePresence>
       {isVisible && (
-        <>
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 pointer-events-auto">
           {/* Dark Backdrop Overlay */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-black/50 backdrop-blur-xs z-[9998]"
+            transition={{ duration: 0.25 }}
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9998]"
             onClick={() => setIsVisible(false)}
           />
 
           {/* Centered Cookie Modal */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: "-45%", x: "-50%" }}
-            animate={{ opacity: 1, scale: 1, y: "-50%", x: "-50%" }}
-            exit={{ opacity: 0, scale: 0.9, y: "-45%", x: "-50%" }}
-            transition={{ duration: 0.35, ease: "easeOut" }}
-            className="fixed top-1/2 left-1/2 z-[9999] w-[92%] sm:w-[440px] max-w-[480px] pointer-events-auto"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="relative z-[9999] w-full max-w-[460px]"
           >
-            <div className="bg-[#07381e] text-white p-6 sm:p-7 rounded-[24px] shadow-[0_25px_60px_rgba(0,0,0,0.6)] border border-[#037B40]/70 flex flex-col justify-between">
+            <div className="bg-[#07381e] text-white p-6 sm:p-7 rounded-[24px] shadow-[0_25px_60px_rgba(0,0,0,0.7)] border border-[#037B40]/70 flex flex-col justify-between">
               <p className="text-center text-sm sm:text-base font-semibold leading-relaxed text-slate-100">
                 We use cookies to improve your experience and analyze site
                 traffic. See our{" "}
@@ -89,7 +86,7 @@ const CookieBanner = () => {
               </div>
             </div>
           </motion.div>
-        </>
+        </div>
       )}
     </AnimatePresence>
   );
