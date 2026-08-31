@@ -49,8 +49,8 @@ const ServiceOfferings = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {serviceContent.map((con, index) => (
-          <MotionEffect effect="fade-up" duration="2000">
-            <div className="p-6 " key={index}>
+          <MotionEffect effect="fade-up" duration="2000" key={index}>
+            <div className="p-6 ">
               <div className="flex items-center justify-center md:justify-start mb-4">
                 <Image
                   width={50}

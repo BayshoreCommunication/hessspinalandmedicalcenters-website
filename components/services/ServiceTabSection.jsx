@@ -66,7 +66,11 @@ const ServiceTabSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <ServiceTabContent />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {servicesData?.map((item, index) => (
+                <ServiceCard key={item?.slug || index} serversData={item} index={index} />
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>
