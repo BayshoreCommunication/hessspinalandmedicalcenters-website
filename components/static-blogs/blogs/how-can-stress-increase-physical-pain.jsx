@@ -181,7 +181,7 @@ const InfoPanel = ({ children, tone = "light" }) => {
 const QuotePanel = ({ quote, author }) => (
   <figure className="rounded-md border border-[#d5e7f4] bg-white p-5 shadow-sm">
     <blockquote className="text-[17px] font-semibold leading-8 text-[#1a3a5c]">
-      "{quote}"
+      &quot;{quote}&quot;
     </blockquote>
     <figcaption className="mt-4 text-sm font-bold uppercase tracking-[0.14em] text-[#2b7bb9]">
       {author}
@@ -349,7 +349,7 @@ export default function HowCanStressIncreasePhysicalPain() {
                 The muscles are forced to be guarded when under stress. While
                 cortisol and adrenaline stay elevated far longer than they
                 should, increasing your already excruciating physical pain. This
-                tightens the neck, back and shoulders. It also lowers the body's
+                tightens the neck, back and shoulders. It also lowers the body&apos;s
                 pain threshold and slows tissue healing. Chronic stress doesn’t
                 just feel heavy but physically rewires how the nervous system
                 reads pain.
@@ -420,7 +420,7 @@ export default function HowCanStressIncreasePhysicalPain() {
               bracing is ancient wiring, built for a saber tooth cat, not a
               Monday inbox.{" "}
               <ExternalLink href={sourceLinks.apaStress2025}>
-                The APA's Stress in America research
+                The APA&apos;s Stress in America research
               </ExternalLink>{" "}
               shows most U.S. adults now report physical or emotional symptoms
               tied to stress and the number keeps climbing year over year.
@@ -460,7 +460,7 @@ export default function HowCanStressIncreasePhysicalPain() {
               relaxes.
             </p>
             <p>
-              Add Florida's heat, the dread of hurricane season and a job market
+              Add Florida&apos;s heat, the dread of hurricane season and a job market
               where{" "}
               <ExternalLink href={sourceLinks.apaStress2025}>
                 69% of employed adults name work as a significant stressor
@@ -474,7 +474,7 @@ export default function HowCanStressIncreasePhysicalPain() {
                 sensitive
               </ExternalLink>
               . Suddenly, just moving around or getting a hug hurts when it
-              shouldn't.
+              shouldn&apos;t.
             </p>
           </div>
 
@@ -609,7 +609,7 @@ export default function HowCanStressIncreasePhysicalPain() {
             </p>
             <p>
               This is not unique to any one patient. It is a regional pattern.
-              Florida's population is growing faster than its infrastructure,
+              Florida&apos;s population is growing faster than its infrastructure,
               and that mismatch shows up in bodies before it shows up in
               headlines.
             </p>
@@ -651,7 +651,7 @@ export default function HowCanStressIncreasePhysicalPain() {
               <InternalLink href="/services">chiropractic care</InternalLink>{" "}
               earns its keep. Spinal adjustments do more than realign joints.
               They interrupt the muscle guarding pattern directly, which lowers
-              the sympathetic nervous system's alert level and gives cortisol a
+              the sympathetic nervous system&apos;s alert level and gives cortisol a
               reason to drop.
             </p>
           </div>

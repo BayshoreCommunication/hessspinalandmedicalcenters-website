@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import MainNavbar from "@/components/MainNavbar";
+import CookieBanner from "@/components/shared/CookieBanner";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
             <MainNavbar />
             {children}
             <Footer />
+            <CookieBanner />
           </div>
         </Providers>
       </body>
