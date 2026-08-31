@@ -22,39 +22,39 @@ export const SITECONFIG = {
       },
       {
         title: "Services",
-        slug: "/", // <- Add this slug
+        slug: "/services",
       },
       {
         title: "Testimonials",
-        slug: "/testimonials", // <- Add this slug
+        slug: "/testimonials",
       },
       {
         title: "Locations",
-        slug: "/location", // <- Adjusted to match 'Blogs' plural
+        slug: "/location",
       },
       {
         title: "Blogs",
-        slug: "/blog", // <- Adjusted to match 'Blogs' plural
+        slug: "/blog",
       },
       {
         title: "Contact",
-        slug: "/",
+        slug: "/contact",
       },
       {
         title: "Disclaimers",
-        slug: "/",
+        slug: "/disclaimers",
       },
       {
         title: "Privacy Policy",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         title: "Terms of Service",
-        slug: "/",
+        slug: "/terms-of-service",
       },
       {
         title: "Cookie Policy",
-        slug: "/",
+        slug: "/cookie-policy",
       },
     ],
   },
