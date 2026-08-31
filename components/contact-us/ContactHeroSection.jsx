@@ -163,7 +163,7 @@ const ContactHeroSection = () => {
                 </ScrollMotionEffect>
               </div>
               <div>
-                <ContactSection />
+                {/* <ContactSection /> */}
               </div>
             </div>
           </div>
