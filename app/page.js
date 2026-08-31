@@ -42,7 +42,7 @@ export default function Home() {
       <WhatPeopleSay />
       <LatestBlogs />
       <GoogleMap />
-      <ContactUs />
+      {/* <ContactUs /> */}
     </main>
   );
 }
