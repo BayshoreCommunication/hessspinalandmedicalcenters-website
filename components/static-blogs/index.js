@@ -22,6 +22,9 @@ import CanChiropracticCareImproveAthleticPerformance, {
 import HowCanStressIncreasePhysicalPain, {
   howCanStressIncreasePhysicalPainPost,
 } from "./blogs/how-can-stress-increase-physical-pain";
+import NaturalWaysToSupportPainManagement, {
+  naturalWaysToSupportPainManagementPost,
+} from "./blogs/natural-ways-to-support-pain-management";
 
 export const staticBlogPosts = [
   {
@@ -55,6 +58,10 @@ export const staticBlogPosts = [
   {
     ...howCanStressIncreasePhysicalPainPost,
     StaticContent: HowCanStressIncreasePhysicalPain,
+  },
+  {
+    ...naturalWaysToSupportPainManagementPost,
+    StaticContent: NaturalWaysToSupportPainManagement,
   },
 ];
 
