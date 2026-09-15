@@ -25,6 +25,9 @@ import HowCanStressIncreasePhysicalPain, {
 import NaturalWaysToSupportPainManagement, {
   naturalWaysToSupportPainManagementPost,
 } from "./blogs/natural-ways-to-support-pain-management";
+import WhyRangeOfMotionTestingMattersAfterAFloridaCarAccident, {
+  whyRangeOfMotionTestingMattersAfterAFloridaCarAccidentPost,
+} from "./blogs/why-range-of-motion-testing-matters-after-a-florida-car-accident";
 
 export const staticBlogPosts = [
   {
@@ -62,6 +65,10 @@ export const staticBlogPosts = [
   {
     ...naturalWaysToSupportPainManagementPost,
     StaticContent: NaturalWaysToSupportPainManagement,
+  },
+  {
+    ...whyRangeOfMotionTestingMattersAfterAFloridaCarAccidentPost,
+    StaticContent: WhyRangeOfMotionTestingMattersAfterAFloridaCarAccident,
   },
 ];
 
