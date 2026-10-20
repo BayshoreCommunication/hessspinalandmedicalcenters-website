@@ -198,6 +198,8 @@ export default function NaturalWaysToSupportPainManagement() {
             "@graph": [
               {
                 "@type": "BreadcrumbList",
+                "@id":
+                  "https://www.hessspinalandmedicalcenters.com/blog/natural-ways-to-support-pain-management#breadcrumb",
                 itemListElement: [
                   {
                     "@type": "ListItem",
@@ -208,19 +210,22 @@ export default function NaturalWaysToSupportPainManagement() {
                   {
                     "@type": "ListItem",
                     position: 2,
-                    name: "Blog",
+                    name: "Blogs",
                     item: "https://www.hessspinalandmedicalcenters.com/blog",
                   },
                   {
                     "@type": "ListItem",
                     position: 3,
                     name: "Natural Ways to Support Pain Management",
-                    item: "https://www.hessspinalandmedicalcenters.com/blog/natural-ways-to-support-pain-management",
+                    item:
+                      "https://www.hessspinalandmedicalcenters.com/blog/natural-ways-to-support-pain-management",
                   },
                 ],
               },
               {
                 "@type": "BlogPosting",
+                "@id":
+                  "https://www.hessspinalandmedicalcenters.com/blog/natural-ways-to-support-pain-management#blogposting",
                 mainEntityOfPage: {
                   "@type": "WebPage",
                   "@id":
@@ -230,32 +235,38 @@ export default function NaturalWaysToSupportPainManagement() {
                 name: "Natural Pain Management Guide for Tampa Bay Adults",
                 description:
                   "Natural pain care uses movement and spinal adjustments to heal injury without medication. See why Tampa doctors are dumping pills for this method",
-                url: "https://www.hessspinalandmedicalcenters.com/blog/natural-ways-to-support-pain-management",
+                url:
+                  "https://www.hessspinalandmedicalcenters.com/blog/natural-ways-to-support-pain-management",
                 image:
                   "https://www.hessspinalandmedicalcenters.com/assets/static-blogs/natural-ways-to-support-pain-management-tips.webp",
                 isPartOf: {
                   "@type": "Blog",
-                  "@id": "https://www.hessspinalandmedicalcenters.com/blog",
+                  name: "Hess Spinal & Medical Centers Blog",
+                  url: "https://www.hessspinalandmedicalcenters.com/blog",
                 },
                 about: {
                   "@type": "Thing",
                   name: "Natural Pain Management",
-                  description:
-                    "A comprehensive guide to holistic and non-pharmacological pain care methods including spinal manipulation, physical therapy, hydration, and sleep.",
                 },
                 keywords: [
                   "natural pain management",
                   "natural pain relief",
-                  "chiropractic care Tampa",
-                  "non-pharmacological pain care",
+                  "pain management",
+                  "chiropractic care",
                   "spinal manipulation",
-                  "natural back pain treatment",
-                  "physical therapy Tampa Bay",
-                  "Florida PIP 14 day rule",
+                  "physical therapy",
+                  "spinal decompression",
+                  "hydrotherapy",
+                  "heat and cold therapy",
+                  "anti-inflammatory diet",
+                  "pain relief Tampa",
+                  "natural pain relief Tampa",
+                  "conservative pain treatment",
                 ],
                 author: {
                   "@type": "Organization",
                   name: "Hess Spinal & Medical Centers",
+                  url: "https://www.hessspinalandmedicalcenters.com/",
                 },
                 publisher: {
                   "@type": "Organization",
@@ -263,7 +274,8 @@ export default function NaturalWaysToSupportPainManagement() {
                   url: "https://www.hessspinalandmedicalcenters.com/",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://www.hessspinalandmedicalcenters.com/assets/site-logo/main-logo.png",
+                    url:
+                      "https://www.hessspinalandmedicalcenters.com/assets/site-logo/main-logo.png",
                   },
                 },
                 datePublished: "2026-09-08",
@@ -271,14 +283,38 @@ export default function NaturalWaysToSupportPainManagement() {
               },
               {
                 "@type": "FAQPage",
-                mainEntity: faqs.map((faq) => ({
-                  "@type": "Question",
-                  name: faq.question,
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: faq.answer,
+                "@id":
+                  "https://www.hessspinalandmedicalcenters.com/blog/natural-ways-to-support-pain-management#faq",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "How long do natural pain relievers last?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text:
+                        "Most cases of minor soft tissue injuries respond to conservative treatment modalities within 2-6 weeks. Degenerative processes and disc-related pain conditions usually require a more prolonged course of treatment.",
+                    },
                   },
-                })),
+                  {
+                    "@type": "Question",
+                    name:
+                      "Is it possible to get chiropractic treatment along with medication?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text:
+                        "Generally, yes, under proper physician guidance. Multi-specialty clinics coordinate chiropractic adjustments, physical therapy and medical treatment together so nothing works against anything else.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Is spinal adjustment safe for elder people?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text:
+                        "Severe side effects resulting from a spinal adjustment are highly unlikely but they can’t be entirely ruled out. The technique and the amount of force used during the procedure are adjusted according to the patient’s overall condition.",
+                    },
+                  },
+                ],
               },
             ],
           }),
